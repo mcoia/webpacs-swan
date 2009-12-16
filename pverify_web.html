@@ -1,0 +1,164 @@
+<!-- SWAN pverify_web.html updated 080822 lee -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SWAN Library Catalog</title>
+</head>
+<body bgcolor="#DBE4C5">
+<!--{toplogo}-->
+<!--{patron}-->
+<!--{logout}-->
+<form method="post">
+<p>
+<!--{iferrmsg}-->
+<font color="red" size="+2"><em>
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</em></font><br />
+<br />
+<br />
+<!--{xif}-->
+<!--{enterinfo}-->
+</p>
+<table style="width:100%; border:0px; background-color:#DBE4C5; padding:2px;" cellspacing="0" summary="name">
+<tr>
+<td style="vertical-align:top; width:1%;">
+<table summary="namePrompt">
+<!--{ifneedpatronname}-->
+<tr>
+<td width="1%"></td>
+<td class="blurb">
+<!--{nameexample}-->
+</td>
+</tr>
+<tr>
+<td class="blurb" width="1%" nowrap="nowrap">
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+</tr>
+<tr>
+<td colspan="3"> &nbsp;</td>
+</tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr>
+<td width="1%"></td>
+<td class="blurb">
+<!--{barcodeexample}-->
+</td>
+</tr>
+<tr>
+<td class="blurb" width="1%" nowrap="nowrap">
+<!--{barcodeprompt}-->
+</td>
+<td>
+<!--{barcode}-->
+</td>
+</tr>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<tr>
+<td colspan="2">
+<!--{newpinmsg}-->
+</td>
+</tr>
+<tr>
+<td class="blurb" width="1%" nowrap="nowrap">
+<!--{pin1prompt}-->
+</td>
+<td>
+<!--{pin1}-->
+</td>
+</tr>
+<tr>
+<td class="blurb" width="1%" nowrap="nowrap">
+<!--{pin2prompt}-->
+</td>
+<td>
+<!--{pin2}-->
+</td>
+</tr>
+<!--{else}-->
+<tr>
+<td></td>
+<td class="blurb">
+<!--{pininstructions}-->
+</td>
+</tr>
+<tr>
+<td class="blurb" width="1%" nowrap="nowrap">
+<!--{pinprompt}-->
+</td>
+<td>
+<!--{pin}-->
+</td>
+</tr>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+<tr>
+<td colspan="2">
+<br />
+<!--{submit}-->
+</td>
+</tr>
+</table>
+</td>
+<td valign="top" align="right">
+<table style="width: 340px; border:0px; background-color:#9EB69B; padding: 2px;margin-right: 5px;" cellspacing="0" summary="IDhelp">
+<tr>
+<td>
+<br />
+<div style="font-size: small; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+&nbsp; &nbsp; Institution Code Help
+</div>
+<br />
+<div style="font-size: x-small; font-family: Arial, Helvetica, sans-serif;">
+&nbsp; &nbsp; &middot; Assemblies of God Theological Seminary -
+<strong>AGTS</strong><br />
+&nbsp; &nbsp; &middot; Baptist Bible College - <strong>BBC</strong><br />
+&nbsp; &nbsp; &middot; Cottey College - <strong>COTT</strong><br />
+&nbsp; &nbsp; &middot; Crowder College - <strong>CC</strong><br />
+&nbsp; &nbsp; &middot; Drury University - <strong>DU</strong><br />
+&nbsp; &nbsp; &middot; Forest Institute of Professional Psychology -
+<strong>FIPP</strong><br />
+&nbsp; &nbsp; &middot; Missouri Southern State University -
+<strong>MSSU</strong><br />
+&nbsp; &nbsp; &middot; Missouri State University - <strong>MSU</strong><br />
+&nbsp; &nbsp; &middot; Ozarks Technical College - <strong>OTC</strong><br />
+&nbsp; &nbsp; &middot; Southwest Baptist University -
+<strong>SBU</strong><br />
+</div>
+<br />
+<div style="font-size:x-small; font-family: Arial, Helvetica, sans-serif;">
+&nbsp;&nbsp;&nbsp;&nbsp; Type your ID number (dashes are not necessary)<br /> &nbsp;&nbsp; plus your institution code.<br />
+&nbsp;&nbsp;&nbsp; &nbsp; For example: 
+<tt style="font-size:small; color:#CC0000;">123654185SBU</tt> 
+would be a<br />&nbsp;&nbsp; Campus ID for a student at Southwest Baptist <br />&nbsp;&nbsp; University.<br />
+<br />
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+<table style="width:100%;" summary="botlogo">
+<tr>
+<td>
+<!--{startover}-->
+</td>
+</tr>
+</table>
+<!--{botlogo}-->
+</body>
+</html>
