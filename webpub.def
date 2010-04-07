@@ -45,9 +45,9 @@ b|n|504|-z6|Bibliography||b|
 b|n|505..|-z6|Contents||b|
 b|n|508|-z6|Credits||b|
 b|n|510|-z6|||b|
-b|n|^5111|-z6|Cast||b|
-b|n|^5112|-z6|Presenter||b|
-b|n|^5113|-z6|Narrator||b|
+b|n|5111|-z6|Cast||b|
+b|n|5112|-z6|Presenter||b|
+b|n|5113|-z6|Narrator||b|
 b|n|520|-z6|Summary||b|
 b|n|521 |-z6|Audience||b|
 b|n|5210|-z6|Reading Level||b|
@@ -64,7 +64,7 @@ b|x|780.0|-6|Continues||b
 b|x|780.1|-6|Continues In Part||b|
 b|x|780.2|-6|Supersedes||b|
 b|x|780.3|-6|Supersedes In Part||b|
-b|x|^780.4|-6|Union Of||b|
+b|x|780.4|-6|Union Of||b|
 b|x|780.5|-6|Absorbed||b|
 b|x|780.6|-6|Absorbed In Part||b|
 b|x|780.7|-6|Split From||b|
