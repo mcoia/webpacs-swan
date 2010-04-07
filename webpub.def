@@ -162,7 +162,7 @@ b|g|086|-6|Sudoc #||b|
 b|g||-6|Govt. Doc#||b|
 b|y|255|uac|Map Scale||b|
 b|y|856|uac|Link To Web Version||b|
-b|y||uac|Misc Marc||b|
+b|y||uac|||b|
 #-----------------------------------------------------
 # ITEM RECORD DISPLAY ON BIB.
 #
