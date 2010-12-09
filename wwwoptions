@@ -197,10 +197,10 @@ LINK856TEXT=Link to web version
 MARC=T
 #RECORDFRAME=25,75
 TABLEPARAM_BIB=BORDER=0|BORDER=0
-TABLEPARAM_BIB_DETAIL=border="0" width="100%" border="0" cellspacing="1"
+TABLEPARAM_BIB_DETAIL=id="bib_detail" border="0" width="100%" border="0" cellspacing="1" 
 TABLEPARAM_BIB_HOLDINGS=width="100%" border="0" cellspacing="1"
 TABLEPARAM_BIB_HOLDS=width="99%" border="0" cellspacing="1"
-TABLEPARAM_BIB_ITEMS=width="100%" border="0" cellspacing="1"
+TABLEPARAM_BIB_ITEMS=id="bib_items" width="100%" border="0" cellspacing="1" 
 TABLEPARAM_BIB_LINKS=width="99%" border="0" cellspacing="1"
 TABLEPARAM_BIB_ORDER=width="100%" border="0" cellspacing="1"
 TABLEPARAM_BIB_PAGER=width="99%" border="0" cellspacing="1"
