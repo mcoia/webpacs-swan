@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Millennium AltaVista Style Search</title>
+
+</head>
+<body bgcolor="#FFFFFF" alink="#000099" vlink="#0033cc">
+<DIV ALIGN="center">
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<!--{patron}-->
+<P>
+</TR>
+
+<TR>
+<TD COLSPAN=3>
+
+<IMG SRC="/screens/millogo.gif" WIDTH=100 HEIGHT=82 ALT="" BORDER="0" ALIGN="left"><CENTER><IMG SRC="/screens/logo.gif" WIDTH=400 HEIGHT=79 ALT="" BORDER="0"></CENTER>
+<BR>
+<IMG SRC="/screens/grndot.gif" WIDTH=90% HEIGHT=1 ALT="" BORDER="0" ALIGN="left"></TD>
+</TR>
+<TR>
+<TD VALIGN="top" width=25%>
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=0 VALIGN="top" ALIGN="left">
+<TD>
+<font size=+1 color=green face="arial">Catalog Options</font><p>
+<A HREF="/"><font face="arial" color=blue>Home
+</A><BR>
+<A HREF="/screens/libinfo.html"><font face="arial" color=blue>
+Library Information</A></font><BR>
+<A HREF="/suggest/"><font face="arial" color=blue>
+Suggestions</A></font><BR>
+<A HREF="/acquire/"><font face="arial" color=blue>Books to Acquire</A></font><BR>
+<A HREF="/ftlist/"><font face="arial" color=blue>Featured Lists</font></A><BR>
+<A HREF="/patroninfo/"><font face="arial" color=blue>
+View Your Record</font></A><BR>
+</TD>
+</TR>
+</TABLE>
+
+</TD><TD VALIGN="top">
+<IMG SRC="/screens/grndot.gif" WIDTH=1 HEIGHT=250 ALT="LINE" BORDER="0" ALIGN="top"></TD>
+<TD VALIGN="center" ALIGN="center">
+<CENTER>
+
+<!--{msg}-->
+<!--{spellcheck}-->
+<br>
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=10 VALIGN="top">
+<TR>
+<TD ALIGN="left" VALIGN="top">
+Type the <B>WORD(S)</B> you want, then click <b>Search</b>
+<FORM ACTION=/search/Z>
+<!--{search}-->
+<INPUT TYPE=HIDDEN NAME=SORT VALUE=S>
+<!--{submit}-->
+</FORM>
+<A HREF="/search/X"><IMG SRC="/screens/advanced.gif" BORDER=0 ALT="[ADVANCED SEARCH]"></a>&nbsp;
+<A HREF="/search/Y"><IMG SRC="/screens/simple.gif" BORDER=0 ALT="[SIMPLE SEARCH]"></a>
+<A HREF="/search/"><IMG SRC="/screens/newsrch.gif" BORDER=0 ALT="[START OVER]"></A>
+<p>
+</TR>
+</TABLE>
+</TABLE>
+
+<TABLE COLSPAN=3 CELLPADDING=10 CELLSPACING=2 bgcolor="#FFFFFF" WIDTH="100%">
+<TR>
+<TH WIDTH=10%></TH>
+<TH WIDTH=40%>Type in Words to search: </TH>
+<TH WIDTH=50%>EXAMPLES</TH></TR>
+<TR>
+<TD WIDTH=100><b>ADJACENCY</b></TD>
+<TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+To search multiple words together as one phrase, enclose in quotes. By default searches will return records containing any of the search terms entered (default OR). </FONT></TD>
+
+<TD BGCOLOR="#99CCFF"><TT>"global warming" (finds only records containing the words "global warming" as a phrase)<BR>
+pollution cancer (finds any record containing "pollution" and any record containing "cancer")
+
+</TD>
+<TR>
+<TD WIDTH=100><b>TRUNCATION</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Words may be right-hand truncated using an asterisk. Use a single asterisk * to truncate from 1-5 characters. Use a double asterisk ** for open-ended truncation.</FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>populat*
+<BR>
+dost**</TT></TD>
+<TR>
+<TD WIDTH=100><b>OPERATORS</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+These do not work the same as Boolean operators; they only apply to one word and they do not modify the relationship between words.  Use a + to require a word be present, use a - to exclude a word, if not specified the assumed operator is OR </FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT><UL><LI>nuclear +family (finds any record with nuclear AND family, and any record with family)<BR>
+<LI>+nuclear +family (finds any record with nuclear AND family)<BR><LI>nuclear -family (finds any record with nuclear AND NOT family, and any record without family) <BR><LI>+nuclear -family (finds any record with nuclear AND NOT family)</TD>
+</TT>
+</FONT>
+</TABLE>
+
+</TD>
+<TD VALIGN="top"></TD>
+</TR>
+</TABLE>
+<p>
+<IMG SRC="/screens/botlogo.gif">
+</DIV>
+</body>
+</html>
