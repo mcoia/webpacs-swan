@@ -219,6 +219,11 @@ resourceResource { }
 
 /* SMS classes */
 
+#smsfeatures {
+    text-align:center;
+    margin:2em;
+}
+
 #info, #sms {
        border:1px solid #36647b;
        position:absolute;
@@ -238,7 +243,7 @@ resourceResource { }
 
 #info {top:500}
 
-#sms {font-size:70%}
+#sms {font-size:70%;}
 
 
 /* WEBBRIDGE DISPLAY CLASSES */
