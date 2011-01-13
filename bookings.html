@@ -1,0 +1,89 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Place a booking</h1>
+
+<div>
+<!--{record_info}-->
+</div>
+
+<!--{iferr}-->
+<div class="errormessage">
+<!--{error_msg}-->
+</div>
+<!--{xif}-->
+
+<div id="accessibleForm" class="form2Part bookingForm">
+
+<!--{formbegin}-->
+
+<div class="formLeft">
+
+<fieldset>
+
+<div class="formEntryArea">
+
+<!--{iflocation}-->
+<h2>Select a location:</h2>
+<!--{location}-->
+<!--{xif}-->
+
+<h2>Begin time:</h2>
+<!--{timedayhour}-->
+
+</div>
+</fieldset>
+
+
+<!--{ifendtime}-->
+<fieldset>
+<!--{ifrepeat}-->
+<div class="formEntryArea">
+Repeat:
+<!--{repeat}-->
+</div>
+<div class="formEntryArea">
+<!--{duration}-->
+</div>
+<!--{xif}-->
+<div class="formEntryArea">
+<!--{endtimedayhour}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<!--{ifneednote}-->
+<fieldset>
+<div class="formEntryArea">
+<h2>Note:</h2>
+<!--{note}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+
+</div>
+
+<div class="formRight">
+<div class="formEntryArea">
+<p>
+<!--{calendar_legend}-->
+</p>
+<div class="bookingsCalendar">
+<!--{calendar}-->
+</div>
+<!--{calendar_type}-->
+</div>
+</div><!-- formRight -->
+
+<!--{formend}-->
+
+<div class="clear"></div>
+
+</div><!-- accessibleForm -->
+</div><!-- pageContentInner -->
+<!--{botlogo}-->

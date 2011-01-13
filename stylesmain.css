@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* Mainmenu styles */
+
+.topLogoSmall { visibility:hidden; }
+
+.topLogo { height:120px; background-image:url(logo_lg.jpg); background-repeat:no-repeat; background-position:9px 9px; }
