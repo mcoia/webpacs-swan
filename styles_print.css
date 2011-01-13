@@ -1,0 +1,127 @@
+a:link, a:visited {background:#FFF; color:#000; text-decoration:underline; font-weight:bold;}
+
+#bibDisplayBody a:link, #bibDisplayBody a:visited, #formLinks a:link, #formLinks a:visited {background:transparent; color:#000; text-decoration:underline; font-weight:bold;}
+  
+body { color:#000; background-color:#FFF; background-image:none; font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+img { border:0; }
+
+td { color:#000; background-color:#FFF; background-image:none; font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+table.browseScreen td { width:18%; }
+
+.bibPager, .bibResourceSidebar, .bibSearch, .briefcitMark, .briefcitRequest, .browseSaveJump, .browseSearchtool, .browseResourceTable, .buttonSpriteDiv, .clear, .navigationRow, .patActionsLinks, .searchNav, #skipNav, .topMyLibrary, .topLinks, .navigationRowRecord, .pageContent div .bibResourceSidebar { display:none; }
+
+.pageContent .bibDisplayPermLink, .resourceHistory, .recordPager { display:none; }
+
+.patActionsLinks, .patTop, .patFuncArea { border:0; }
+
+.patFloat { background-image:none; }
+
+.patFuncArea { float:none; margin-top:1em; width:auto; }
+
+#bibDisplayBody div[align="center"] { display:none; }
+
+#bibDisplayContent { display:block !important; }
+
+.bibDisplayContentMain, .resourceDisplayContentMain { margin-left:1em; width:78%; }
+
+.bibDisplayJacket, .bibMedia { width: 80px; }
+
+.bibMedia { margin-top:2em; text-align:left; }
+
+.bibDisplayJacket { margin:0 0 1em 0; }
+
+.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { font-size:50%; }
+
+.bibItems td, .bibItems a { background-color:transparent; }
+
+.bibDisplayItemsHeader h2 { color:#767C70; }
+
+th.bibItemsHeader { color:#000000; font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+#bibDisplayBody a:link, #bibDisplayBody a:visited { font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+.bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#767C70; }
+
+#bibDisplayBody .resourceDisplayBibs a:link  { font-size:80%; }
+
+.briefcitActions { display:none; }
+
+.briefcitCell { width:100%; }
+
+.briefcitDetail a { background-color:transparent; }
+
+.briefcitDetail, .briefcitAuthDetail { width: 70%; }
+
+.briefcitItems h2 { color:#000000; }
+
+.briefcitRow { margin:5px 0; }
+
+h2.briefcitTitle { font-size:10pt; }
+
+.briefcitDetailMain { width: 98%; float:left; }
+
+.briefcitItemsMain { width:98%; }
+
+.briefcitItems { width:auto; padding-left:0; }
+
+.briefcitItems, .briefcitItems td, .briefcitItems th { font-size:90%; }
+
+.briefcitRow { padding-left:0; }
+
+.briefcitJacket { margin:0 .3em; }
+
+.browseScreen > tbody > tr > td { width:0; }
+
+.browseScreen > tbody > tr > td:first-child { width:100%; }
+
+.browseScreen table { border-collapse:separate; }
+
+.browsepager { padding-top:0; }
+
+.browsePager { padding-top:0; }
+
+.browsePager a { display:none; }
+
+.browsePager strong  {}
+
+.briefcitCell { font-size:10pt; }
+
+.briefcitMedia { margin-top:20px; }
+
+.helpTopics { display:none; }
+
+.helpContent #formLinks { display:none; }
+
+.loggedInMessage { display:none; }
+
+.patActionsLinks, .patTop, .patFuncArea { outline:none; }
+
+.patFuncArea { margin:0; }
+
+.patFunc a { background:transparent; }
+
+.patFunc td { width:auto; }
+
+table.patFunc { width:40em; font-size:90% }
+
+.patTop {margin:0; }
+
+.patFuncHeaders { text-align:left; }
+
+tr.patFuncHeaders { border-bottom:1px solid #888888; }
+
+.patFuncRating { text-align:left; }
+
+.rateLabel { padding-left:1.5em; }
+
+.resourcePager { display:none; }
+
+.resourceDisplayBibs { clear:both; padding-top:1em; margin-left:-4em; }
+
+.resourceDisplayContentMain { float:left; margin-left:1em; padding-left:4em; position:absolute; left:0; }
+
+.resourceDisplayBibs td, .resourceDisplayBibs th, .resourceLicenseHeader { font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
+
+.topLogoSmall img { border:0; height:.25in; width:1.75in; }

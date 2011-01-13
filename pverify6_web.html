@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Millennium Web Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Media Verification</h1>
+<div id="accessibleForm" class="form1Part">
+<!--<form method="post" target="_top" name="patform" class="unpadded"> -->
+<!-- Alternative form pre2009B -->
+<!--{formbegin}-->
+<fieldset>
+
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</div>
+
+<!--{xif}-->
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+Please enter your name:
+<!--{name}-->
+<!--{xif}-->
+<br >
+<!--{ifneedpatronverify}-->
+Please enter your barcode:
+<!--{barcode}-->
+<!--<xif>-->
+<br >
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<!--{pin1prompt}-->
+<!--{pin1}-->
+<!--{pin2prompt}-->
+<!--{pin2}-->
+<!--{else}-->
+<!--{pininstructions}-->
+<!--{pinprompt}-->
+<!--{pin}-->
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+<!--{ifcourseverify}-->
+<!--{courseprompt}-->
+<!--{coursepswd}-->
+<!--{xif}-->
+<br >
+<!--{imageinfo}-->
+<!--{ifprinter}-->
+<!--{print}-->
+<!--{xif}-->
+<p>
+Pursuant to the federal Copyright Act (Title 17 of the United States Code), it is presumptively unlawful to reproduce, distribute, or publicly display any copyrighted work (or any substantial portion thereof) without the permission of the copyright owner. The statute, however, recognizes a fair use defense that has the effect of excusing an act of copyright infringement. It is the intention of the Library to act within the parameters of the fair use defense in allowing limited posting of copyrighted materials in Electronic Course Reserve areas such as this one. It is the intention of the Library, moreover, that such materials be made available solely for the purposes of private study, scholarship, and research, and that any further reproduction of such materials by students, by printing or downloading, be limited to such purposes. Any further reproduction of copyrighted materials made from this computer system may be in violation of copyright laws and is prohibited.</p>
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+<!--</form> -->
+<!-- Alternative form pre2009B -->
+<!--{formend}-->
+</div><!-- form1Part -->
+</div>
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
