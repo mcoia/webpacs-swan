@@ -1,0 +1,191 @@
+# SWAN webpub.def Updated 080728 lee removed vol. and copy# from item display
+# SWAN webpub.def Updated 080903 lee - adjusted item summary table column widths
+# SWAN webpub.def Updated 080904 lee added vol. and copy# to item display again
+# SWAN webpub.def Updated 080924 lee re-enabled edition statement
+#
+# [record type]|[field tag]|[marctag/indicators]|[subfields]|[label]|[column %]|[record display]|[append]
+# -----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+# converted by cvpubdef from HOLDINGS_POS: atpe (re-enabled edition statement  080924)
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a|110|-6|Corporate Author||b|
+b|a|111|-6|Meeting Name||b|
+b|a||-6|Author||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|240|-6|Uniform Title||b|
+b|t||-6|Title||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+b|p||-6|Imprint||b|
+b|e||-6|Edition||b|
+#
+# end HOLDINGS_POS
+# -------------------------------------------------------
+# BIB RECORD DISPLAY
+# -------------------------------------------------------
+# next line added by cvpubdef
+b|H|||||b
+b|r|300|-6|Description||b|
+b|r|310|-6|Frequency||b|
+b|r|321|-6|Former Frequency||b|
+b|r|350|-6|||b|
+b|r|362|-6|Publication History||b|
+b|r||-6|Descript.||b|
+b|s|440.0|-6|Series||b|
+b|s|490.1|-6|Added Title||b|
+b|s||-6|Series||b|
+b|n|504|-z6|Bibliography||b|
+# 080220 added 1st indicator 0 below lee
+b|n|505..|-z6|Contents||b|
+b|n|508|-z6|Credits||b|
+b|n|510|-z6|||b|
+b|n|5111|-z6|Cast||b|
+b|n|5112|-z6|Presenter||b|
+b|n|5113|-z6|Narrator||b|
+b|n|520|-z6|Summary||b|
+b|n|521 |-z6|Audience||b|
+b|n|5210|-z6|Reading Level||b|
+b|n|5211|-z6|Age Level||b|
+b|n|5212|-z6|Grade Level||b|
+b|n|5213|-z6|Audience||b|
+b|n|5214|-z6|Audience||b|
+b|n|5218|-z6|Audience||b|
+b|n|555[^0]|-z6|Indexes||b|
+b|n|59[0-9]|-z6|Local Note||b|
+b|n||-z6|Note||b|
+b|x|7801|-6|||b|
+b|x|780.0|-6|Continues||b
+b|x|780.1|-6|Continues In Part||b|
+b|x|780.2|-6|Supersedes||b|
+b|x|780.3|-6|Supersedes In Part||b|
+b|x|780.4|-6|Union Of||b|
+b|x|780.5|-6|Absorbed||b|
+b|x|780.6|-6|Absorbed In Part||b|
+b|x|780.7|-6|Split From||b|
+b|x||-6|Continues||b|
+b|z|785.0|-6|Continued By||b|
+b|z|785.1|-6|Continued In Part||b|
+b|z|785.2|-6|Superseded By||b|
+b|z|785.3|-6|Superseded In Part||b|
+b|z|785.4|-6|Absorbed By||b|
+b|z|785.5|-6|Absorbed In Part||b|
+b|z|785.6|-6|Split Into||b|
+b|z|785.7|-6|Merged With ||b|
+b|z|785.8|-6|Changed Back||b
+b|z||-6|Cont'd By||b|
+b|q||-6w|Related To||b|
+b|q|773|-7|Related To||b|
+b|d|600.0|-26|Subjects||b|
+b|d|610.0|-26|Subjects||b|
+b|d|611.0|-26|Subjects||b|
+b|d|630.0|-26|Subjects||b|
+b|d|650.0|-26|Subjects||b|
+b|d|651.0|-26|Subjects||b|
+b|d||-26|Subjects||b|
+b|j|6[0-9][0-9].2|-26|Additional Subjects||b|
+b|j|690|-26|Added Keyword||b|
+b|b|700|-6|Added Author||b|
+b|b|710|-6|Added Author||b|
+b|b|711|-6|Added Author||b|
+b|b||-6|Add Author||b|
+b|u|130|-6|Uniform Title||b|
+b|u|210|-6|Other Title||b|
+b|u|211|-6|Other Title||b|
+b|u|212|-6|Other Title||b|
+b|u|214|-6|Other Title||b|
+b|u|241|-6|Other Title||b|
+b|u|242|-6|Other Title||b|
+b|u|243|-6|Other Title||b|
+b|u|2460|-6|Other Title||b|
+b|u|2461 |-6|Other Title||b|
+b|u|2461[01]|-6|Added Title||b|
+b|u|24612|-6|Other Title||b|
+b|u|24613|-6|Other Title||b|
+b|u|24614|-6|Cover Title||b|
+b|u|24615|-6|Other Title||b|
+b|u|24616|-6|Caption Title||b|
+b|u|24617|-6|Running Title||b|
+b|u|24618|-6|Spine Title||b|
+b|u|2463|-6|Other Title||b|
+b|u|24700|-6|Other Title||b|
+b|u|24701|-6|Other Title||b|
+b|u|24710|-6|Other Title||b|
+b|u|24711|-6|Other Title||b|
+b|u|730|-6|Added Title||b|
+b|u|740|-6|Added Title||b|
+b|u||-6|Add Title||b|
+b|f|970|-6|||b|
+b|f||-6|Contents||b|
+b|i|020|-c6|ISBN||b|
+b|i|022|-c6|ISSN||b|
+b|i|0242|-c6|Ismn||b|
+b|i|027|-c6|Technical Report #||b|
+b|i|028[0-9]0|-c6|||b|
+b|i|028[0-9]1|-c6|||b|
+b|i|028[0-9]3|-c6|||b|
+b|i|028[0-9]4|-c6|||b|
+b|i|028[0-9]5|-c6|||b|
+b|i|02802|-c6|Issue #||b|
+b|i|02812|-c6|Matrix #||b|
+b|i|02822|-c6|Plate #||b|
+b|i|02832|-c6|Publisher #||b|
+b|i|02842|-c6|Video Publisher #||b|
+b|o||-6789|OCLC #||b|
+b|i|030|-c6|Coden||b|
+b|i|074|-c6|Gpo Item #||b|
+b|i|088|-c6|Technical Report #||b|
+b|i||-c6|Standard#||b|
+b|g|086|-6|Sudoc #||b|
+b|g||-6|Govt. Doc#||b|
+b|y|255|uac|Map Scale||b|
+b|y|856|uac|Link To Web Version||b|
+b|y||uac|||b|
+#-----------------------------------------------------
+# ITEM RECORD DISPLAY ON BIB.
+#
+# Converted by cvpubdef from item_col_width:  1(23)[LOCATION],Cgv#(28),n(15)[NOTE],%
+# -----------------------------------------------------
+i|1|||LOCATION|30|b|
+i|C||||30|b||&nbsp;
+i|g|||||b||&nbsp;
+i|v|||||b||&nbsp;
+i|Q|||||b|
+#i|#|||||b|&nbsp;
+i|n|||NOTE|20|b|
+i|%|||STATUS|20|b|
+#---------------------------------------------------
+# HOLDINGS RECORDS ON BIB. DISPLAY
+#---------------------------------------------------
+c|i||a|Identity||b|&nbsp;
+c|C||&|||b|
+c|Q||||b|  
+c|$||+|Location||b|
+c|h||-8x|Lib. Has||b|
+c|n||+|Note||b|
+c|2||+|Latest Received||b|&nbsp;
+c|3||+|Latest Received||b|
+c|Q||||b|
+#
+# end pubdef
+#-----------------------------------------------------
+# HOLDINGS DISPLAY
+#-----------------------------------------------------
+b|t||-6|Title||b|&nbsp;
+c|Q|||||b|  
+# ----------------------------------------------------
+# Electronic Resource Record display
+# ----------------------------------------------------
+e|t|||PUBLISHER(S)||e
+e|h|||COVERAGE||e
+e|k|||ADVISORY||e
+e|R|||Rating||e
+# ---------------------------------------------------
+#end converted webpub.def
+
+
