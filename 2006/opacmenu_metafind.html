@@ -1,0 +1,227 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 15 February, 2007 -->
+<head>
+<title>Millennium Library Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<!--[if lte IE 8]>
+
+<link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" />
+
+<![endif]-->
+<script type="text/javascript">
+//function controlling the collapsable portions of the menus
+function toggleLayer(whichLayer)
+{
+if (document.getElementById)
+{
+var style2 = document.getElementById(whichLayer).style;
+style2.display = style2.display? "":"block";
+}
+else if (document.all)
+{
+var style2 = document.all[whichLayer].style;
+style2.display = style2.display? "":"block";
+}
+else if (document.layers)
+{
+var style2 = document.layers[whichLayer].style;
+style2.display = style2.display? "":"block";
+}
+}
+</script>
+</head>
+
+<body onload="document.forms[0].elements[0].focus();">
+<!--{toplogo}-->
+<div>
+<!-- to create new tabs copy the tab code:
+
+		<div class="mainActiveTab">
+			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabActive">Keyword</div></div>
+		</div>
+
+and insert in correct place.  You may have to adjust the font size and spacing within the style sheet styles.css and ie_styles.css to accomodate additional tabs.
+Also, each of the search help pages must be edited with your additional tab code.   The current pages include srchhelp_a.html, srchhelp_X.html, srchhelp_d.html, srchhelp_c.html, srchhelp_t.html, and srchhelp_i.html.
+-->
+<div class="folderWrapper"><!-- "folder" interface wrapper div-->
+	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
+		<div class="mainActiveTab"><!--active tab-->
+			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabActive">Keyword</div></div>
+		</div><!--close active tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search/t">Title</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search/a">Author</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search/d">Subject</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search/c">Call #</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search/i">ISBN/ISSN</a></div></div>
+		</div><!--close inactive tab-->
+	</div><!--close selection tab wrapper-->
+	<div class="mainSpacer"><!-- main content wrapper div -->
+		<div class="mainActiveContent">
+<table class="textFix"><tr><td valign="top" width="70%">
+Type the keyword(s) in the box below then press Enter or click the Submit button.<br />
+<form action="/search/X" method="get" class="unpadded">
+<input type="text" name="SEARCH" size="20" value="" />
+<select name="SORT">
+<option value="D">Sorted By:</option>
+<option value="D">Date</option>
+<option value="A">Title</option>
+<option value="R">Relevance</option>
+</select>
+<!--{scope}-->
+<!--{submit}-->
+</form>
+Type the keyword you want to find. For example:
+<table class="textFix"><tr><td><ul class="unpadded">
+<li>good to great</li>
+</ul></td><td><ul class="unpadded"><li>Indian cooking</li>
+</ul></td></tr></table>
+</td><td valign="top"><div class="roundedContent2">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="roundedContentInfo">
+<div class="mainContentHead">Other Searches:</div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/X">Advanced Search</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/q">Author and Title Search</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/g">Government Documents</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/r">Course reserves</a></div>
+<!--<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/illb">Inter Library Loan</a></div>-->
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+</td></tr>
+</table>
+
+
+		</div>
+<div >
+	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+</div>
+<div id="searchTipMain">
+<div class="roundedContent">
+<b class="contop"><b class="conb1"></b><b class="conb2"></b><b class="conb3"></b><b class="conb4"></b></b>
+<div class="searchTipContentInfo">
+<table class="searchTipTable">
+<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
+<tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br/>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr>
+<tr valign="top"><th align="left">Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk. '*' for 1-5 characters, '**' for open-ended truncation, '?' to replace a single character anywhere within a word.<br/>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, comput**, wom?n</td>
+</tr>
+<tr valign="top"><th align="left">Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
+<span style="text-decoration:underline">Example</span>: stocks and bonds <br/>
+<span style="text-decoration:underline">Example</span>: (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br/>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr>
+<tr valign="top"><th align="left">Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr valign="top">
+<th align="left">Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+</table>
+</div>
+<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+</div>
+</div>
+	</div><!--close main content wrapper div-->
+	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
+		<div class="helpActiveTabLarge"><!--active tab-->
+			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
+			<div class="DisplayBoxContent"><div class="helpTabActiveContentLarge" ><table align="center" class="unpadded"><tr valign="top"><td><img src="map_icon.gif" width="25" height="25" alt="MetaFind Icon" /></td><td valign="middle"><strong>MetaFind</strong></td></tr></table></div></div>
+		</div><!--close active tab-->
+	</div><!--close selection tab wrapper-->
+	<div class="mainSpacer"><!-- main content wrapper div -->
+		<div class="helpActiveContent">
+<form class="unpadded" action="http://metafind.iii.com/muse/servlet/MusePeer" method="get">
+<div >Search across multiple resources to find full-text articles, abstracts, images, books, and more.</div>
+<div >
+<select name="field">
+<option value="Keywords" selected="selected">Keyword</option>
+<option value=":TITLE">Title</option>
+<option value=":CREATOR">Author</option>
+<option value=":SUBJECT">Subject</option>
+</select>
+<!--Log on info-->
+<input type="hidden" name="action" value="logon" /> <input type="hidden" name="userID" value="sitecode" />
+<input type="hidden" name="userPwd" value="sitecode" /> <input type="hidden" name="templateFile" value="passthru.html" />
+<input type="text" name="queryStatement" size="25" value="" />
+<!-- dbList options to choose from -->
+<select name="dbList">
+<option value="AllSources" selected="selected">All Sources</option>
+<option value="Library">Library Catalog</option>
+<option value="Search">Search Engines</option>
+<option value="Indexes">Indexes/Abstracts</option>
+<option value="Images">Image Databases</option>
+</select>
+<!--end dbList-->
+<span class="nowrap">
+<input type="image" value="Search" name="submit2" src="/screens/submit.gif" align="middle" alt="Submit" />
+&nbsp;<a href="http://metafind.iii.com/muse/servlet/MusePeer?action=logon&userID=sitecode&userPwd=sitecode&templateFile=search/search.html&pageId=asearch"><img src="/screens/metafind_advanced_search.gif" border="0" align="middle" alt="Advanced MetaFind Search" /></a></span>
+</div>
+</form>
+</div>
+
+	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+
+	</div><!--close main content wrapper div-->
+</div><!--close wrapper of "folder interface"-->
+<div class="mainNavLinksWrapper">
+<div class="roundedContent">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="roundedContentInfo">
+<div align="center"><img src="/screens/welcome.jpg" alt="Welcome to Webpac Pro"/></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/patroninfo">My Record</a></div>
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/selfreg">Patron self registration</a></div>-->
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/acquire">Suggest a purchase</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/suggest">Comments</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/libinfo.html">Library Info</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/ftlist">Featured item lists</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/feeds_example.html">Feeds</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/">Search</a></div>
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/resources_index.html">Other Resources</a></div>-->
+<!-- Note: uncomment this row and insert the correct URL if library uses KidsOnline product -->
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="#">KidsOnline</a></div>-->
+<!-- Note: if library has Web OPACs in alternate language(s), links can be added here -->
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/help_index.html">Help</a></div>
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+<div id="searchTipsLink"><a href="#" onclick="javascript:toggleLayer('searchTipMain');" >Need Search Tips?</a></div>
+
+</div>
+</div>
+<div style="clear:both"></div>
+<!--{botlogo}-->
+</body>
+</html>

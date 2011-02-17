@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/screens/feedsExample.js"></script>
+<body>
+<!--{toplogo}-->
+<div class="mainMenuSrchTool">
+<form class="unpadded" action="/search" method="post" name="search" id="search">
+Search:
+<select name="searchtype" id="searchtype" onChange="initSort()">
+<option value="X" selected="selected"> Keyword</option>
+<option value="t"> Title</option>
+<option value="a"> Author</option>
+<option value="d"> Subject</option>
+
+<option value="h"> Journal Title</option>
+<option value="c"> LC Call #</option>
+<option value="g"> Govt Doc #</option>
+<option value="i"> ISBN/ISSN</option>
+<option value="y"> Resource Name</option>
+<option value="m"> Resource Subject</option>
+
+</select>
+<!--{nosort}-->
+<input maxlength="75" name="searcharg" size="20" />
+<!--{scope}-->
+<span class="nowrap"><input type="image" value="Submit" name="submit" src="/screens/submit.gif" border="0" align="top" alt="Submit Search" /></span>
+</form>
+</div><!--end tool -->
+<div id="feeds">
+<div class="tabs">
+<span class="firstSelected"><a href="/screens/feeds_example.html" id="feedLink1">BBC NEWS</a></span><span><a href="/screens/feeds_example.html" id="feedLink2">THE NEW YORK TIMES</a></span><span><a href="/screens/feeds_example.html" id="feedLink3">NEWSVINE</a></span><span><a href="/screens/feeds_example.html" id="feedLink4">NATURE</a></span><span><a href="/screens/feeds_example.html" id="feedLink5">WEATHER</a></span></div>
+<div class="tabBody">
+<div id="feed1">
+<!--{RSS:http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml:10:t:t:3}-->
+</div>
+<div id="feed2">
+<!--{RSS:http://www.nytimes.com/services/xml/rss/nyt/National.xml:10:t:t:3}-->
+</div>
+<div id="feed3">
+<!--{RSS:http://www.newsvine.com/_feeds/rss2/index:10:t:t:3}-->
+</div>
+<div id="feed4">
+<!--{RSS:http://www.nature.com/news/rss.rdf:10:t:t:3}-->
+</div>
+<div id="feed5">
+<!--{RSS:http://rss.weather.com/weather/rss/local/94608?cm_ven=LWO&cm_cat=rss&par=LWO_rss:10:t:t:3}-->
+</div>
+</div>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

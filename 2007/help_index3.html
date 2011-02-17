@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--{toplogo}-->
+<div id="helpCenter">
+<h2 class="srchhelpHeader">Help Center</h2>
+<br/>
+<div class="tabs">
+<span class="firstTab"><a href="/screens/help_index.html">NAVIGATION</a></span><!--<span><a href="/screens/help_feepay.html">FEE PAYMENT</a></span>--><span ><a href="/screens/help_prefsearch.html">PREFERRED SEARCHES</a></span><span><a href="/screens/help_renew.html">RENEWALS</a></span><span><a href="/screens/help_index2.html">SEARCHING</a></span><span class="selected"><a href="/screens/help_index3.html">SEARCH TIPS</a></span><!--<span><a href="/screens/help_metafind.html">METAFIND</a></span><span><a href="/screens/help_prog.html">PROGRAMS</a></span>--></div>
+<div class="tabBody">
+<table  class="textFix" cellspacing="3">
+<tr><td with="60%" valign="top"><div class="helpspan"><strong>Advanced Keyword Search Tips</strong></div></td><td><div class="helpspan"><strong>Examples</strong></div></td></tr>
+<tr><td with="60%" >
+<div class="helpspan topicTerm" style="margin-top:0"><strong>Multiple Words</strong></div><div class="helpspan">When searching multiple words the system will automatically supply the Boolean &quot;and&quot; operator between each word; multiple words entered for the search will all occur somewhere in the retrieved records though not necessarily in the order entered. Both examples on the right will retrieve the same results.</div>
+</td>
+<td width="35%" valign="top">
+<div id="multipleWords"><strong>Using multiple words:</strong><br/><a href="/search/X?SEARCH=university+science+department">university science department</a><br/><a href="/search/X?SEARCH=university+and+science+and+department">university and science and department</a></div></td>
+</tr>
+<tr><td with="60%" >
+<div class="helpspan topicTerm"><strong>Phrase Searches</strong></div><div class="helpspan">Search for complete phrases by enclosing them in quotation marks. Words enclosed in double quotes will appear together in all results exactly as typed.</div>
+</td>
+<td width="35%" valign="top">
+<div id="phraseSearch"><strong>A phrase Search:</strong><br/><a href="/search/X?SEARCH=%22university+science+department%22">&quot;university science department&quot;</a></div>
+</td>
+</tr>
+<tr><td with="60%" >
+<div class="helpspan topicTerm"><strong>Wildcards</strong></div>
+<div class="helpspan"><strong>*</strong>&nbsp;&nbsp;&nbsp;The asterisk ('*') matches up to five non-space characters, starting at the specified position in the word. For example, &quot;inter*&quot; will match &quot;internal&quot; and &quot;internet&quot;, but will not match &quot;international&quot;. The '*' wildcard may only appear after at least two characters.<br/>The '*' wildcard may also be embedded in a search string. For example, &quot;colo*r&quot; would match both &quot;color&quot; and &quot;colour&quot;.</div>
+<!-- <div class="helpspan"><strong>**</strong>&nbsp;&nbsp;&nbsp;Matches any number of non-space characters, starting at the specified position in the word. For example, &quot;comput**&quot; will match all words that begin with &quot;comput&quot; (e.g., &quot;computer&quot;, &quot;computation&quot;, etc.).<br/>The '*' wildcard may also be embedded in a search string.</div> -->
+<div class="helpspan"><strong>?</strong>&nbsp;&nbsp;&nbsp;You may use a question mark ('?') to replace a single character anywhere within a word.</div>
+</td>
+<td width="35%" valign="top">
+<div id="wildcard"><strong>* Wildcard:</strong><br/><a href="/search/X?SEARCH=environment*+polic*">environment* polic*</a><br/><br />
+<!-- <strong>** Wildcard:</strong><br/><a href="/search/X?SEARCH=comp**">comp**</a><br/> -->
+<strong>? Wildcard:</strong><br/><a href="/search/X?SEARCH=wom%3Fn">wom?n</a></div>
+</td>
+</tr>
+<tr><td with="60%" >
+<div class="helpspan topicTerm"><strong>Boolean Operators</strong></div><div class="helpspan">Use AND or OR to specify multiple words in any field, any order. Use AND NOT to exclude words. Select the operator you wish to use from the selection list on the Advanced Search form.</div>
+</td>
+<td width="35%" valign="top">
+<div id="booleanSearch"><strong>Using Boolean operators:</strong><br/><a href="/search/X?SEARCH=stocks+and+bonds">stocks and bonds</a><br/><a href="/search/X?SEARCH=stocks+or+bonds">stocks or bonds</a><br/><a href="/search/X?SEARCH=stocks+and+not+bonds">stocks and not bonds</a></div>
+</td>
+</tr>
+<!-- <tr><td with="60%" >
+<div class="helpspan topicTerm"><strong>Proximity Operators</strong></div><div class="helpspan">The NEAR operator is used to retrieve records that contain the specified words or phrases within ten words of each other in the same indexed field.
+ The WITHIN operator is similar to the NEAR operator, but allows the user to specify the maximum number of words that may appear between the specified words. WITHIN 10 and NEAR are equivalent.</div>
+</td>
+<td width="35%" valign="top">
+<div id="proxSearch"><strong>Using proximity operators:</strong><br/><a href="/search/X?SEARCH=international+near+conference">international near conference</a><br/><a href="/search/X?SEARCH=fractal+within+3+geometry">fractal within 3 geometry</a></div>
+</td>
+</tr> -->
+<tr><td with="60%" valign="top">
+<div class="helpspan topicTerm"><strong>Field Limits</strong></div><div class="helpspan">Field limits may be specified by selecting a field limit from the selection list in the form above. These limits appear before the word or phrase to be searched. A field limit causes the system to search only the specified field for the specified word(s).</div>
+</td>
+<td width="35%" >
+<div class="helpspan"><strong>Field Limits and their meanings:</strong></div>
+<div class="helpspan">Author: Search only author fields</div>
+<div class="helpspan">Title: Search only title fields</div>
+<div class="helpspan">Subject: Search only subject fields</div>
+<div class="helpspan">Note: Search only note fields</div>
+<div class="helpspan">Subject: Search only subject fields</div>
+</td>
+</tr>
+<tr><td with="60%" >
+<div class="helpspan topicTerm"><strong>Grouping</strong></div><div class="helpspan">Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</div>
+</td>
+<td width="35%" valign="top">
+<div id="grouping">
+<div><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;Most relevant titles&nbsp;</div>
+<div><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;Highly relevant titles&nbsp;</div>
+<div><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;Very relevant titles&nbsp;</div>
+<div><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;Relevant titles&nbsp;</div>
+<div><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;Other relevant titles&nbsp;</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

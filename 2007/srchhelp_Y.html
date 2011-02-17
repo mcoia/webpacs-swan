@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Keyword Search</h2>
+<!--{msg}-->
+<div class="srchhelpText">Type the keyword(s) in the box below then press Enter or click the Submit button.</div>
+<div class="tool">
+<form action="/search/Y" method="get" class="unpadded">
+<span class="magFive">
+<!--{submit}-->
+</span>
+<table border="0" class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<input type="text" name="SEARCH" size="20" value="" />
+</td>
+</tr>
+<tr>
+<td align="right">Search in the:</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</form>
+</div>
+<div class="srchhelpText">Type the keyword you want to find. For example:
+<ul class="unpadded srchhelpList">
+<li>design</li>
+<li>bleachers grisham</li>
+</ul>
+</div>
+<table class="searchTipTable">
+<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br/>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr valign="top"><th align="left">Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br/>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr valign="top"><th align="left">Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br/>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr valign="top"><th align="left">Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr valign="top">
+<th align="left">Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br/>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+</table>
+<!--{botlogo}-->
+</body>
+</html>

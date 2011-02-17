@@ -1,0 +1,130 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 01 July 2008 -->
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Welcome! This is Patron Self Registration</h2>
+<div class="srchhelpText">
+This page allows you to register on-line as a patron of our library. You will have limited privileges.
+</div>
+<div class="advSrchTool">
+<form method="post" class="unpadded" autocomplete="off"  onsubmit="return selfRegChecker();">
+<!--
+The hidden template name below overrides the selfreg_template EO; if certain users need a special template, set this input accordingly when you create the version of selfreg.html for those users.
+-->
+<!--
+<input type="hidden" name="TemplateName" value="YOUR VALUE">
+<br />
+-->
+<!--{iferrmsg}-->
+<div style="font-size:1.3em;color:#990000;font-weight:bold;letter-spacing:1px;">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<div id="selfRegMessage" style="font-size: 1.3em; color: #990000; font-weight: bold; letter-spacing: 1px;">
+</div>
+<div><strong>Please enter the following information: (<span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px;">*</span> means required field)</strong></div>
+<table cellpadding="3" cellspacing="1">
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="nfirst">First name:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="nfirst" value="" size="40" maxlength="40" id="nfirst"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="nlast">Last name:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="nlast" value="" size="40" maxlength="60" id="nlast"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="user_name">Alias/Nickname:</label></td>
+<td>
+<input name="user_name" value="" size="40" maxlength="25" id="user_name"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="stre_aaddress">Address:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="stre_aaddress" value="" size="40" maxlength="128" id="stre_aaddress"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="city_aaddress">City:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="city_aaddress" value="" size="40" maxlength="48" id="city_aaddress"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="stat_aaddress">State:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="stat_aaddress" value="" size="15" maxlength="32" id="stat_aaddress"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="post_aaddress">ZIP Code:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
+<td>
+<input name="post_aaddress" value="" size="15" maxlength="32" id="post_aaddress"></td></tr>
+<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="zemailaddr">Email:</label></td>
+<td>
+<input name="zemailaddr" value="" size="40" maxlength="128" id="zemailaddr"></td></tr>
+</table>
+
+
+<br/>
+<input type="image" src="screens/submit.gif" value="submit"/>
+</form>
+<script type="text/javascript">
+function selfRegChecker(){
+var regForm = document.getElementsByTagName("INPUT");
+var messageDiv = document.getElementById("selfRegMessage");
+for(i=0;i<regForm.length;i++){
+switch(regForm[i].id){
+case "nfirst":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your First Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "nlast":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "stre_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Address to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "city_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your City to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "stat_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your State to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "nlast":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "post_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Zip Code to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+}
+}
+return true;
+}
+</script>
+<!--{botlogo}-->

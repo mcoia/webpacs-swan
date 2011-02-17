@@ -1,0 +1,58 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 01 July 2008 -->
+<!--{toplogo}-->
+<!--{formbegin}-->
+<div class="bookingsSelect">
+<span class="pageMainAreaHeader">
+Place a booking<br />
+</span>
+<!--{record_info}-->
+<!--{iferr}-->
+<!--{error_msg}-->
+<!--{xif}-->
+</div>
+<div class="bookingsSelect">
+<div class="bookingsSelectTime">
+<div class="bookingsLocation">
+<!--{iflocation}-->
+Select a location:
+<!--{location}-->
+<!--{xif}-->
+</div>
+Select a time:<br />
+Begin:
+<!--{timedayhour}-->
+<!--{ifrepeat}-->
+<div class="bookingsSelectRepeat">
+Repeat:
+<!--{repeat}-->
+</div>
+<div class="bookingsSelectRepeat">
+<!--{duration}-->
+</div>
+<!--{xif}-->
+<div class="bookingsSelectRepeat">
+<!--{ifendtime}-->
+<!--{endtimedayhour}-->
+<!--{xif}-->
+</div>
+</div>
+</div>
+<div class="bookingsSelectCal">
+<!--{calendar}-->
+<!--{calendar_legend}-->
+<br />
+<!--{calendar_type}-->
+</div>
+<div class="bookingsSelect">
+<!--{ifneednote}-->
+Note:
+<!--{note}-->
+<!--{xif}-->
+<span class="button">
+<!--{submit}-->
+<!--{cancel}-->
+</span>
+</div>
+<!--{formend}-->
+<!--{botlogo}-->

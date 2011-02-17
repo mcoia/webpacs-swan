@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[0].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Web Access Management Login</h2>
+<div class="advSrchtool">
+<form method="post" class="unpadded">
+<span class="magFive">
+<!--{submit}-->
+</span>
+<table class="textFix"><tr><td valign="top">
+<!--{iferrmsg}-->
+<span class="errorMessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span><br />
+<!--{xif}-->
+<table width="100%" class="textFix">
+<!--{ifneedpatronname}-->
+<tr><td width="30%"></td><td>
+<!--{nameexample}-->
+</td></tr><tr><td>
+<!--{nameprompt}-->
+</td><td>
+<!--{name}-->
+</td></tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr><td>&nbsp;</td><td>
+<!--{barcodeexample}-->
+</td></tr>
+<tr><td>
+<!--{barcodeprompt}-->
+</td><td>
+<!--{barcode}-->
+</td></tr>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<tr><td colspan="2">
+<!--{newpinmsg}-->
+</td></tr><tr><td>
+<!--{pin1prompt}-->
+</td><td>
+<!--{pin1}-->
+</td></tr><tr><td>
+<!--{pin2prompt}-->
+</td><td>
+<!--{pin2}-->
+</td></tr>
+<!--{else}-->
+<tr><td></td><td>
+<!--{pininstructions}-->
+</td></tr><tr><td>
+<!--{pinprompt}-->
+</td><td>
+<!--{pin}-->
+</td></tr>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+</table>
+</td></tr></table>
+</form>
+</div>
+<!--{botlogo}-->
+</body>
+</html>
