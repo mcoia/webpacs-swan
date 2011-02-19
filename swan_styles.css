@@ -155,7 +155,7 @@ TD.patImage { } */
 .holdingscode { }
 .holdingsDivider { } 
 .checkinCard {
-	clear:both; margin-top:250px;
+	clear:both; margin-top:1em;
 }
 
 /* LIMIT/SORT DISPLAY CLASSES */
