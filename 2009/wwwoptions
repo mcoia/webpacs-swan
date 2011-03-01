@@ -266,7 +266,7 @@ ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-righ
 REQUEST=Hold this item|bib|ask|Y
 #REQUEST_ARTICLE_IFCHKIN=Y
 #REQUEST_INSTRUCTION=Please enter any special instructions: 
-REQUEST_MULTI=Request All Items in Book Cart|bib|ask
+REQUEST_MULTI=Request All Items in Book Cart|[match request wwwoption]
 
 # Patron Record
 ICON_BUT_PAT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
