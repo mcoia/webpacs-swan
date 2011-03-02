@@ -3,7 +3,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Millennium Web Catalog</title>
+<title>Millennium Web Catalog - Course Reserves</title>
 <script language="JavaScript">
 <!-- Hide the JS
 startTimeout(600000, "/");
@@ -20,19 +20,21 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<h1 class="pageHeader">Barcode Search</h1>
+<h1 class="pageHeader">Course Reserves</h1>
 
-<div id="accessibleForm" class="form2Part">
-<div class="formLeft">
-<form method="get">
+<div id="accessibleForm" class="form1Part">
+
+
+<form method="get" id="search" name="search" action="/search/r">
+
 <fieldset>
-<!-- Optional legend:
-<legend>Type the barcode you want to find, then press the Enter key or click Submit.</legend>
--->
+
+<legend>Type as much of the course name as you want.  For example: nur, eng101, biology</legend>
+
 
 <div class="formEntryArea">
 <span class="formLabel">
-<label for="SEARCH">Search for:</label>
+<label for="SEARCH">Course name:</label>
 </span>
 <!--{search}-->
 </div>
@@ -43,11 +45,31 @@ startTimeout(600000, "/");
 
 </fieldset>
 </form>
-</div><!--formLeft -->
-<div class="formRight">
-<p>Type the barcode you want to find, then press the Enter key or click Submit.</p>
-</div><!--formRight -->
-</div><!--form2Part -->
+
+<hr />
+
+<form method="get" id="search" name="search" action="/search/p">
+
+<fieldset>
+
+<legend>Type as much of the instructor's name as you want.  For example: Smith or Smith, Brian</legend> 
+
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Instructor name:</label>
+</span>
+<!--{search}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+
+</fieldset>
+</form>
+    
+</div><!--form1Part -->
 </div><!--pageContentInner -->
 
 <!--{botlogo}-->
