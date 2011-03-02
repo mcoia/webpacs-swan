@@ -3,7 +3,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Millennium Web Catalog - Word Search</title>
+<title>Millennium Web Catalog - Journal Title Search</title>
 <script language="JavaScript">
 <!-- Hide the JS
 startTimeout(600000, "/");
@@ -20,20 +20,26 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<h1 class="pageHeader">Word Search</h1>
+<h1 class="pageHeader">Periodical Search</h1>
 
 <div id="accessibleForm" class="form2Part">
 <div class="formLeft">
 <form method="get">
 <fieldset>
 <!-- Optional legend:
-<legend>Type the word you want to find, then press the Enter key or click Submit.</legend>
+<legend>Type the title you want to find, then press the Enter key or click Submit.</legend>
 -->
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="SEARCH">Search for:</label>
 </span>
 <!--{search}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
 </div>
 <div class="formEntryArea formScopeSearch">
 <span class="formLabel">
@@ -50,19 +56,11 @@ startTimeout(600000, "/");
 </div><!--formLeft -->
 
 <div class="formRight">
-<p>The catalog will search the library's records, looking for the words that you type in various fields, such as title, contents notes, corporate names, etc.</p>
+<p>Type as much or as little of the periodical title as you want. For example:</p>
 <ul>
-<li>You may use the Boolean operators <strong>AND</strong>, <strong>OR</strong> and <strong>NOT</strong></li>
-<li>You may also truncate words with an asterisk <strong>*</strong>
-<br>
-For example:
-<ul class="unpadded srchhelpList">
-<li>Soviet <strong>and</strong> Russian</li>
-<li>Soviet Union <strong>or</strong> Russia</li>
-<li>Mexico <strong>not</strong> New</li>
-<li>(games <strong>or</strong> toys) and (child<strong>*</strong> <strong>or</strong> infant<strong>*</strong>)</li>
-</ul>
-</li>
+<li>national geographic</li>
+<li>national geo</li>
+<li>people</li>
 </ul>
 </div><!--formRight -->
 
