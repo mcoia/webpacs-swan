@@ -1,0 +1,107 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<div style="margin-bottom: 20px;" id="formLinks">
+<!--{prevpage}-->
+</div>
+
+<h1 class="pageHeader">
+<!--{record_info}-->
+</h1>
+
+<!--{iferr}-->
+<div class="errormessage">
+<!--{error_msg}-->
+</div>
+<!--{xif}-->
+
+<div id="accessibleForm" class="form2Part bookingForm">
+<!--{formbegin}-->
+
+<div class="formLeft">
+
+ <!-- these next 4 only apply if BOOKINGS_REPEAT = true -->
+ <!--{ifrepeat}-->
+ <!--{repeat}-->
+ <!--{duration}-->
+ <!--{xif}-->
+ 
+<!--{ifitemlist}-->
+<fieldset>
+<div class="formEntryArea">
+<!--{itemlist}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<div class="formEntryArea">
+Begin: 
+<!--{book_from}-->
+</div>
+
+<div class="formEntryArea">
+
+<!--{iflocation}-->
+<h2>Select a location:</h2>
+<!--{location}-->
+<!--{xif}-->
+
+</div>
+
+</fieldset>
+
+<!--{ifrepeat}-->
+<fieldset>
+<div class="formEntryArea">
+Repeat:
+<!--{repeat}-->
+</div>
+<div class="formEntryArea">
+<!--{duration}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<!--{ifendtime}-->
+<fieldset>
+<div class="formEntryArea">
+<!--{endtimedayhour}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<!--{ifneednote}-->
+<fieldset>
+<div class="formEntryArea">
+<h2>Note:</h2>
+<!--{note}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+</div><!-- formLeft -->
+
+<div class="formRight">
+<div class="formEntryArea">
+<p>
+<!--{calendar_legend}-->
+</p>
+<div class="bookingsCalendar">
+<!--{calendar}-->
+</div>
+<!--{calendar_type}-->
+</div>
+</div><!-- formRight -->
+
+<!--{formend}-->
+<div class="clear"></div>
+
+</div><!-- accessibleForm -->
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
