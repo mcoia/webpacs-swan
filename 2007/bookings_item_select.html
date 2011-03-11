@@ -1,0 +1,49 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 30 Mar 2009 -->
+<!--{toplogo}-->
+<!--{formbegin}-->
+<div style="margin-bottom: 20px;">
+<!--{prevpage}-->
+</div>
+
+<h2>
+<!--{record_info}-->
+</h2>
+<!--{iferr}-->
+<!--{error_msg}-->
+<!--{xif}-->
+
+ <!-- these next 4 only apply if BOOKINGS_REPEAT = true -->
+ <!--{ifrepeat}-->
+ <!--{repeat}-->
+ <!--{duration}-->
+ <!--{xif}-->
+ 
+<div class="bookingsRadioSelect">
+<!--{ifitemlist}-->
+<!--{itemlist}-->
+<!--{xif}-->
+</div>
+<div class="bookingsData">
+Begin: 
+<!--{book_from}-->
+</div>
+<div class="bookingsData">
+<!--{endtimedayhour}-->
+ or 
+<!--{endtimeday}-->
+</div>
+<!--{ifneednote}-->
+<div class="bookingsData">
+<label for="webbook_note">Note: </label>
+<!--{note}-->
+</div>
+<!--{xif}-->
+<div class="bookingsSubmit">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+<!--{formend}-->
+<!--{botlogo}-->
+</body>
+</html>

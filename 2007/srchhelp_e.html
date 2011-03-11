@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Electronic Resources</h2>
+<div class="srchhelpEBody">
+<div class="srchhelpText"><h4 class="srchhelpHeader">Database Search</h4>
+Type the name of the database you want, then click <strong>Submit Search</strong>.
+<div class="tool">
+<form action="/search" method="post" name="searchwidget" class="unpadded">
+<span class="magFive">
+<input type="submit" value="Submit Search" name="submit"/>
+</span>
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<input align="center" maxlength="40" name="searcharg" size="40"/>
+</td>
+</tr>
+<tr>
+<td align="right">Select this type:</td>
+<td>
+<!-- Remove the "Resource subject" option below if your system does not have a resource subject index. -->
+<select name="searchtype">
+<option value="{resource_name_index_tag}" selected>Resource name</option>
+<option value="{resource_subject_index_tag}">Resource subject</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right">Search in the:</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<br/>
+<div class="srchhelpText">
+<h4 class="srchhelpHeader">Search databases by subject</h4>
+Select a subject and click <strong>Submit Subject Search</strong>.
+<div class="tool">
+<form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch" class="unpadded">
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<!-- Insert the resource subject terms you would like to -->
+<!-- make available into the following select statement. -->
+<!-- The actual text to be searched should be included as -->
+<!-- the value attribute of each option tag. -->
+<select name="subjectSearchSelect">
+<option value="{insert_text_to_be_searched}" selected>See HTML comments about subject headings</option>
+</select>
+</td>
+<td><input type="submit" name="Submit2" value="Submit Subject Search"/></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<br/>
+<div class="srchhelpText">
+<h4 class="srchhelpHeader">Alphabetical list of database titles</h4>
+<div class="tool alphaERM">
+<a href="/search/{resource_name_index_tag}?a">A</a> | <a href="/search/{resource_name_index_tag}?b">B</a> | <a href="/search/{resource_name_index_tag}?c">C</a> | <a href="/search/{resource_name_index_tag}?d">D</a> | <a href="/search/{resource_name_index_tag}?e">E</a> | <a href="/search/{resource_name_index_tag}?f">F</a> | <a href="/search/{resource_name_index_tag}?g">G</a> | <a href="/search/{resource_name_index_tag}?h">H</a> | <a href="/search/{resource_name_index_tag}?i">I</a> | <a href="/search/{resource_name_index_tag}?j">J</a> | <a href="/search/{resource_name_index_tag}?k">K</a> | <a href="/search/{resource_name_index_tag}?l">L</a> | <a href="/search/{resource_name_index_tag}?m">M</a> | <a href="/search/{resource_name_index_tag}?n">N</a> | <a href="/search/{resource_name_index_tag}?o">O</a>|
+ <a href="/search/{resource_name_index_tag}?p">P</a> | <a href="/search/{resource_name_index_tag}?q">Q</a> | <a href="/search/{resource_name_index_tag}?r">R</a> | <a href="/search/{resource_name_index_tag}?s">S</a> | <a href="/search/{resource_name_index_tag}?t">T</a> | <a href="/search/{resource_name_index_tag}?u">U</a> | <a href="/search/{resource_name_index_tag}?v">V</a> | <a href="/search/{resource_name_index_tag}?w">W</a> | <a href="/search/{resource_name_index_tag}?x">X</a> | <a href="/search/{resource_name_index_tag}?y">Y</a> | <a href="/search/{resource_name_index_tag}?z">Z</a> | <a href="/search/{resource_name_index_tag}?00000">All titles</a>
+</div>
+</div>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

@@ -1,0 +1,152 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<link rel="stylesheet" href="/screens/styles.css" type="text/css" />
+<link rel="stylesheet" href="/screens/progreg_styles.css" type="text/css" />
+</head>
+<body>
+<div class="topLogoDiv">
+<div class="floatRight">
+<ul class="headerNav">
+<li><a href="/search">Start Over</a></li>
+<li> | </li>
+<li><a href="/screens/help_index.html">Help</a></li>
+<li> | </li>
+<li>
+<!--{patronrecord}-->
+</li>
+<li> | </li>
+<li><a href="/logout?">Log Out</a></li>
+</ul>
+</div>
+<a href="/"><img src="/screens/wpp2007Logo.png"  height="50" width="241" alt="2007 WebPAC PRO"/></a>
+</div>
+
+<div class="progContent"><!-- right container -->
+<div class="progNavrow">
+<!--{return}-->
+</div>
+<div class="progNavMessage">You are logged in as:
+<!--{patronname}-->
+</div>
+<!--{formbegin}-->
+<div class="errorMessageStatus">
+<!--{iferrmsg}-->
+<br/>
+<div class="errorMessageStatus">
+<!--{errmsg}-->
+
+<!--{ifregistrationerror}-->
+There was a problem with your registration. Please see a librarian for assistance.
+<!--{xif}-->
+
+<!--{ifblocked}-->
+You are blocked. Please see a Librarian for assistance.
+<!--{xif}-->
+
+<!--{ifnoteligible}-->
+You are not eligible for this program. Please see a Librarian for assistance.
+<!--{xif}-->
+
+<!--{ifsectionnotavail}-->
+Registration for this section is temporarily unavailable. Please try your request again.
+<!--{xif}-->
+
+<!--{ifnotopen}-->
+Registration for this section is closed. Please choose another program or section.
+<!--{xif}-->
+
+<!--{ifsystemerror}-->
+The system has encountered a problem. Please try your request again.
+<!--{xif}-->
+
+</div><!--end errorMessageStatus -->
+<!--{xif}-->
+
+<br/>
+<div class="progRegAlert">Register for:</div>
+<div class="progName" id="program_name">
+<!--{progname}-->
+</div>
+<div class="progRegDescArea">
+<table cellspacing="0" cellpadding="0" class="progRegForm">
+<tr><td class="progConfLabel">Description:</td>
+<td id="program_desc" class="value">
+<!--{progdesc}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Instructor:</td>
+<td class="value">
+<!--{instructor}-->
+</td>
+</tr>
+<!--{iffee}-->
+<tr>
+<td class="progConfLabel">Price:</td>
+<td class="value">
+<!--{price}-->
+</td>
+</tr>
+<!--{xif}-->
+<tr><td class="progConfLabel">Meets:</td>
+<td>
+<!--{sessionsummary}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Session(s):</td>
+<td>
+<!--{viewhidesessionlist}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Location:</td>
+<td class="value">
+<!--{location}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Notes:</td>
+<td class="value">
+<!--{publicnote}-->
+</td>
+</tr>
+</table>
+</div>
+<div id="program_thumbnail" class="progThumbnail">
+<!--{progthumbnail}-->
+</div>
+
+<br/>
+<div class="progRegAlert">Your info:</div>
+<table cellspacing="0" cellpadding="0" class="progRegForm">
+<tr><td class="progConfLabel">Email address on file:</td>
+<td class="value">
+<strong>
+<!--{emailinrecord}-->
+</strong>
+</td>
+</tr>
+<tr><td class="progConfLabel">Update email (optional):</td>
+<td class="value">
+<!--{newemail}-->
+ </td>
+</tr>
+<tr><td class="progConfLabel">Number of seats:</td>
+<td class="value">
+<!--{multiregselect}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Note to instructor:</td>
+<td class="value">
+<!--{multiregnotes}-->
+</td>
+</tr>
+</table>
+<div class="progRegButtons">
+<!--{confirm}-->
+<!--{cancel}-->
+</div>
+<!--{formend}-->
+</div>
+<!--{botlogo}-->
+</body>
+</html>

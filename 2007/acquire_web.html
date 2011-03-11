@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+<h2 class="srchhelpHeader">Suggest a Title for Purchase</h2>
+<!--{ifpinerrormessage}-->
+<div class="srchhelpText">
+<span class="errormessage">
+<!--{pinerrormessage}-->
+</span>
+</div>
+<!--{xif}-->
+<br/>
+<div class="advSrchtool">
+<div class="srchhelpText">Additional items library should acquire:</div>
+<form method="POST">
+<table border="0" class="textFix">
+<tr>
+<td align="right" width="20%"><label for="author">Author:</label></td>
+<td width="80%">
+<input name="author" value="" size="40" maxlength="40">
+</td>
+</tr>
+<tr>
+<td align="right"><label for="title">Title:</label></td>
+<td>
+<input name="title" value="" size="40" maxlength="40">
+</td>
+</tr>
+<tr>
+<td align="right"><label for="publish">Publisher &amp; where &amp; when published:</label></td>
+<td>
+<input name="publish" value="" size="60" maxlength="60">
+</td>
+<tr>
+<td align="right">Where you saw this item mentioned:</td>
+<td>
+<input name="mention" value="" size="60" maxlength="60">
+</td>
+</tr>
+<tr>
+<td align="right">Other information:</td>
+<td>
+<input name="other" value="" size="40" maxlength="40">
+</td>
+</tr>
+
+<!-- Patron verification form. -->
+<!--{ifneedpatronname}-->
+<tr>
+<td align="right">
+<label for="name">
+<!--{nameprompt}-->
+</label></td>
+<td valign="top">
+<!--{name}-->
+<br>
+<!--{nameexample}-->
+</td>
+</tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr>
+<td align="right">
+<label for="name">
+<!--{barcodeprompt}-->
+</label></td>
+<td valign="top">
+<!--{barcode}-->
+<br>
+<!--{barcodeexample}-->
+</td></tr>
+<!--{ifneedspin}-->
+<!--{ifpinerrormessageisPIN}-->
+<tr>
+<td align="center" colspan="2">
+<!--{newpinmessage}-->
+</td></tr>
+<tr>
+<td align="right">
+<label for="pin1">
+<!--{pin1prompt}-->
+</label></td>
+<td valign="top">
+<!--{pin1}-->
+</td></tr>
+<tr>
+<td align="right">
+<label for="pin2">
+<!--{pin2prompt}-->
+</label></td>
+<td valign="top">
+<!--{pin2}-->
+</td></tr>
+<!--{else}-->
+<tr>
+<td align="right">
+<label for="pin1">
+<!--{pinprompt}-->
+</label>
+</td>
+<td valign="top">
+<!--{pin}-->
+<br>
+<!--{pininstructions}-->
+</td></tr>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+<!--{ifalternate_id}-->
+<tr>
+<td align="right">&nbsp;</td>
+<td valign="top">
+<!--{user_name}-->
+</td></tr>
+<!--{xif}-->
+
+</table>
+
+<input name="submit" type="SUBMIT" value="SUBMIT THIS SUGGESTION">
+
+
+</form>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

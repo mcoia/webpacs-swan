@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 25 Mar 2009 -->
+<head>
+<link rel="stylesheet" href="/screens/styles.css" type="text/css" />
+<link rel="stylesheet" href="/screens/progreg_styles.css" type="text/css" />
+</head>
+<body>
+<div class="topLogoDiv">
+<div class="floatRight">
+<ul class="headerNav">
+<li><a href="/search">Start Over</a></li>
+<li> | </li>
+<li><a href="/screens/help_index.html">Help</a></li>
+<li> | </li>
+<li>
+<!--{patronrecord}-->
+</li>
+<li> | </li>
+<li><a href="/logout?">Log Out</a></li>
+</ul>
+</div>
+<a href="/"><img src="/screens/wpp2007Logo.png"  height="50" width="241" alt="2007 WebPAC PRO"/></a>
+</div>
+
+<div class="progContent"><!-- right container -->
+<div class="progNavrow">
+<!--{return}-->
+</div>
+<div class="progNavMessage">You are logged in as:
+<!--{patronname}-->
+</div>
+<div class="errorMessageStatus">
+<!--{iferrmsg}-->
+<br/>
+Registering for
+<!--{progname}-->
+<div class="errorMessageStatus">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<br/>
+<!--{else}-->
+<!--Begin the main content table-->
+<div class="progRegConf">Registration Confirmation</div>
+<div class="progName">
+<!--{progname}-->
+</div>
+<div class="progRegDescArea">
+<table cellspacing="0" cellpadding="0" class="progRegConfirm">
+<tr>
+<td colspan="2">
+<strong>
+<div>
+<!--{registeredstatuses}-->
+</div>
+<div>
+<!--{waitlistedstatuses}-->
+</div>
+</strong>
+</td>
+</tr>
+<tr><td class="progConfLabel">Description:</td>
+<td id="program_desc" class="value">
+<!--{progdesc}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Instructor:</td>
+<td>
+<!--{instructor}-->
+</td>
+</tr>
+<!--{iffee}-->
+<tr><td class="progConfLabel">Price:</td>
+<td>
+<!--{price}-->
+</td>
+</tr>
+<!--{xif}-->
+<tr><td class="progConfLabel">Meets:</td>
+<td>
+<!--{sessionsummary}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Session(s):</td>
+<td>
+<!--{viewhidesessionlist}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Location:</td>
+<td>
+<!--{location}-->
+</td>
+</tr>
+<tr><td class="progConfLabel">Notes:</td>
+<td>
+<!--{publicnote}-->
+</td>
+</tr>
+</table>
+</div>
+<div id="program_thumbnail" class="progThumbnail">
+<!--{progthumbnail}-->
+</div>
+<div style="clear:both"></div>
+<!--End of main page content-->
+<!--{xif}-->
+<!--{botlogo}-->
+</body>
+</html>

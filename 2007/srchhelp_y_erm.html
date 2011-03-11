@@ -1,0 +1,112 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 03 April 2009 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Important note - this section must be in file to work properly with a variety of browsers -->
+<script language="JavaScript" type="text/javascript">
+<!--
+function submitSubject() {
+window.location="/search/m?" + document.subjectSearch.subjectSearchSelect.options[document.subjectSearch.subjectSearchSelect.selectedIndex].value;
+return true;
+}
+//-->
+</script>
+<!-- end of note -->
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Electronic Resources</h2>
+<div class="srchhelpEBody">
+<div class="srchhelpText"><h4 class="srchhelpHeader">Database Search</h4>
+Type the name of the database you want, then click <strong>Submit Search</strong>.
+<div class="tool">
+<form action="/search/a?a" name="searchwidget">
+<p>
+<select name="searchtype">
+<option value="y" selected="selected">Resource name</option>
+<option value="m">Resource subject</option>
+</select>
+<input align="center" maxlength="40" name="searcharg" size="40"/>
+</p>
+<p>
+<label for="searchscope" class="textFix">Search in the:</label>
+<!--{scope}-->
+
+<input type="submit" value="Submit Search" name="submit"/>
+</p>
+</form>
+</div>
+</div>
+<br/>
+<div class="srchhelpText">
+<h4 class="srchhelpHeader">Search databases by subject</h4>
+Select a subject and click <strong>Submit Subject Search</strong>.
+<div class="tool">
+<form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch" class="unpadded">
+<label for="subjectSearchSelect" class="textFix">Search for:</label>
+<!-- Insert the resource subject terms you would like to -->
+<!-- make available into the following select statement. -->
+<!-- The actual text to be searched should be included as -->
+<!-- the value attribute of each option tag. -->
+<select name="subjectSearchSelect">
+<option value="agriculture" selected="selected">Agriculture</option>
+<option value="anthropology">Anthropology</option>
+<option value="art and architecture">Art and Architecture</option>
+<option value="astronomy">Astronomy</option>
+<option value="biography">Biography</option>
+<option value="biology">Biology</option>
+<option value="book reviews">Book Reviews</option>
+<option value="business and economics">Business and Economics</option>
+<option value="chemistry and chemical engineering">Chemistry and Chemical Engineering</option>
+<option value="communications journalism">Communications/Journalism</option>
+<option value="computer science">Computer Science</option>
+<option value="current events">Current Events</option>
+<option value="Dictionaries, Directories and Encyclopedias">Dictionaries, Directories and Encyclopedias</option>
+<option value="Economics">Economics</option>
+<option value="Education">Education</option>
+<option value="Engineering">Engineering</option>
+<option value="Ethnic studies">Ethnic studies</option>
+<option value="General topics">General topics</option>
+<option value="Geography (Human)">Geography (Human)</option>
+<option value="Geography (Physical)">Geography (Physical)</option>
+<option value="Geology">Geology</option>
+<option value="History">History</option>
+<option value="Humanities">Humanities</option>
+<option value="Language and literature">Language and literature</option>
+<option value="Law">Law</option>
+<option value="Library Science">Library Science</option>
+<option value="Mathematics and Statistical Methods">Mathematics and Statistical Methods</option>
+<option value="Medicine and Health">Medicine and Health</option>
+<option value="Music">Music</option>
+<option value="Newspapers">Newspapers</option>
+<option value="Performing Arts (including Theatre)">Performing Arts (including Theatre)</option>
+<option value="Philosophy">Philosophy</option>
+<option value="Physics">Physics</option>
+<option value="Politics and Political science">Politics and Political science</option>
+<option value="Psychology">Psychology</option>
+<option value="Religion">Religion</option>
+<option value="Social Sciences">Social Sciences</option>
+<option value="Sociology and Social Work">Sociology and Social Work</option>
+<option value="Sports and Leisure Studies">Sports and Leisure Studies</option>
+<option value="Technology">Technology</option>
+<option value="Veterinary Science">Veterinary Science</option>
+<option value="Women Studies/Gender">Women Studies/Gender</option>
+</select>
+<input type="submit" name="Submit2" value="Submit Subject Search"/>
+</form>
+</div>
+</div>
+<br/>
+<div class="srchhelpText">
+<h4 class="srchhelpHeader">Alphabetical list of database titles</h4>
+<div class="tool alphaERM">
+<a href="/search/y?a">A</a> | <a href="/search/y?b">B</a> | <a href="/search/y?c">C</a> | <a href="/search/y?d">D</a> | <a href="/search/y?e">E</a> | <a href="/search/y?f">F</a> | <a href="/search/y?g">G</a> | <a href="/search/y?h">H</a> | <a href="/search/y?i">I</a> | <a href="/search/y?j">J</a> | <a href="/search/y?k">K</a> | <a href="/search/y?l">L</a> | <a href="/search/y?m">M</a> | <a href="/search/y?n">N</a> | <a href="/search/y?o">O</a>|
+ <a href="/search/y?p">P</a> | <a href="/search/y?q">Q</a> | <a href="/search/y?r">R</a> | <a href="/search/y?s">S</a> | <a href="/search/y?t">T</a> | <a href="/search/y?u">U</a> | <a href="/search/y?v">V</a> | <a href="/search/y?w">W</a> | <a href="/search/y?x">X</a> | <a href="/search/y?y">Y</a> | <a href="/search/y?z">Z</a> | <a href="/search/y?*">All titles</a>
+</div>
+</div>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

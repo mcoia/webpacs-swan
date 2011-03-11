@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 01 February, 2007 -->
+<head>
+<title>Millennium Library Catalog</title>
+<meta http-equiv="Content-Type" content="text/html" />
+<link rel="stylesheet" href="/screens/styles.css" type="text/css" />
+<!--[if lte IE 8]>
+
+<link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" />
+
+<![endif]-->
+</head>
+
+<body>
+<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+<tr>
+<td  class="pageNavArea">&nbsp;</td>
+</tr>
+</table>
+
+<br />
+
+<!--Begin the main content table-->
+<table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
+<tr valign="top" class="pageMainArea">
+<td class="pageMainArea">&nbsp;
+<!--Beginning main page content-->
+<!--{closewindow}-->
+<br /><br />
+<div id="instructions">Click the related search links below to perform a search for that subject, author or title.</div>
+<br />
+<div id="relsearchsubj">
+<!--{ifsubj}-->
+<span class="sectionHeading">Related Subjects:</span>
+<!--{relsearchsubj}-->
+<!--{else}-->
+<span class="sectionHeading">Related Subjects:</span> none found
+<!--{xif}-->
+</div>
+<br />
+<div id="relsearchauth">
+<!--{ifauth}-->
+<span class="sectionHeading">Related Authors:</span>
+<!--{relsearchauth}-->
+<!--{else}-->
+<span class="sectionHeading">Related Authors:</span> none found
+<!--{xif}-->
+</div>
+<br />
+<div id="relsearchtitle">
+<!--{iftitle}-->
+<span class="sectionHeading">Related Titles:</span>
+<!--{relsearchtitle}-->
+<!--{else}-->
+<span class="sectionHeading">Related Titles:</span> none found
+<!--{xif}-->
+</div>
+<!--{closewindow}-->
+
+<!--End of main page content-->
+</td>
+</tr>
+</table>
+<!--End the main content table-->
+
+<br />
+<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+<tr valign="middle">
+<td align="center" class="pageNavArea">&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>

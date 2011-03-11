@@ -1,0 +1,431 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 8 February, 2007 -->
+<head>
+<title>Millennium Library Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<!--[if lte IE 8]>
+
+<link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" />
+
+<![endif]-->
+<script type="text/javascript">
+function setValue(element,value)
+{
+	if( element.type == 'select-one' && element.selectedIndex >= 0)
+	{
+		if( element.options[element.selectedIndex].value == value )
+			element.options.selected=true;
+	}
+	else if( element.type == 'select-multiple' )
+	{
+		for (var m = 0; m < element.options.length; m++)
+		{
+			if(element.options[m].value == value)
+			{
+				element.options[m].selected=true;
+				return;
+			}
+		}
+
+	}
+	else if( element.type == 'text' || element.type == 'radio' )
+	{
+		element.value = value;
+	}
+	else if( element.type == 'checkbox' )
+	{
+		if( element.value == value )
+			element.checked = true;
+	}
+
+}
+//method of AdvancedSearchForm retrievse the form element object's value
+function getValue(element)
+{
+	if( element.type == 'select-one' && element.selectedIndex >= 0)
+	{
+		return element.options[element.selectedIndex].value;
+	}
+	else if( element.type == 'select-multiple' )
+	{
+		var selectedValues = '';
+		var countSelected = 0;
+		for (var m = 0; m < element.options.length; m++)
+		{
+			if (element.options[m].selected)
+			{
+				if(countSelected != 0)
+					selectedValues += "&"+element.name+"=";
+				selectedValues += element.options[m].value;
+				countSelected++;
+			}
+		}
+		return selectedValues;
+	}
+	else if( element.type == 'text' || element.type == 'radio' )
+	{
+		return element.value;
+	}
+	else if( element.type == 'checkbox' )
+	{
+		if( element.checked )
+			return element.value;
+	}
+	return "";
+}
+// method of AdvancedSearchForm is called by the createSearchString  and createLimitString methods
+//utf8 endcodes values to be passed to webpac
+function prepHTMLValue(value)
+{
+	if(value != "" )
+	{
+		newvalue = encodeURIComponent(value);
+		escvalue = escape(value);
+
+		if(escvalue.indexOf("%u") != -1 && encode != "utf-8")
+			return value;
+		else
+			return newvalue;
+	}
+	return "";
+}
+//method of AdvancedSearchForm creates the search string for the search request
+function createSearchString()
+{
+	//start at one because the arrays are created by extracting the numeric portion of the form element's name
+	//for example: searchText1, searchText2
+	for(var i=1; i < this.searchTextArray.length; i++)
+	{
+		var searchVal = this.prepHTMLValue( this.getValue(this.searchTextArray[i]) );
+       var searchSlice = this.getValue(this.fieldLimitArray[i]);
+		if( searchVal != "" )
+		{
+			if(i != 1 )
+			{
+				this.searchString +=this.getValue(this.booleanArray[i-1]);
+			}
+           if (searchSlice != "")
+			    this.searchString += searchSlice+"("+searchVal+")";
+           else
+			    this.searchString += searchSlice+searchVal;
+		}
+	}
+}
+//method of AdvancedSearchForm creates the limit string for the search request
+function createLimitString()
+{
+	for( var i in this.limitArray)
+	{
+		var elemName = new String(this.limitArray[i].name);
+		var elemValue = this.getValue(this.limitArray[i]);
+		if( elemValue != "" )
+		{
+			if(elemName.indexOf("Db") != -1 || elemName.indexOf("Da") != -1)
+			{
+				this.limitString += "&"+elemName+"="+this.prepHTMLValue( elemValue );
+			}
+			else
+			{
+				this.limitString += "&"+elemName+"="+elemValue;
+			}
+		}
+	}
+}
+//AdvancedSearchFrom is a javascript object
+function AdvancedSearchForm(form)
+{
+	//methods
+	this.getValue = getValue;
+	this.prepHTMLValue = prepHTMLValue;
+	this.createSearchString = createSearchString;
+	this.createLimitString = createLimitString;
+
+	this.limitString = new String("");
+	this.limitArray = new Array();
+	this.limitArray.scope = ( form.elements["searchscope"] ) ? form.elements["searchscope"] : "" ;
+	this.limitArray.dateafter = (form.elements["Da"]) ? form.elements["Da"] : "" ;
+	this.limitArray.datebefore = (form.elements["Db"]) ? form.elements["Db"] : "" ;
+	this.limitArray.sortby =  (form.elements["SORT"]) ? form.elements["SORT"] : "" ;
+	this.limitArray.limitavail =  (form.elements["availlim"]) ? form.elements["availlim"] : "" ;
+	this.limitArray.lang = (form.elements["l"]) ? form.elements["l"] : "";
+	this.limitArray.mattype = (form.elements["m"]) ? form.elements["m"] : "";
+	this.limitArray.journal = (form.elements["j"]) ? form.elements["j"] : "";
+	this.limitArray.branch = (form.elements["b"]) ? form.elements["b"] : "";
+	this.limitArray.pub = (form.elements["p"]) ? form.elements["p"] : "";
+	this.limitArray.illu = (form.elements["i"]) ? form.elements["i"] : "";
+	this.limitArray.genre = (form.elements["g"]) ? form.elements["g"] : "";
+	this.limitArray.conf = (form.elements["c"]) ? form.elements["c"] : "";
+	this.searchString = new String("") ;
+	this.fieldLimitArray = new Array();
+	this.searchTextArray = new Array();
+	this.booleanArray = new Array();
+	this.fieldPattern = /fieldLimit(\d+)/;
+	this.searchPattern = /searchText(\d+)/;
+	this.booleanPattern = /boolean(\d+)/;
+	for(var i=0; i < form.elements.length; i++)
+	{
+		if( form.elements[i].name.indexOf("fieldLimit") != -1)
+		{
+			var matches = this.fieldPattern.exec(form.elements[i].name)
+			this.fieldLimitArray[matches[1]] = form.elements[i];
+		}
+		if( form.elements[i].name.indexOf("searchText") != -1)
+		{
+			var matches = this.searchPattern.exec(form.elements[i].name)
+			this.searchTextArray[matches[1]] = form.elements[i];
+		}
+		if( form.elements[i].name.indexOf("boolean") != -1)
+		{
+			var matches = this.booleanPattern.exec(form.elements[i].name)
+			this.booleanArray[matches[1]] = form.elements[i];
+		}
+	}
+
+}
+
+function submitSearch(form, pathname, use_nosrch)
+{
+	var thisForm = new AdvancedSearchForm(form);
+	 thisForm.createLimitString();
+	 thisForm.createSearchString();
+   var nosrchstring = "SEARCH";
+   var subkeystring = "";
+   if (use_nosrch)
+        {
+        nosrchstring = "NOSRCH";
+        subkeystring = "&SUBKEY=" + thisForm.searchString;
+        }
+	 form.action = location.protocol+"//" + location.host + "/search/" +  thisForm.searchString + thisForm.limitString ;
+	window.location.href = location.protocol+"//" + location.host  + "/search/" +  thisForm.searchString + thisForm.limitString;
+	return false;
+}
+
+function modifySearch(string)
+{
+   var form = document.search;
+	var modifyString = string;
+   if( modifyString.indexOf("&SUBKEY=") == -1 )
+	{
+       if (modifyString.indexOf("?SEARCH=") == -1 )
+	    {
+           if( modifyString.indexOf("searcharg=") == -1 )
+            {
+		       alert("Unable to process search information.");
+			   return;
+           }
+           else
+           {
+              var searchPattern = /searcharg=([^&]+)/;
+           }
+		}
+		else
+		{
+			var searchPattern = /\?SEARCH=([^&]+)/;
+		}
+	}
+	else
+	{
+		var searchPattern = /&SUBKEY=([^&]+)/;
+	}
+
+	var searchTextArray = searchPattern.exec(modifyString);
+	var searchText = searchTextArray[1].replace(/\+/g," ");
+
+	modifyString = modifyString.replace(/&SUBKEY=(.+)&{0,1}/,"");
+	var modifyArray = modifyString.split("&");
+
+	modifyArray.shift();
+
+	if (searchText.indexOf('%22') != -1)
+	{ /* query has quotes */
+		form.elements["searchText1"].value = decodeURIComponent(searchText);
+	}
+	else
+	{
+       searchText = searchText.replace(/%25/g,"%2525");       searchText = searchText.replace(/%2B/g,"%252B");       var zz1 = decodeURIComponent(searchText);
+		zz2 = zz1.replace( / and not /g, "+and+not+");
+		zz1 = zz2.replace( / and /g, "+and+");
+		zz2 = zz1.replace( / or /g, "+or+");
+		zz1 = zz2.replace( / near /g, "+near+");
+		zz2 = zz1.replace( / before /g, "+before+");
+		zz1 = zz2.replace( / after /g, "+after+");
+		searchText = zz1;
+
+		var pattern = /(.:)?([^+]+)(\+.*\+)?/;
+		var searchTextPrep  = searchText.replace( /(\+(and\+not|and|or|near|before|after)\+?)/g,"$1BBBBB");
+		var searchPhrases = searchTextPrep.split("BBBBB");
+
+		var count =  1;
+		for(var c = 0; c < searchPhrases.length; c++ )
+		{
+			var phrase = searchPhrases[c];
+			var patMatches = pattern.exec(phrase);
+
+
+			if( patMatches != null )
+			{
+				var field = patMatches[1];
+				var term = patMatches[2];
+				var operator = patMatches[3];
+				if(field != "")
+					form.elements["fieldLimit"+count].value = field;
+				if(term != "")
+					form.elements["searchText"+count].value = decodeURIComponent(term);
+				if(operator != "")
+					form.elements["boolean"+count].value = operator;
+				count++;
+			}
+		}
+	}
+	for(var i=0; i < modifyArray.length; i++)
+	{
+		var pairArray = modifyArray[i].split("=");
+		var key = pairArray[0];
+		var value = decodeURIComponent(pairArray[1]);
+		if(form.elements[key])
+			setValue(form.elements[key], value);
+	}
+}
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+<div>
+<div class="folderWrapper"><!-- "folder" interface wrapper div-->
+	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
+		<div class="helpActiveTabLarge"><!--inactive tab-->
+			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
+			<div class="DisplayBoxContent"><div class="helpTabActiveContentLarge">Community Programs</div></div>
+		</div><!--close inactive tab-->
+	</div><!--close selection tab wrapper-->
+	<div class="mainSpacer"><!-- main content wrapper div -->
+		<div class="mainActiveContent">
+<table class="textFix"><tr><td valign="top" width="70%">
+<p>Here you can search our database for classes, lectures, and other activities sponsored or hosted by the library.</p>
+<form action="javascript:submitSearch(this);" enctype="multipart/form-data: charset=utf-8" name="search" id="search" onsubmit="return submitSearch(this);">
+<input type="hidden" name="startSearch" />
+<table cellpadding="1" cellspacing="1">
+<tr><td>
+<select name="fieldLimit1">
+<option value="P" selected="selected">Program Keywords:</option>
+<option value="H" >Program Name:</option>
+<option value="Q" >Program Subject:</option>
+<option value="J" >Program Description:</option>
+<option value="L" >Program Code:</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="35" name="searchText1" />
+</td>
+<td>
+<select name="boolean1">
+<option value="+and+" selected="selected">And</option>
+<option value="+and+not+">And not</option>
+<option value="+or+">Or</option>
+</select>
+</td></tr>
+<tr><td>
+<select name="fieldLimit2">
+<option value="P" selected="selected">Program Keywords:</option>
+<option value="H" >Program Name:</option>
+<option value="Q" >Program Subject:</option>
+<option value="J" >Program Description:</option>
+<option value="L" >Program Code:</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="35" name="searchText2" />
+</td>
+<td>
+<select name="boolean2">
+<option value="+and+" selected="selected">And</option>
+<option value="+and+not+">And not</option>
+<option value="+or+">Or</option>
+</select>
+</td></tr>
+<tr><td>
+<select name="fieldLimit3">
+<option value="P" selected="selected">Program Keywords:</option>
+<option value="H" >Program Name:</option>
+<option value="Q" >Program Subject:</option>
+<option value="J" >Program Description:</option>
+<option value="L" >Program Code:</option>
+</select>
+</td>
+<td>
+<input maxlength="75" size="35" name="searchText3" />
+</td>
+<td></td></tr>
+</table>
+<input type="hidden" name="endSearch" />
+<input type="hidden" name="startLimit" />
+<table><tr><td>
+<!-- Limited to:-->
+</td></tr>
+<tr><td>
+<!--{branch}-->
+</td></tr>
+</table>
+<input type="image" name="submit" src="/screens/submit.gif" alt="Submit" class="
+button" />
+<INPUT TYPE="hidden" NAME="endLimit"/>
+</form>
+
+<p>Popular topics include:</p>
+<ul class="unpadded">
+<li>Gardening</li>
+<li>Children's Storytime</li>
+<li>Study Skills</li>
+<li>Writing Workshops</li>
+<li>Digital Photography</li>
+</ul>
+</td><td valign="top"><div class="roundedContent2">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="roundedContentInfo">
+<div class="mainContentHead">Other Searches:</div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/">Keyword</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/X">Advanced Search</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/q">Author and Title Search</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/r">Course reserves</a></div>
+<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/search/g">Government Documents</a></div>
+<!--<div>&nbsp;&nbsp;<img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/illb">Inter Library Loan</a></div>-->
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div></td></tr></table>
+
+
+		</div>
+<div >
+	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+</div>
+	</div><!--close main content wrapper div-->
+</div><!--close wrapper of "folder interface"-->
+<div class="mainNavLinksWrapper">
+<div class="roundedContent">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="roundedContentInfo">
+<div align="center"><img src="/screens/welcome.jpg" alt="Welcome to Webpac Pro"/></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/patroninfo">My Record</a></div>
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/selfreg">Patron self registration</a></div>-->
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/acquire">Suggest a purchase</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/suggest">Comments</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/libinfo.html">Library Info</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/ftlist">Featured item lists</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/feeds_example.html">Feeds</a></div>
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/">Search</a></div>
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/resources_index.html">Other Resources</a></div>-->
+<!-- Note: uncomment this row and insert the correct URL if library uses KidsOnline product -->
+<!--<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="#">KidsOnline</a></div>-->
+<!-- Note: if library has Web OPACs in alternate language(s), links can be added here -->
+<div><img src="/screens/bullet.gif" alt=""/>&nbsp;<a href="/screens/help_index.html">Help</a></div>
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+</div>
+</div>
+<div style="clear:both"></div>
+<!--{botlogo}-->
+</body>
+</html>
