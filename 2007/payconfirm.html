@@ -1,0 +1,155 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 28 August 2008 -->
+<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
+
+<div class="spacer">
+
+<h2 class="popupFormHeader">Payment Confirmation</h2>
+<!--{formbegin}-->
+<!-- FOR USE IN PHRASE SEARCH PAGES (e.g.: srchhelp_a.html) ONLY -->
+<!-- FOR ADVANCED SEARCH PAGES USE TOKEN: advancedsearchformbegin -->
+
+<div class="popupForm patPayconfirmContainer">
+<span class="msg">
+<!--{infocorrectprompt}-->
+</span>
+
+<!-- Main Page div containing "left" and "right" columns to standardize presentation of Fines and Payment info. -->
+<div class="patPayconfirmFeeDisplay">
+
+<table width="100%" border="0" align="left">
+<tr>
+<td colspan="2" align="left" class="patFuncTitle">
+Fees/Fines:
+</td>
+</tr>
+<tr>
+
+<td colspan="2">
+<!--{finestable}-->
+</td>
+</tr>
+<tr>
+<td align="right">
+<!--{totalfinesprompt}-->
+:
+</td>
+<td align="center">
+<!--{amount}-->
+</td>
+</tr>
+<tr>
+<td align="right">
+TOTAL:
+</td>
+
+<td align="center">
+<!--{total}-->
+</td>
+</tr>
+</table>
+</div>
+
+<div class="patPayconfirmBillingDisplay">
+<table width="100%">
+<tr>
+<td colspan="2" align="left" class="patFuncTitle">
+Billing Information:
+</td>
+</tr>
+<tr>
+<td align="right"><label for="name">Name:</label></td>
+<td align="left">
+<!--{name}-->
+</td>
+</tr>
+<tr>
+<td align="right"><label for="address1">Address:</label></td>
+<td align="left">
+<!--{address1}-->
+</td>
+</tr>
+<tr>
+
+<td align="right"><label for="city">City:</label></td>
+<td align="left">
+<!--{city}-->
+</td>
+</tr>
+<tr>
+<td align="right"><label for="state">State:</label></td>
+<td align="left">
+<!--{state}-->
+</td>
+</tr>
+<tr>
+<td align="right"><label for="zip">Zip Code:</label></td>
+<td align="left">
+
+<!--{zip}-->
+</td>
+</tr>
+<tr>
+<td align="right"><label for="email">Email:</label></td>
+<td align="left">
+<!--{emailaddr}-->
+</td>
+</tr>
+<tr>
+<td colspan="2" align="left" class="patFuncTitle">
+Credit Card Information:
+</td>
+</tr>
+
+<tr>
+<td align="right"><label for="ccnum">Card Number:</label></td>
+<td align="left">
+<!--{ccnum}-->
+</td>
+</tr>
+<tr>
+<td align="right"><label for="ccexp_month">Expiration:</label></td>
+<td align="left">
+<!--{ccexpmonth}-->
+/
+<!--{ccexpyear}-->
+</td>
+</tr>
+<tr>
+
+<td align="right"><label for="cvv">Security Code:</label></td>
+<td align="left">
+<!--{cc_cvv2}-->
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" class="patFuncTitle">
+<img src="/screens/csc.gif" width="150" height="54" alt="Security Code" />
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<br/>
+<!--{ecompaidlibrary}-->
+<br/>
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<!--{submit}-->
+&nbsp;&nbsp;&nbsp;
+<!--{cancel}-->
+</td>
+</tr>
+</table>
+
+<!--{formend}-->
+</div>
+</div>
+<div class="clear2"></div>
+</div>
+
+<!--End of main page content-->
+<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
+
+<div class="pageNavAreaPopupBottom clear2">&nbsp;</div>
+
+<!--this is customized <screens/payconfirm.html>-->

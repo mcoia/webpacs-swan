@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">AltaVista-style Search</h2>
+<div class="srchhelpText">Type the keyword(s) in the box below then click the Search button to perform the search.</div>
+<div class="tool">
+<form method="get" class="unpadded">
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<!--{search}-->
+</td>
+<td align="right">
+<!--{submit}-->
+</td>
+</tr>
+</table>
+<!--{nosort}-->
+</form>
+</div>
+<div class="srchhelpText">
+<h4 class="srchhelpHeader">AltaVista-style Truncation</h4>
+Words may be right-hand truncated using an asterisk. Use a single asterisk * to truncate from 1-5 characters. Use a double asterisk ** for open-ended truncation.<br/>
+Examples:
+<ul class="unpadded srchhelpList">
+<li>populat*</li>
+<li>dost**</li>
+</ul>
+<h4 class="srchhelpHeader">AltaVista-style Operators</h4>
+These do not work the same as Boolean operators; they only apply to one word and they do not modify the relationship between words. Use a + to require a word be present, use a - to exclude a word. If not specified the assumed operator is OR.<br/>
+Examples:
+<ul class="unpadded srchhelpList">
+<li>nuclear +family (finds any record with nuclear AND family, and any record with family)</li>
+<li>+nuclear +family (finds any record with nuclear AND family)</li>
+<li>nuclear -family (finds any record with nuclear AND NOT family, and any record without family)</li>
+<li>+nuclear -family (finds any record with nuclear AND NOT family)</li>
+</ul>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

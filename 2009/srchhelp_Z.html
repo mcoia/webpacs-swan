@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Millennium Web Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">AltaVista-style Search</h1>
+
+<div class="formsTogether" id="accessibleForm">
+<div class="form1Part">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the keyword(s) in the box below then click the Search button to perform the search.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--{search}-->
+</div>
+
+<div class="formButtonArea">
+<!--{nosort}-->
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--form1Part -->
+
+<div class="clear"></div>
+
+<div>
+<!--This section may apply depending on catalog version and configuration. -->
+<!--<h2>AltaVista-style Truncation</h2>
+<p>Words may be right-hand truncated using an asterisk. Use a single asterisk * to truncate from 1-5 characters. Use a double asterisk ** for open-ended truncation.<br>
+Examples:</p>
+<ul>
+<li>populat*</li>
+<li>dost**</li>
+</ul>
+ -->
+ 
+<h2 class="pageHeader">AltaVista-style Operators</h2>
+<p>These do not work the same as Boolean operators; they only apply to one word and they do not modify the relationship between words. Use a + to require a word be present, use a - to exclude a word. If not specified the assumed operator is OR.</p>
+<p>Examples:</p>
+<ul>
+<li>nuclear +family (finds any record with nuclear AND family, and any record with family)</li>
+<li>+nuclear +family (finds any record with nuclear AND family)</li>
+<li>nuclear -family (finds any record with nuclear AND NOT family, and any record without family)</li>
+<li>+nuclear -family (finds any record with nuclear AND NOT family)</li>
+</ul>
+
+</div><!--form1Part -->
+</div><!--formsTogether -->
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

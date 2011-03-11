@@ -1,0 +1,194 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<html>
+<head>
+<title>WebBridge Resolution Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function goBack() {
+history.back()
+}
+//-->
+</script>
+<link href="/screens/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+.header { }
+
+.noresources { color: red; font-size: 1.2em; font-weight: bold;}
+
+.citation { background-color: #FFFFFF; padding: 5px; margin:0 10px -10px 10px;}
+
+.resourceinfo { }
+
+.advisory { }
+
+.ada, .license { }
+
+.linkdisplay { }
+
+.coverage { }
+
+.coverage em { font-style: normal; }
+
+.wbheading { font-size:11px;margin:0 10px -7px 10px; }
+
+.headertable { background:#162a6d; }
+
+.citationtitle { font-weight: bold; color:#aa1002; font-size:1.2em;}
+
+.fieldinsert { font-size: .9em; margin-left: 30px; margin-right: 30px; }
+</style>
+</head>
+
+<body class="wbbody">
+<table width="100%" class="headertable">
+<tr >
+<td align="left"><img src="/screens/logo2.png" alt="WebBridge Logo" width="250" height="29" /></td>
+</tr>
+</table>
+<!--{ifopenurl:subjectmap}-->
+<div style="background: #FFFFFF url(/screens/subjectmap_logo.gif) no-repeat top left; border: 1px solid #162A6D;">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="bottom">
+<td align="left">
+<span style="font-size: 1.2em; font-weight: bold; margin-left: 70px">
+<!--{openurl:subjectmap}-->
+</span>
+</td>
+<td align="right">
+<a href="javascript:goBack()"><img src="/screens/ret2cat.gif" alt="Return to Catalog" width="80" height="40" border="0"></a>
+</td>
+</tr>
+</table>
+</div>
+<!--{xif}-->
+
+<!--{ifopenurl:atitle}-->
+<div class="citation">
+<span class="citationtitle">
+<!--{openurl:atitle}-->
+</span>
+<br />
+<!--{xif}-->
+
+<!--{ifopenurl:aulast}-->
+Author:
+<!--{openurl:aulast}-->
+<!--{ifopenurl:aufirst}-->
+,
+<!--{openurl:aufirst}-->
+<!--{else}-->
+<!--{ifopenurl:auinit}-->
+,
+<!--{openurl:auinit}-->
+<!--{xif}-->
+<!--{xif}-->
+.&nbsp;
+<!--{xif}-->
+
+<!--{ifopenurl:title}-->
+Published in:
+<!--{openurl:title}-->
+,&nbsp;
+<!--{else}-->
+<!--{ifopenurl:stitle}-->
+Published in:
+<!--{openurl:stitle}-->
+,
+<!--{xif}-->
+<!--{xif}-->
+
+<!--{ifopenurl:volume}-->
+v.
+<!--{openurl:volume}-->
+&nbsp;
+<!--{xif}-->
+<!--{ifopenurl:issue}-->
+no.
+<!--{openurl:issue}-->
+,
+<!--{xif}-->
+
+<!--{ifopenurl:pages}-->
+pp.
+<!--{openurl:pages}-->
+<!--{else}-->
+<!--{ifopenurl:spage}-->
+pp.
+<!--{openurl:spage}-->
+<!--{ifopenurl:epage}-->
+-
+<!--{openurl:epage}-->
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+<!--{ifopenurl:date}-->
+&nbsp;Date:
+<!--{openurl:date}-->
+</div>
+<!-- close citation div -->
+<!--{xif}-->
+
+<!--{ifnoresources}-->
+<div class="noresources">Sorry, no resources are available.</div>
+<!--{xif}-->
+
+<!--{resourcelist}-->
+
+<!--{ifopenurl:subjectmap}-->
+<div style="margin-top: 5px; padding: 5px; background: #FFFFFF; border: 1px solid #162A6D;">
+<form action="http://metafind.iii.com/muse/servlet/MusePeer" method="get">
+<div style="margin-bottom: 5px; background: #B7C9F9;">
+<img src="/screens/images/search_all.gif" width="318" height="37" />
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr align="left" valign="bottom">
+<td>
+<!-- -Choose what type of search------------- -->
+Search for:
+<select name="field">
+<option value="Keywords" selected="selected">Keywords&nbsp;&nbsp;</option>
+<option value=":TITLE">Title</option>
+<option value=":CREATOR">Author</option>
+<option value=":SUBJECT">Subject</option>
+</select>
+<!-- --------Log on info----------------- -->
+<input type="hidden" name="action" value="logon" />
+<input type="hidden" name="userID" value="iiiacademicmill" />
+<input type="hidden" name="userPwd" value="iiiacademicmill" />
+<input type="hidden" name="templateFile" value="passthru.html" />
+</td>
+<td>
+<input size="25" name="queryStatement" maxlength="75" />
+</td>
+<td>
+<!-- Add some dbList options to choose from -->
+<select name="dbList">
+<option value="AllSources">Search Everything</option>
+<option value="Library">Library Catalogs</option>
+<option value="Text" selected="selected">Full Text</option>
+<option value="Indexes">Indexes/Abstracts</option>
+<option value="Book">Book Resources</option>
+<option value="Search">Search Engines</option>
+</select>
+<!-- ------------end dbList------------ -->
+</td>
+<td>
+<input type="image" value="Search" name="submit2" src="/screens/images/go_but.gif" alt="Go" width="26" height="27" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+<!--{xif}-->
+<br/>
+<table width="100%">
+<tr>
+<td align="left"><img src="/screens/iii_small.gif" alt="Innovative Interfaces"/></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Styles for the progreg registration webapp */
+
+.progInfoLabel {font-size:.82em; vertical-align:top; padding-right:.5em; width:26%;font-weight: bold; }
+
+.progInfoData {vertical-align:top; font-size:.95em;}
+
+.progNextSession {width:200px;}
+.progSections {border:0;}
+
+.progSections th {text-align: left; border-top:0px; border-left:0px; border-right:0px; border-bottom: 1px solid #162A6D; text-size:75%; }
+
+.progSections td  {  }
+
+.progSectionsEntry { border:0px; color: #000000; text-align: left; vertical-align: top; border-bottom: 1px solid #DDDDDD; padding: 1px 0 3px 0;}
+.progSectionsEntry {border-bottom:1px solid #eeeeee; background: #FFFFFF; font-size:90%; }
+
+.progSectionsHeader {}
+.progSectionsHeader th {font-weight: bold; border-bottom:1px solid #162A6D; font-size:.9em;}
+.progSectionsHeader th  { color: #FFFFFF; background: #477295; font-size:90%; font-weight: bold; text-align: left; border-bottom:1px solid #d7e3ff;}
+
+.progNavrow { float:left; }
+.progNavMessage { float:right; color:#FF0000; }
+
+.progValueDescription { }
+.progThumbnail { float:left; width:165px; }
+.progContent  {border:0px; border:3px solid #f9f9f9; margin:9px; background-color:#FFFFFF; padding:10px; }
+.progRegDescArea { float:left;  width:70%;}
+
+.progRegAlert , .progRegConf  {font-size:1.1em;font-weight:bold;text-decoration:underline;margin:0 10%;letter-spacing:.1em; clear:both; }
+.progRegForm , .progRegForm2 , .progRegConfirm {margin:5px 10%;}
+.progRegForm td , .progRegConfirm td {padding:2px 5px;vertical-align:top;letter-spacing:.1em;font-size:.9em;}
+.progRegForm2 td {padding:2px 2px;letter-spacing:.1em;font-size:.9em;}
+.progRegButtons {margin:10px 0 10px 35%;}
+.progName {font-family:'Trebuchet MS', Helvetica, Geneva, Arial,sans-serif;font-size:1.3em;font-weight:bold;color:#9c1f2e;margin:5px 10%;letter-spacing:.1em;}
+.progConfLabel {font-weight:bold;text-align:right;padding:0;}
+.progConfRet {margin:10px 10%;}
+#noteFields {margin:0 0 0 -5px;padding:0;}
+#noteFields table {margin:0;padding:0;}
+#noteFields td {font-weight:bold;}
+
+.errorMessageStatus {color:#9c1f2e; clear:both; }
+
+#sectionContent {width:100%;}
+#sectionContent div {width:100%}
+

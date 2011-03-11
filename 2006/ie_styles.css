@@ -1,0 +1,137 @@
+/*<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->*/
+/*<!-- This file last changed: 09 March, 2007 -->*/
+/* *******************************************************************
+
+The new example set has a separate non-Internet Explorer css file. You must make similar changes to your regular style sheet in
+order for the same display across browsers. The regular style sheet is styles.css 
+
+This ie_styles.css file contains only styles that are used to correct the IE css implementation to create a cross browser
+compatible theme.  This style sheet is inserted by conditional comments in the head of any html page or with the 
+INSERTTAG_INHEAD wwwotion.  The correct conditional statement follows:
+
+<!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]-->
+
+********************************************************************** */
+/* general appearance */
+/* See also Web Option BODYPARAM */
+
+/* Stylesheet to use for dynamic Web pages */
+/* is set by Web Option STYLESHEET */
+
+/* COLOR SCHEME (use find & replace to swap colors */
+/* border and tab light blue : d7e3ff */
+/* manilla background color: FFF8EF */
+/* medium blue: 0132A7 */
+/* dark blue: 00437f */
+/* very dark blue: 162A6D */
+/* light orange : F5D9A3 */
+/* light blue used in table striping : eff7ff */
+/* light yellow used in table highlighting : FFFFDF */
+/* light gray for .authPublicNote : F7F4F4 */ 
+
+/* Section 1 */
+/*Global tag styles*/
+body { font-size:100%; margin: 0; padding: 0; background-color: white; font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;  font-style : normal; font-weight : normal; }
+
+/* Section 2 */
+/* named styles listed in alphabetical order */
+
+.additionalCopies {padding:0 15px 0 15px; width:99%;}
+
+.bibBookingsHeader { font-weight: bold; text-decoration: none; padding: 3px; border: 1px solid #00437f; background: #FFFBC6; }
+
+.bibHoldingsEntry { font-size:100%; border-bottom:1px solid #EEEEEE;border-top:1px solid #EEEEEE;border-right:1px solid #EEEEEE;}
+
+.bibHoldingsLabel { font-size:100%; border-bottom:1px solid #EEEEEE;border-top:1px solid #EEEEEE;border-left:1px solid #EEEEEE;}
+
+.bibHolds { font-size:100%; border: 1px solid #00437f; }
+
+.bibHoldsEntry { font-size:100%; border: 1px solid #00437f; }
+
+.bibInfoLabel { width: 15%; font-size:82%; text-align: right; padding-right: 1em; background-color: #d7e3ff; font-weight: bold; font-style: italic; }
+
+.bibItemsEntry { color: #000; text-align: left; font-size:100%;}
+
+.bibItemsEntry td {border-bottom:1px solid #EEEEEE;font-size:100%; }
+
+.bibItemsHeader { color: #000; font-size:100%; font-weight: bold; text-align: left;border-bottom:1px solid #d7e3ff }
+
+.bibOrder { border: 1px solid #00437f; font-size:100%;}
+
+.bibSearchtool { background:#d7e3ff; width:70%; padding:5px 0 0 0; font-size: 100%; }
+
+div.DisplayBoxContent div a:visited, div.DisplayBoxContent div a:link, div.DisplayBoxContent div a:active {color:#00437f;text-decoration:none; font-weight:bold; outline:none; }
+
+.mainSpacer {margin: 0 1em .2em 1em;}
+.mainActiveTab {background: transparent; width:100px; float:left;margin:0 5px -1px 0;}
+.mainInactiveTab {background: transparent; width:100px; float:left; margin:0 5px -1px 0;}
+.menuTabContent {width:100px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0;padding:1px 0 9px 0; height:18px;}
+.menuTabActive {width:100px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0 0 0 0; padding:1px 0 9px 0;}
+
+.helpActiveTab {background: transparent; width:100px; float:left; margin:0 5px -1px 0;}
+.helpActiveTabMedium {background: transparent; width:125px; float:left; margin:0 5px -1px 0;}
+.helpActiveTabLarge {background: transparent; width:175px; float:left; margin:0 5px -1px 0;}
+.verifyActiveTabXL {background: transparent; width:200px; float:left; margin:0 5px -1px 0; }
+.helpInactiveTab {background: transparent; width:100px; float:left; margin:0 5px -1px 0;}
+.helpInactiveTabMedium {background: transparent; width:125px; float:left; margin:0 5px -1px 0;}
+.helpInactiveTabLarge {background: transparent; width:175px; float:left; margin:0 5px -1px 0;}
+.helpTabContent {width:100px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0; padding:1px 0 9px 0; height:18px;}
+.helpTabActiveContent {width:100px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0 0 0 0; padding:1px 0 9px 0;}
+.helpTabContentMedium {width:125px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0; padding:1px 0 9px 0; height:18px;}
+.helpTabContentLarge {width:175px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0; padding:1px 0 9px 0; height:18px;}
+.helpTabActiveContentMedium {width:125px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0; padding:1px 0 9px 0;}
+.helpTabActiveContentLarge {width:175px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0; padding:1px 0 9px 0;}
+.verifyTabActiveContentXL {width:200px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0; padding:1px 0 9px 0;}
+
+/* content div rounding styles */
+.mainActiveContent {border:0 solid #00437f; border-width:1px 1px 0 1px;clear:both;padding:2px 10px 2px 10px;background:#fff;display:block;margin:0;}
+.mainActiveContentTabless {border:0 solid #00437f; border-width:1px 1px 0 1px;clear:both;padding:2px 10px 2px 10px;background:#fff;display:block;margin:2px 0 0 0;}
+.helpActiveContent {border:0 solid #00437f; border-width:1px 1px 0 1px;clear:both;padding:2px 10px 2px 10px;background:#fff;display:block; margin-top:-13px;}
+
+.roundedContentInfo {display:block; background:#FFF8EF; border:0 solid #00437f; border-width:0 1px; padding:2px 5px 0 5px;color:#000}
+.mainActiveContentTable {width:92%;font-size:100%}
+#currentDate {font-weight:bold; color:#ffffff; font-size:90%;padding:5px;}
+.topLog {padding:3px 0 3px 10px;margin:0;font-size:100%; color:#fff;}
+.topLog input {font-size:80%;}
+#topID ul {list-style:none; font-size:85%; padding:0; margin:0 0 5px 0;}
+
+div.bibContentBox div a:visited, div.bibContentBox div a:link, div.bibContentBox div a:active, {color:#000;text-decoration:none; font-weight:bold; outline:none; font-size:75%;}
+
+/* tab rounding styles for selection switches*/
+.bibTabOn {background: transparent; width:100px; float:left; margin:0 5px -1px 0;}
+.bibTabOff {background: transparent; width:100px; float:left; margin:0 5px -1px 0;}
+.bibSimTabOn {background: transparent; width:150px; float:left; margin:0 5px -1px 0;}
+.bibSimTabOff {background: transparent; width:150px; float:left; margin:0 5px -1px 0;}
+.bibTabContent {width:100px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0; padding:1px 0 9px 0; height:18px;}
+.bibTabSelected {width:100px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0; padding:1px 0 9px 0;}
+.bibSimTabSelected {width:150px;background-color: #fff; text-align:center; border-left:1px solid #00437f; border-right:1px solid #00437f; height:23px; margin:0; padding:1px 0 9px 0;}
+.bibSimTabContent {width:150px;background-color: #d7e3ff; text-align:center; margin:0 0 -2px 0; padding:1px 0 9px 0; height:18px;}
+
+/* This section added to correct full record display problem */
+.tabTop, .tabBottom {display:block; background:transparent; font-size:1px;}
+
+
+.selected1, .selected2, .selected3, .selected4 {display:block; overflow:hidden;}
+.selected1, .selected2, .selected3 {height:1px;}
+.selected2, .selected3, .selected4 {background:#fff;  border-left:1px solid #00437f; border-right:1px solid #00437f;}
+.selected1 {margin:0 5px; background:#00437f;}
+.selected2 {margin:0 3px; border-width:0 2px;}
+.selected3 {margin:0 2px;}
+.selected4 {height:2px; margin:0 1px;}
+
+
+.option1, .option2, .option3, .option4 {display:block; overflow:hidden;}
+.option1, .option2, .option3 {height:1px;}
+.option2, .option3, .option4 {background:#d7e3ff;}
+.option1 {margin:0 5px; background:#d7e3ff;}
+.option2 {margin:0 3px; border-width:0 2px;}
+.option3 {margin:0 2px;}
+.option4 {height:2px; margin:0 1px;}
+.bibContentWrapper {border:0 solid #00437f; border-width:1px 1px 0 1px;clear:both;padding:0 10px 0 10px;background:#fff;display:block;}
+.bibContentSectionOptions {width:95%;display:none;margin:0;}
+.bibContentSectionDefault {width:95%;margin:0;}
+/* End of section added to correct full record display problem */
+
+/* this style corrects the IE rendering bug for the bottom rounded corner overflow */
+.ieFix {margin:0 1px 0 1px} 
+

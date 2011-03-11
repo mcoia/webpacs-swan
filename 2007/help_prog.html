@@ -1,0 +1,160 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+function hideProgDivs(){
+	document.getElementById("progCal").style.display = 'none';
+	document.getElementById("progReg").style.display = 'none';
+	document.getElementById("progMy").style.display = 'none';
+}
+function moreProgContent(id) {
+
+	document.getElementById("progGen").style.display = 'none';
+	document.getElementById("progCal").style.display = 'none';
+	document.getElementById("progReg").style.display = 'none';
+	document.getElementById("progMy").style.display = 'none';
+
+
+	document.getElementById(id).style.display = 'block';
+
+}
+
+if (document.images) {
+    image01 = new Image (266,500)
+		image01.src = "proghelp_img1.png";
+		image02 = new Image (362,500)
+		image02.src = "proghelp_img2.png";
+		image03 = new Image (407,500)
+		image03.src = "proghelp_img3.png";
+		image04 = new Image (362,500)
+		image04.src = "proghelp_img4.png";
+		image05 = new Image (362,500)
+		image05.src = "proghelp_img5.png";
+		image06 = new Image (362,500)
+		image06.src = "proghelp_img6.png";
+		image07 = new Image (362,500)
+		image07.src = "proghelp_img7.png";
+		image08 = new Image (362,500)
+		image08.src = "proghelp_img8.png";
+		image09 = new Image (362,500)
+		image09.src = "proghelp_img9.png";
+		image10 = new Image (362,500)
+		image10.src = "proghelp_img10.png";
+		image11 = new Image (245,500)
+		image11.src = "proghelp_img11.png";
+		image12 = new Image (245,500)
+		image12.src = "proghelp_img12.png";
+		image13 = new Image (261,500)
+		image13.src = "proghelp_img13.png";
+		image14 = new Image (261,500)
+		image14.src = "proghelp_img14.png";
+		image15 = new Image (311,419)
+		image15.src = "proghelp_img15.jpg";
+		image16 = new Image (199,500)
+		image16.src = "proghelp_img16.png";
+}
+function show(){document.gen.src = image01.src;}
+function show1(){document.gen.src = image02.src;}
+function show2(){document.gen.src = image03.src;}
+function show3(){document.nav.src = image02.src;}
+function show4(){document.nav.src = image04.src;}
+function show5(){document.nav.src = image05.src;}
+function show6(){document.nav.src = image06.src;}
+function show7(){document.nav.src = image07.src}
+function show8(){document.nav.src = image08.src;}
+function show9(){document.nav.src = image09.src;}
+function show10(){document.nav.src = image10.src;}
+function show11(){document.reg.src = image01.src;}
+function show12(){document.reg.src = image02.src;}
+function show13(){document.reg.src = image11.src;}
+function show14(){document.reg.src = image12.src;}
+function show15(){document.reg.src = image13.src;}
+function show16(){document.reg.src = image14.src;}
+function show17(){document.reg.src = image15.src;}
+function show18(){document.my.src = image16.src;}
+window.onload=function(){
+hideProgDivs();
+}
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+<div id="helpCenter">
+<h2 class="srchhelpHeader">Help Center</h2>
+<br/>
+<div class="tabs">
+<span class="firstTab"><a href="/screens/help_index.html">NAVIGATION</a></span><!--<span><a href="/screens/help_feepay.html">FEE PAYMENT</a></span>--><span><a href="/screens/help_prefsearch.html">PREFERRED SEARCHES</a></span><span><a href="/screens/help_renew.html">RENEWALS</a></span><span><a href="/screens/help_index2.html">SEARCHING</a></span><span><a href="/screens/help_index3.html">SEARCH TIPS</a></span><!--<span><a href="/screens/help_metafind.html">METAFIND</a></span>--><span  class="selected"><a href="/screens/help_prog.html">PROGRAMS</a></span></div>
+<div class="tabBody">
+<table width="95%" class="textFix" id="progNav"><tr>
+<td width="26%"><div class="mfMenuHead"><strong>Community Programs Help Menu :</strong></div></td>
+<td width="15%"><div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<a href="#" onClick="moreProgContent('progGen'); show(); return false;">General</a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+<td ><div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<a href="#" onClick="moreProgContent('progCal'); show3(); return false;">Calendar Navigation</a></div></td>
+<td ><div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<a href="#" onClick="moreProgContent('progReg'); show13(); return false;">Program Registration</a></div></td>
+<td ><div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<a href="#" onClick="moreProgContent('progMy'); show18(); return false;">My Programs</a></div></td>
+</tr></table>
+
+<div id="progGen">
+<table class="textFix">
+<tr><td width="45%" valign="top">
+<div><strong>General Community Programs Information</strong></div><div class="helpspan">
+Program Registration allows patrons to view programs offered by the library. Patrons may retrieve programs in either a <a href="#" OnMouseOver="show1()">calendar</a> or <a href="#" OnMouseOver="show2()">browse view</a>, depending on the <a href="#" OnMouseOver="show()">initiated search</a>.  Program Registration is a useful way to familiarize yourself with the community programs offered by the library and allow the library to play an integral role in planning your life.
+</div>
+</td>
+<td align="center" valign="top"><img name="gen" src="proghelp_img1.png" alt="Community Programs" border="1"></td></tr>
+</table>
+</div>
+<div id="progCal">
+<table class="textFix">
+<tr><td colspan="2">
+<div><strong>Calendar Navigation</strong></div>
+</td></tr>
+<tr><td width="45%" valign="top">
+<div class="helpspan">
+The <a href="#" OnMouseOver="show3()">calendar</a> offers a visual monthly view of the programs offered by the library.
+</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Month Hover</strong><br/>
+Hovering over the <a href="#" OnMouseOver="show4()">month</a> in the first column will allow the calendar view to change between months</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Year Dropdown</strong><br/>
+The <a href="#" OnMouseOver="show5()">Year dropdown</a> allows the user the ability to change the default calendar year in respects to the months.</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Program Type Dropdown</strong><br/>
+The <a href="#" OnMouseOver="show6()">Program Type Dropdown</a> will allow users to change the default calendar view to display only programs of a specific type.</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Day Scroll</strong><br/>
+The display of programs per day may exceed the available fixed screen of the calendar, therefore a <a href="#" OnMouseOver="show7()">day scroll</a> has been implemented to allow you to see all programs offered for a specific day.</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Program Information</strong><br/>
+Clicking on a <a href="#" OnMouseOver="show8()">program</a> will display a <a href="#" OnMouseOver="show9()">pop up box</a> with information about the specific program and it's registration status.</div>
+<div class="helpspan"><img src="/screens/bullet.gif" alt="Bullet Point" height="9" width="6"/>&nbsp;<strong>Registration</strong><br/>
+The Program Information pop up box offers the option to <a href="#" OnMouseOver="show10()">Register</a>. Selecting the register option with ask for patron verification, if you are not currently logged into a session.</div>
+<td align="center" valign="top"><img name="nav" src="proghelp_img2.png" alt="Community Programs" border="1"></td></tr>
+</table>
+</div>
+<div id="progReg">
+<table class="textFix">
+<tr><td colspan="2">
+<div><strong>Program Registration</strong></div>
+</td></tr>
+<tr><td width="45%" valign="top">
+<div class="helpspan">
+After viewing the <a href="#" OnMouseOver="show12()">calendar</a> or using <a href="#" OnMouseOver="show11()">advanced keyword</a> searches for <a href="#" OnMouseOver="show13()">programs</a>, you may <a href="#" OnMouseOver="show14()">select a program</a> for registration. Upon selecting the <a href="#" OnMouseOver="show15()">register option</a>, your patron account will be checked for patron blocks and eligibility. The system will auto-populate the email address in the form if you have an email address associated with your patron account. The <a href="#" OnMouseOver="show16()">email address</a> on the form is editable and once registration is <a href="#" OnMouseOver="show17()">complete</a>, a registration confirmation receipt will be sent to that email address.</div>
+</td>
+<td align="center" valign="top"><img name="reg" src="proghelp_img11.png" alt="Community Programs" border="1"></td></tr>
+</table>
+</div>
+<div id="progMy">
+<table class="textFix">
+<tr><td colspan="2">
+<div><strong>My Programs</strong></div>
+</td></tr>
+<tr><td width="45%" valign="top">
+<div class="helpspan">
+To see what programs you are currently registered for requires accessing your My Millennium account. Upon verification of your account a "x programs currently registered" link will display. Selecting this link will display currently registered programs. You are able to sort the view by Program Name or Date and cancel registration.</div>
+</td>
+<td align="center" valign="top"><img name="my" src="proghelp_img16.png" alt="Community Programs" border="1"></td></tr>
+</table>
+</div>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

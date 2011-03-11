@@ -1,0 +1,66 @@
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 8 June, 2006 -->
+<div class="header">
+<table width="100%" class="headertable">
+<tr>
+<!-- there are two supplied WebBridge logos in PNG format. The wb_logo_blue is best for light colored backgrounds, and the wb_logo_white is best for dark colored backgrounds. The background color is specified in .webody .headertable in the style sheets. -->
+<td align="left"><img src="/screens/wb_logo_blue.png" alt="WebBridge" width="250" height="29"/></td>
+    <td align="right">
+<!--{ret2cat}-->
+<!--{closewindow}-->
+    </td>
+  </tr>
+</table>
+<!--{ifnoresources}-->
+<div class="wbheading">
+<p class="noresources">Sorry, no resources were found.</p>
+<!--{else}-->
+<!--{header}-->
+<!--{xif}-->
+</div>
+</div>
+
+<!--{resourcelist}-->
+
+<table width="100%">
+<tr>
+<td align="left"><img src="/screens/wb_iii_logo.gif" alt="Innovative Interfaces"/></td>
+<td align="right">
+<!--{ret2cat}-->
+<!--{closewindow}-->
+</td>
+</tr>
+</table>
+<!-- the following conditional code fixes the PNG transparency in Internet Explorer or other Microsoft code browsers pre IE 7 -->
+<!--[if lt IE 7]>
+<script defer type="text/javascript">
+
+var arVersion = navigator.appVersion.split("MSIE")
+var version = parseFloat(arVersion[1])
+
+if ((version >= 5.5) && (document.body.filters))
+{
+   for(var i=0; i<document.images.length; i++)
+      {
+      var img = document.images[i]
+	  var imgName = img.src.toUpperCase()
+	  if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+	  {
+         var imgID = (img.id) ? "id='" + img.id + "' " : ""
+         var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+         var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+         var imgStyle = "display:inline-block;" + img.style.cssText
+         if (img.align == "left") imgStyle = "float:left;" + imgStyle
+         if (img.align == "right") imgStyle = "float:right;" + imgStyle
+         if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+         var strNewHTML = "<span " + imgID + imgClass + imgTitle
+         + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+         + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+         + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+         img.outerHTML = strNewHTML
+         i = i-1
+      }
+   }
+}
+</script>
+<![endif]-->

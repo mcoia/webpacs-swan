@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 12 Oct 2010 -->
+<!-- Rename this file as "srchhelp_{indextag}.html, and replace any "((...))" indicating site-specific changes. -->
+<head>
+<title>Millennium Web Catalog - Electronic Resources</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!-- Important note - this section must be in file to work properly with a variety of browsers -->
+<script language="JavaScript" type="text/javascript">
+<!--
+function submitSubject() {
+window.location="/search/m?" + document.subjectSearch.subjectSearchSelect.options[document.subjectSearch.subjectSearchSelect.selectedIndex].value;
+return true;
+}
+//-->
+</script>
+<!-- end of note -->
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Electronic Resources</h1>
+
+<div class="formsTogether" id="accessibleForm">
+
+<div class="form1Part">
+<h2>Database Search</h2>
+<!--{formbegin}-->
+<fieldset>
+<legend>Type the name of the database you want, then click <strong>Submit Search</strong>.</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="searcharg">Search for:</label>
+</span>
+<!--{search}-->
+</div>
+
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<input type="submit" value="Submit Search" name="submit">
+</div>
+
+</fieldset>
+</form>
+</div><!--form1Part -->
+
+<div class="clear"></div>
+
+<div class="form1Part">
+<h2>Search databases by subject</h2>
+<form action="javascript:submitSubject();" onSubmit="submitSubject();" method="get" name="subjectSearch">
+<fieldset>
+<legend>Select a subject and click <strong>Submit Subject Search</strong>.</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="subjectSearchSelect">Search for:</label>
+</span>
+<!-- Insert the resource subject terms you would like to -->
+<!-- make available into the following select statement. -->
+<!-- The actual text to be searched should be included as -->
+<!-- the value attribute of each option tag. -->
+<select name="subjectSearchSelect">
+<option value="((insert_text_to_be_searched))" selected>See HTML comments above about subject headings</option>
+</select>
+</div>
+
+<div class="formButtonArea">
+<input type="submit" name="Submit2" value="Submit Subject Search">
+</div>
+
+</fieldset>
+</form>
+</div><!--form1Part -->
+
+</div><!--formsTogether-->
+
+<div class="clear"></div>
+
+<h2>Alphabetical list of database titles</h2>
+<div class="alphaERM">
+<a href="/search/((resource_name_index_tag))?a">A</a> | <a href="/search/((resource_name_index_tag))?b">B</a> | <a href="/search/((resource_name_index_tag))?c">C</a> | <a href="/search/((resource_name_index_tag))?d">D</a> | <a href="/search/((resource_name_index_tag))?e">E</a> | <a href="/search/((resource_name_index_tag))?f">F</a> | <a href="/search/((resource_name_index_tag))?g">G</a> | <a href="/search/((resource_name_index_tag))?h">H</a> | <a href="/search/((resource_name_index_tag))?i">I</a> | <a href="/search/((resource_name_index_tag))?j">J</a> | <a href="/search/((resource_name_index_tag))?k">K</a> | <a href="/search/((resource_name_index_tag))?l">L</a> | <a href="/search/((resource_name_index_tag))?m">M</a> | <a href="/search/((resource_name_index_tag))?n">N</a> | <a href="/search/((resource_name_index_tag))?o">O</a>|
+ <a href="/search/((resource_name_index_tag))?p">P</a> | <a href="/search/((resource_name_index_tag))?q">Q</a> | <a href="/search/((resource_name_index_tag))?r">R</a> | <a href="/search/((resource_name_index_tag))?s">S</a> | <a href="/search/((resource_name_index_tag))?t">T</a> | <a href="/search/((resource_name_index_tag))?u">U</a> | <a href="/search/((resource_name_index_tag))?v">V</a> | <a href="/search/((resource_name_index_tag))?w">W</a> | <a href="/search/((resource_name_index_tag))?x">X</a> | <a href="/search/((resource_name_index_tag))?y">Y</a> | <a href="/search/((resource_name_index_tag))?z">Z</a> | <a href="/search/((resource_name_index_tag))?**">All titles</a>
+</div>
+</div><!--pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

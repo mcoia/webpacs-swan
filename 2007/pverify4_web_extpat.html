@@ -1,0 +1,176 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Request Saved Records</h2>
+<br/>
+<div class="advSrchtool">
+<table class="textFix"><tr><td valign="top">
+<!--{iflist}-->
+<br />
+<!--{listerrmsg}-->
+<!--{else}-->
+
+<form name="patform" method="POST" class="unpadded">
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span><br /><br /><br />
+<!--{xif}-->
+
+<!--{ifrequestmoney}-->
+<span class="errormessage">
+<!--{requestmoney}-->
+</span><br /><br />
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<!--{ifextpat}-->
+<table border="0" width="80%" class="loginarea textFix">
+<tr>
+<td valign="top">
+<div id="extpat">
+<strong>Login with campus identification:</strong><br />
+Your Campus ID#:&nbsp; &nbsp;
+<!--{extpatid}-->
+<br />
+Your Password:&nbsp; &nbsp;
+<!--{extpatpw}-->
+</div>
+</td>
+<!--{xif}-->
+<!--{xif}-->
+<td valign="top">
+<div id="libpat">
+<strong>or login with library identification:</strong><br />
+<!--{ifneedpatronname}-->
+<!--{nameprompt}-->
+&nbsp; &nbsp;
+<!--{name}-->
+<br />
+<!--endpatronname-->
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<!--{barcodeprompt}-->
+&nbsp; &nbsp;
+<!--{barcode}-->
+<br />
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<br />
+<!--{pin1prompt}-->
+&nbsp; &nbsp;
+<!--{pin1}-->
+<br />
+<!--{pin2prompt}-->
+&nbsp; &nbsp;
+<!--{pin2}-->
+<!--{else}-->
+<!--{pinprompt}-->
+&nbsp; &nbsp;
+<!--{pin}-->
+<br />
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+</div>
+</td>
+</tr>
+</table>
+<!--{else}-->
+<!-- used if external patron authentication is unavailable -->
+<!--{enterinfo}-->
+<table width="100%" class="textFix">
+<!--{ifneedpatronname}-->
+<tr><td width="30%"></td><td><span class="helpNote">
+<!--{nameexample}-->
+</span></td></tr><tr>
+<td>
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+</tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr><td></td><td><span class="helpNote">
+<!--{barcodeexample}-->
+</span></td></tr>
+<tr><td>
+<!--{barcodeprompt}-->
+</td><td>
+<!--{barcode}-->
+</td></tr>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<tr><td colspan="2">
+<!--{newpinmsg}-->
+</td></tr><tr><td>
+<!--{pin1prompt}-->
+</td><td>
+<!--{pin1}-->
+</td></tr><tr><td>
+<!--{pin2prompt}-->
+</td><td>
+<!--{pin2}-->
+</td></tr>
+<!--{else}-->
+<tr><td></td><td><span class="helpNote">
+<!--{pininstructions}-->
+</span></td></tr><tr><td>
+<!--{pinprompt}-->
+</td><td>
+<!--{pin}-->
+</td></tr>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+</table>
+
+<!--{ifcampus}-->
+<!--{campus}-->
+<!--{else}-->
+<!--{holdshelfmenu}-->
+<!--{xif}-->
+<br /><br />
+<!--{ifreqinst}-->
+<!--{reqinst}-->
+<br />
+<!--{inst}-->
+<br />
+<!--{xif}-->
+<!--{ifneedNNA}-->
+<!--{needbyprompt}-->
+<!--{needby}-->
+<br /><br />
+<!--{xif}-->
+
+<div align="center">
+<!--{requestall}-->
+<!--{requestselected}-->
+<!--{reset}-->
+</div>
+<div align="left">
+<!--{listtable}-->
+</div>
+</form>
+<!--{xif}-->
+
+<div align="left">
+<!--{bookcart}-->
+</div>
+</td></tr></table>
+</div>
+<!--{botlogo}-->
+</body>
+</html>
