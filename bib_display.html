@@ -1,79 +1,111 @@
-<!-- SWAN bib_display.html updated 080612 lee -->
-
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<br />
-<!--{ifbibdisplay}-->
-<!--{xif}-->
-<div class="navigationRow" style="text-align: center;">
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-<br />
-<br />
-</div>
-<div class="bibSearchtool" style="text-align: center;">
-<!--{searchtool}-->
-<!--{relsearch}-->
-</div>
-<!--{reslink}-->
-<br />
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-<br />
-<br />
-</div>
-<!--{recordinfo:atpe}-->
-<!--{ifhaspatrate}-->
-<div class="rateLableWrapper">
-<!--{ratings}-->
-</div>
-<!--{xif}-->
-<!--{bibimage}-->
-<div class="bibHolds">
-<!--{holds}-->
-</div>
-<!--{linkeddocs}-->
-<!--{URLS}-->
-<!--{holdingslink}-->
-<!--{bloblinks}-->
-<!--{imagelinks}-->
-<!--{artthumb}-->
-<!--{booking}-->
-<!--{holdings}-->
-<div style="margin:5px;">
-<!--{items}-->
-<br />
-<br />
-</div>
-<!--{orders}-->
-<div>
-<!--{recordlink}-->
-</div> 
-<!-- III sample token setting:recordinfo:ercsndjbuwi -->
-<!--{recordinfo:crnfvwsdmibuxzolqyj}-->
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!--{patronreviews}-->
-<!--{patronreviewsfull}-->
-<!--{xmlframe}-->
-<!--{catedit}-->
-<br />
-<br />
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-<br />
-<br />
-</div>
-<div class="navigationRow" style="text-align: center;">
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-</div>
-<!--{botlogo}-->
+<!--{toplogo}-->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
+</div>
+
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pR}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+<!--{holdings}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
+<div class="bibDisplayItemsMain">
+<!--{items}-->
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+</div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+<!--{botlogo}-->
