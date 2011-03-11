@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Millenium Web Catalog - Limit/Sort Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Limit/Sort Search</h1>
+
+<p>
+You searched for the
+<!--{searchtypeindex}-->
+
+<!--{searchterm}-->
+-
+<!--{entriesfoundnum}-->
+ entries found.
+</p>
+
+<!--{iferr}-->
+<div><span class="errormessage">
+<!--{errmsg}-->
+</span></div>
+<!--{xif}-->
+
+<div class="form1Part" id="accessibleForm">
+<!--{formbegin}-->
+
+<fieldset>
+<legend>Please select criteria to limit by:</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="W">Location:</label>
+</span>
+<!--{WHERE_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="M">Material type:</label>
+</span>
+<!--{MATERIAL_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="L">Language:</label>
+</span>
+<!--{LANGUAGE_select}-->
+</div>
+
+<div class="formEntryArea">
+<fieldset class="formFieldsetInner">
+<legend>Year of publication:</legend>
+<div class="formEntryArea">
+<!--<span class="formLabel">
+<label for="Ya">Year of publication:</label>
+</span> -->
+<!--{YEAR_select}-->
+</div>
+</fieldset>
+</div>
+
+<div class="formEntryArea">
+<label for="NAME" class="accessibleAddInfo">Limit type:</label>
+<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
+<!--{TITLE_label}-->
+<!--{TITLE_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort By:</label>
+</span>
+<!--{sort}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+
+</fieldset>
+<!--{formend}-->
+</div> <!-- form1Part -->
+
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>

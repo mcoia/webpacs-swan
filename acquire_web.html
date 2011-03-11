@@ -1,0 +1,151 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+<!--{patron}-->
+<h1 class="pageHeader">Suggest a Title for Purchase</h1>
+<!--{ifpinerrormessage}-->
+<div>
+<span class="errormessage">
+<!--{pinerrormessage}-->
+</span>
+</div>
+<!--{xif}-->
+
+<div id="accessibleForm" class="form1Part">
+<form method="POST">
+
+<!--{ifneedpatronverify}-->
+
+<fieldset class="formLogin">
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<label for="name">
+<!--{nameprompt}-->
+</label>
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
+<!--{xif}-->
+
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{ifpinerrormessageisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+Additional items library should acquire:
+</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{authorprompt}-->
+</span>
+<!--{author}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{titleprompt}-->
+</span>
+<!--{title}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{publishprompt}-->
+</span>
+<!--{publish}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{mentionprompt}-->
+</span>
+<!--{mention}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{otherprompt}-->
+</span>
+<!--{other}-->
+</div>
+
+</fieldset>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+
+</form>
+</div>
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
