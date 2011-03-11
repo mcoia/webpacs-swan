@@ -1,108 +1,76 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-
-
-<HTML>
-<HEAD>
-	<TITLE>View Entire Collection - Subjects (Library of Congress) Search</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://swan.missouri.edu/screens/swan_styles.css">
-
-
-<meta http-equiv="Refresh" CONTENT="300;URL=http://swan.missouri.edu/search----->">
-
-
-
-
-</HEAD>
-
-<BODY bgcolor="#DBE4C5" text="#000000" link="#003399" vlink="#003399" alink="#003399"
-	onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-
-
-
-
-
-
-
-
-
-	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="99%" height="85" valign="top" nowrap></td>
-    <td rowspan="3" valign="top" nowrap><a href="/"><IMG SRC="/screens/swans_navbar.jpg" HEIGHT="81" WIDTH="203" ALT="" BORDER="0" ></a></td>
-  </tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="99%" nowrap bgcolor="#000000" height="2"></td>
-  </tr>
-</table>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td valign="top" width="99%" height="19"  nowrap>
-      <p><font color="#000000" size="-1" face="Verdana"><b> &nbsp;
-	  <a href="http://mobius.umsystem.edu/search" style="text-decoration:none">MOBIUS</a> > 
-      <a href="/" style="text-decoration:none">SWAN</a> | 
-	  <a href="/screens/faq.html" style="text-decoration:none">FAQ</a> |</b></font></td></div></p></td>
-    <td><img src="spacer.gif" width="1" height="19" border="0" alt=""></td>
-  </tr>
-</table>
-
-
-
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://swan.missouri.edu/screens/swan_styles.css">
-
-<!--{patron}-->
-<!--{logout}-->
-
-<p><center>
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-Type the <B>SUBJECT</B> you want, then press <b>&lt;Enter&gt;</b>
-or click <b>Submit Search</b>
-<FORM METHOD=GET action="/search/d">
-<center><INPUT TYPE=TEXT NAME=SEARCH MAXLENGTH=64 SIZE=48 ALIGN=CENTER>
-<br>
-<INPUT TYPE=SUBMIT VALUE="Submit Search"></center>
-</FORM>
-
-<center><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0
-ALT="[START OVER]"></A></center>
-<P>
-
-<UL>
-<TABLE>
-<TR><TD><LI>Sports medicine</TD></TR>
-<TR><TD><LI>Sports</TD></TR>
-<TR><TD><LI>Civil War</TD></TR>
-</TABLE>
-</UL>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-
-</center></p>
-
-<br>  
-<CENTER>
-    <TABLE>
-      <tr>
-        <td colspan="2">
-          <Font face="Verdana" SIZE="+1"><a href="/" style=" TEXT-DECORATION: none">Change To Another Library Catalog</a></h4>
-        </td>
-      </tr>
-    </table>
-  </CENTER>
-
-
-
-
-</BODY>
-</HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Millennium Web Catalog - Subject Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Subject Search</h1>
+
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the subject you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--{search}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--formLeft -->
+
+<div class="formRight">
+<p>Type as much or as little of the subject as you want. For example:</p>
+<ul>
+<li>children's rights</li>
+<li>motion pictures</li>
+<li>United States History Civil War, 1861-1865</li>
+</ul>
+</div><!--formRight -->
+
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
