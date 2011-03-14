@@ -44,7 +44,43 @@
 <!--{booking}-->
 <!--{holdings}-->
 <div style="margin:5px;">
-<!--{items}-->
+<!--{items}-->
+ 
+ <!-- this is the button set we'll hide it if the BIB has no items -->
+ <div id=smsfeatures>
+
+    <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton_dark.gif" border=0></a>
+    </div>
+
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+    </div>
+
+
+
+    <!-- just a placeholder for the sms form -->
+    <div id='sms' style="visibility:hidden;display:none">
+    </div>
+
+
 <br />
 <br />
 </div>
@@ -53,11 +89,7 @@
 <!--{recordlink}-->
 </div> 
 <!-- III sample token setting:recordinfo:ercsndjbuwi -->
-<<<<<<< HEAD
 <!--{recordinfo:crnfvwsdmibuxzolyjq}-->
-=======
-<!--{recordinfo:crnfvwsdmibuxzolqyj}-->
->>>>>>> b4e6791ea273dedfa2f53f69722b63f2f96a9e15
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
