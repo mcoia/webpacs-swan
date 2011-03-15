@@ -36,9 +36,9 @@ b|r|310|-6|Frequency||b|
 b|r|321|-6|Former Frequency||b|
 b|r|350|-6|||b|
 b|r|362|-6|Publication History||b|
-b|r|336|-6|Content Type||b|
-b|r|337|-6|Media Type||b|
-b|r|338|-6|Carrier Type||b|
+b|r|336|-26|Content Type||b|
+b|r|337|-26|Media Type||b|
+b|r|338|-26|Carrier Type||b|
 b|r||-6|Descript.||b|
 b|s|440.0|-6|Series||b|
 b|s|490.1|-6|Added Title||b|
