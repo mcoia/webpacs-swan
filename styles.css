@@ -637,6 +637,14 @@ div .bibResourceSidebar { display:none; }
 
 .illform fieldset label { float:none; }
 
+.indexList a {text-decoration:none; font-size:1.1em;}
+
+.indexList dt, .indexList li {margin-top:1em;}
+
+.indexList li {list-style-type:none;}
+
+.inlineBlock {display:inline-block; zoom: 1; *display: inline;}
+
 .itemSelect { width:50em; }
 
 .itemSelect br, .volumeSelect br { line-height:1px; }
