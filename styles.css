@@ -637,6 +637,8 @@ div .bibResourceSidebar { display:none; }
 
 .illform fieldset label { float:none; }
 
+.inlineBlock {display:inline-block; zoom: 1; *display: inline;}
+
 .itemSelect { width:50em; }
 
 .itemSelect br, .volumeSelect br { line-height:1px; }
