@@ -408,7 +408,7 @@ ICON_PAT_DELETE_ALL=<img src="/screens/b_removeall.gif" alt="Delete All" border=
 #ICON_PAY_CLEAR_ALL 	Ecommerce Options
 #ICON_PAY_SELECT_ALL 	Ecommerce Options
 ICON_PAGING_NEXT=<IMG SRC="/screens/b_nextpage.gif" ALT="Next Page" BORDER="0"/>
-ICON_PAGING_PREV=<<IMG SRC="/screens/b_prevpage.gif" ALT="Previous Page" BORDER="0"/>
+ICON_PAGING_PREV=<IMG SRC="/screens/b_prevpage.gif" ALT="Previous Page" BORDER="0"/>
 ICON_PREVPAGE=<img src="/screens/b_prevpage.gif" ALT="Previous Page" BORDER="0"/>
 #ICON_PRINT 	Ecommerce Options
 ICON_READING_HISTORY=<img src="/screens/b_read_history.gif" alt="Reading History" border="0"/>
