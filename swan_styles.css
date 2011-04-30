@@ -255,3 +255,8 @@ wblinkdisplay { }
 wblinkfield { }
 wblinktext { }
 wbresourcelist { }*/
+.checkinInfoLabel, .checkinInfoData, .checkinInfoHoldingsLabel, .checkinInfoHoldingsData {height:auto; margin-bottom:.5em;}
+ {height:auto;}
+ 
+ .checkinInfoCurrentReceipts {display:none;}
+
