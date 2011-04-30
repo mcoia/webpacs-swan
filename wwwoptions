@@ -234,9 +234,6 @@ BROWSE_t=245/ab/0|240/abc/0|970/t/0|ab/0
 
 DISPLAY_245=atdX
 EXTENDED=AL
-EXTENDED_a=AL
-EXTENDED_t=AL
-EXTENDED_c=3
 #HEADING_LENGTH=
 IMAGE_MATTYPE2=/screens/media_ebook.png
 IMAGE_MATTYPE-=/screens/media_book.png
