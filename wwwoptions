@@ -122,7 +122,6 @@ ICON_BUT_LIMIT=<span class="button"><img src="/screens/ico_gear.gif" alt=""><spa
 ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.gif" alt=""><span class="buttonText">Show All</span></span>
 DISPLAY_245=atd
 EXTENDED=AL
-EXTENDED_c=3
 HEADING_LENGTH=100
 ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
