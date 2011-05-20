@@ -475,9 +475,13 @@ h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
 .checkinCard { margin-left:21%; text-align:left; }
 
-.checkinInfoLabel { clear:both; font-weight:bold; width:19%; text-align:right; }
+.checkinInfoLabel { clear:both; font-weight:bold; width:19%; text-align:right; height:auto;}
 
 .checkinInfoData { height:auto; }
+
+.checkinInfoHoldingsData { height: auto; }
+
+.checkinInfoHoldingsLabel { height:auto; width: 19%; font-weight:bold; text-align:right; }
 
 .ecommerceFormDone { background:#ffffff; margin-left:auto; margin-right:auto; padding:0px; text-align:left; width:97%; padding-bottom:12em; }
 
