@@ -157,15 +157,15 @@ PREFTEXT=SAVE YOUR SEARCH?
 READING_HISTORY_DELETE=T
 
 #   PATRON FEEDS OPTIONS
-#PATFEED_CONFIG=Library News|Click links for details
-#PATFEED_FINES_INCURRED_RECENTLY=You have new fines or fees
+PATFEED_CONFIG=Library News|Click links for details
+PATFEED_FINES_INCURRED_RECENTLY=You have new fines or fees
 #PATFEED_IMAGE
-#PATFEED_HOLDS_READY=Your materials are ready to be picked up
-#PATFEED_ITEMS_DUE_SOON=You have items that are due soon
-#PATFEED_ITEMS_OVERDUE=You have items that are overdue
-#PATFEED_ITEMS_BOOKED_TOMORROW=You have materials booked for tomorrow
-#PATFEED_ITEMS_RECALLED=You have materials that are recalled
-#PATFEED_LIVE_BOOKMARKS=Y
+PATFEED_HOLDS_READY=Your materials are ready to be picked up
+PATFEED_ITEMS_DUE_SOON=You have items that are due soon
+PATFEED_ITEMS_OVERDUE=You have items that are overdue
+PATFEED_ITEMS_BOOKED_TOMORROW=You have materials booked for tomorrow
+PATFEED_ITEMS_RECALLED=You have materials that are recalled
+PATFEED_LIVE_BOOKMARKS=Y
 
 #   PATRON RECORD OPTIONS
 FRAMEURL_PAT=50
@@ -390,17 +390,7 @@ ICON_LOCATEINRESULTS=<INPUT TYPE="image" NAME="jumpto" SRC="/screens/b_locateinr
 #ICON_PAGING_CAPTION 	Search Results Options 
 ICON_PAT_DELETE_ALL=<img src="/screens/b_removeall.gif" alt="Delete All" border="0"/>
 #ICON_PAT_DELETE_MARKED=<img src="/screens/b_remove_select.gif" alt="Delete Selected" border="0"/>
-#ICON_PATFEED=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED1=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED2=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED3=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED4=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-##ICON_PATFEED5=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED6=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED7=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED8=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED9=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
-#ICON_PATFEED10=<img src="/screens/my_feeds.gif" alt="My Record Feeds" border="0" />
+ICON_PATFEED=<img src="/screens/rss.png" alt="Subscribe to an RSS feed" border="0"/>
 #ICON_PAY 	Ecommerce Options
 #ICON_PAY_CLEAR_ALL 	Ecommerce Options
 #ICON_PAY_SELECT_ALL 	Ecommerce Options
