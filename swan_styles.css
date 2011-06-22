@@ -259,4 +259,10 @@ wbresourcelist { }*/
  {height:auto;}
  
  .checkinInfoCurrentReceipts {display:none;}
+ 
+ /* MobileCat */
+ 
+ .mobileinfo {
+    display:none;
+ }
 
