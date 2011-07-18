@@ -707,8 +707,6 @@ div .bibResourceSidebar { display:none; }
 
 .navigationRow a:link,.navigationRow a:visited, .miscButtons a:link, .miscButtons a:visited { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
-.navigationRow a:active,.navigationRow a:hover, .miscButtons a:active,.miscButtonsw a:hover { text-decoration:underline; }
-
 .navigationRow { margin:0; }
 
 .navigationRow, .navigationRowRecord { clear:both; text-align:center; }
