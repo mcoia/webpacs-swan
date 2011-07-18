@@ -59,6 +59,8 @@ body > * { text-align:left;}
 
 caption { border-bottom:1px solid #D3D3D3; font-weight:bold; text-align:center; }
 
+center a {text-decoration:none;}
+
 div center table { border-color:#D3D3D3; margin-top:10px; margin-bottom:10px; }
 
 div.pageContent > a:link, div.pageContent > a:visited, div.pageContent > a:active, div.pageContent > a:hover { margin:10px; }
