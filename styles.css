@@ -445,6 +445,8 @@ h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
 .buttonText { font-size:.8824em; font-weight:bold; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; }
 
+span.buttonText:hover {text-decoration:underline;}
+
 .buttonTopLinks { white-space:nowrap; }
 
 .buttonTopLinks img { border:0; margin-right:3px; }
