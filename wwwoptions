@@ -179,8 +179,8 @@ HOLDINGS_POS=atpR
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 #ICON_NEARBY=<img src="/screens/bullet.gif" alt="Nearby on shelf" border="0">
 ICON_BIB_PAGING_CAPTION= 
-ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.png" alt=""></span>
-ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.png" alt=""><span class="buttonText">Previous Record</span></span>
+ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
 ICON_RECORDLINK=<a href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Permanent Link</span></span></a>
 LINK856TEXT=Connect to
 MARC=yes
@@ -443,8 +443,8 @@ PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up
 
 # Z39.50
 ICON_BUT_EMAIL=Email
-ICON_BUT_NEXTREC=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.png" alt=""></span>
-ICON_BUT_PREVREC=<span class="button"><img src="/screens/ico_previous.png" alt=""><span class="buttonText">Previous Record</span></span>
+ICON_BUT_NEXTREC=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
+ICON_BUT_PREVREC=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
 ICON_BUT_Z39_ANOTHER=Another Database
 ICON_BUT_Z39_REQUEST=<span class="button"><img src="/screens/ico_checkbox.png" alt=""><span class="buttonText">Request</span></span>
 ICON_BUT_Z39SEARCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search Other Libraries</span></span>
