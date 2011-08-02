@@ -437,7 +437,7 @@ h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
 .button { white-space:nowrap;  }
 
-.button img { border:0; margin:7px 0 3px; vertical-align:text-bottom; }
+.button img { border:0; margin:7px 3px 0; vertical-align:text-bottom; }
 
 .button2 { font-size:.8824em; white-space:nowrap; }
 
