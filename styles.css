@@ -252,8 +252,6 @@ table.bibResourceTable { border:0; }
 
 .bibSearchToolMessage { margin-bottom:5px; }
 
-.bibSearchHistory, .resourceHistory { position:absolute; right:24px; top:36px; }
-
 .bibSearchHistory { font-size:0.83333em; }
 
 .bibSearchHistory select, .resourceHistory select  { width:200px; }
@@ -716,8 +714,6 @@ div .bibResourceSidebar { display:none; }
 .navigationRow > form, .navigationRowNoForm { margin-top:5px; margin-bottom:0; } 
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
-
-.navigationRow select, .navigationrow option { position:absolute; right:24px; top:48px; }
 
 .navigationRow select { font-size:.83333em; width:200px; }
 
