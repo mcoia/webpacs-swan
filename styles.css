@@ -216,7 +216,7 @@ table.bibItems { clear:both; }
 
 .bibRecordLink { padding:8px 0 8px 6px; }
 
-.bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; }
+.bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; padding-bottom:10px; }
 
 .bibResourceSidebar .button { margin:1% 3%; }
 
