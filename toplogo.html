@@ -1,6 +1,10 @@
 <!-- begin toplogo.html file -->
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 06 Oct 2010 -->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 if (document.body){document.body.className = "bodybg";}
 </script>
@@ -11,14 +15,6 @@ if (document.body){document.body.className = "bodybg";}
 <div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
 <div class="topLogo">
 
-<div class="topLinks">
-<ul id="topLinksList">
-<li><a href="/patroninfo" tabindex="120">Login</a></li>
-<li><a href="/help" tabindex="115">Help</a></li>
-<li><a href="#" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.png" alt=""><span class="buttonTopLinksText">Print</span></span></a></li>
-<li><a href="/search/" tabindex="105">New Search</a></li>
-</ul>
-</div>
 
 <div class="topLogoSmall">
 <a href="/" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="Catalog Home Page"></a>
@@ -99,37 +95,52 @@ if (document.all&&document.getElementById) {
 </div><!--myLibrary-->
 <div class="topNavClear"></div>
 
-<div class="searchNav">
-<script language="JavaScript"> 
-<!--
-function GotoURL() { 
-//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
-window.location.assign(document.getElementById("specializedSearch").value);
-return false;
-} 
-// -->
-</script>
-<div id="searchNavMenu">
-<select name="specializedSearch" id="specializedSearch">
-<option selected="selected" value=" ">(More Searches)</option>
-<option value="/search/X">Advanced Keyword</option>
-<option value="/search/t">Title</option>
-<option value="/search/s">Journal Title</option>
-<option value="/search/a">Author</option>
-<option value="/search/d">Subject</option>
-<option value="/search/y">Resource Name</option>
-<option value="/search/c">Call Number</option>
-<option value="/search/i">ISBN</option>
-<option value="/search/g">Government Document #</option>
-<option value="/search/q">Author and Title</option>
-<!--<option value="/search/p">Instructor</option>
-<option value="/search/r">Course</option> -->
-</select>
-<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
+<div class="linkBanner">
+
+<div class="navRight">
+<ul>
+<li><a href="http://mobius.umsystem.edu/">MOBIUS</a></li>
+<li><a href="/">Cluster</a></li>
+<li><a href="/patroninfo" tabindex="120">My Library Account</a></li>
+<li><a href="/search/k" tabindex="115">Help</a></li>
+</ul>	
+
 </div>
+
+<div class="clear"></div>
 
 </div><!--searchNav-->
 <div class="clear"></div>
-<div class="pageContent"><!-- content container -->
+
+
+<div class="clear"></div>
+
+
+<div class="pageNavColumn"><!-- nav menu column-->
+
+<h1 class="navHeader">Search Options</h1>
+
+<ul id="rightCol">
+<li><a href="/search/X">Advanced Search</a></li>
+<li><a href="/search/a">Author</a></li>
+<li><a href="/search/t">Title</a></li>
+<li><a href="/search/s">Journals, Magazines, Newspapers</a></li>
+<li><a href="#">Numbers</a>
+			<ul>
+				<li><a href="/search/c">Library of Congress (LC) Call Number</a></li>
+				<li><a href="/search/e">Dewey Call Number</a></li>
+                                <li><a href="/search/f">Other Call Number</a></li>
+                                <li><a href="/search/g">Government Document Call Number</a></li>
+                                <li><a href="/search/i">ISBN, ISSN, Music, Etc., Number</a></li>
+                                <li><a href="/search/o">OCLC Number</a></li>
+			</ul>
+</li>
+<li><a href="/search/d">Subject (LC)</a></li>
+<li><a href="/search/m">Children's Subject</a></li>
+<li><a href="/search/q">Author and Title</a></li>
+</ul>
+        
+</div>
+<div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
 <!--end toplogo.html-->
