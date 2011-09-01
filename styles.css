@@ -715,7 +715,7 @@ div .bibResourceSidebar { display:none; }
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
 
-.navigationRow select { font-size:.83333em; width:200px; }
+.navigationRow select { font-size:.83333em; width:200px; margin-top: 15px; }
 
 .pageContent { clear:both; }
 
