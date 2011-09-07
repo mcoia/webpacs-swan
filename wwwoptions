@@ -330,7 +330,9 @@ BUT_PAT_FINES=/screens/b_pat_fines.gif
 BUT_PAT_GETPSAVEDRECS=/screens/b_pref_srch.gif
 BUT_PAT_HOLDS=/screens/b_pat_holds.gif
 BUT_PAT_ILL=/screens/b_pat_ill.gif
-BUT_PAT_INFO=/screens/b_patinfo.gif
+ICON_BUT_PAT_INFO=<img border="0" alt="Modify Email" src="/screens/b_patinfo.gif" id="modifyEmail" />
+
+ICON_BUT_PAT_INFO9=<span></span>
 BUT_PAT_MSGS=/screens/b_pat_msgs.gif
 BUT_PAT_PIN=/screens/b_modifypin.gif
 BUT_PAT_PSEARCH_REMOVE=/screens/b_removeall.gif
