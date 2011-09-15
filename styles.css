@@ -38,6 +38,8 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
+a img {border:none;}
+
 body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
 body.bodybg { background:url(background.gif) 2% 0% repeat-x #4D4D4D; color: #444444; }
