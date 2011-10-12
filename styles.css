@@ -689,7 +689,7 @@ div .bibResourceSidebar { display:none; }
 
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
 
-.mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto;  }
+.mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; max-width:100%; } /*Fixed the search box so it wouldn't run into the Search Options column on narrow browsers */
 
 .minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
