@@ -220,7 +220,7 @@ RSRV_FORMAT=F
 #BRIEF_EXPORT=
 #BRIEF_EXPORT_CHKIN=
 EMAILOP=From the SWAN Library Catalog|exporter|
-EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:marc,full
+EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:marc,full,endnote
 #XRECTYPE=
 
 #   SEARCH RESULTS OPTIONS
