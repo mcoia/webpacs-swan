@@ -167,7 +167,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; }
 
-.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:59%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:76%; margin-left:1.5em; display:inline; }
 
 .bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:0; font-size:.8824em; }
 
