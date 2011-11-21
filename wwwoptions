@@ -461,8 +461,7 @@ FEATURED_LIST=16,17,18,19,23,25,42,43,44,41,08,281,26,290,241,285,286,246,461,54
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-#BIBIMAGE=http://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
-#BIBIMAGE=https://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=minsostu|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=minsostu
 BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif

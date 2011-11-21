@@ -1105,3 +1105,28 @@ tr.highlight { background:#FFFFE4; }
 .wblinkdisplay form { margin-bottom:8px; }
 
 .wbnoresources { display:block; margin: 3px 0; }
+
+/* Syndetics Plus */
+
+.syn_title {
+    color: #767C70;
+    font-weight: bold;
+    width: 13.5%;
+    text-align:right;
+    clear:both;
+    margin-right:.8em;
+}
+
+.syn_body {
+    width:70%;
+}
+
+.syn_title, .syn_body {
+    font-size: .9em;
+    float: left;
+    margin-top:.5em;
+}
+
+.syn_body p {
+    margin:0;
+}
