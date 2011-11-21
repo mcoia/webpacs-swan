@@ -19,7 +19,9 @@ AVS_TAG=XYZ
 ASSEARCH=1
 
 # CONTENT LINKING AND OTHER RESOURCES OPTIONS
-#EBADDRESS=http://search.britannica.com/bcom/search/results/1,5843,,00.html?p_query0=%s
+#EBADDRESS=http://search.britannica.com/bcom/search/results/1,5843,,00.html?p_query0=%s
+
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=minsostu|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=minsostu
 
 # EBOOKS OPTONS
 
