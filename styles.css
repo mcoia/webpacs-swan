@@ -712,6 +712,10 @@ div .bibResourceSidebar { display:none; }
 
 .minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; }
+
+.clusterLogo {top:8px;}
+
 .msg td { padding-top:3px; }
 
 .mylistsSavePage { height:100%; width:100%; padding-bottom:0; padding-top:0; }
@@ -989,7 +993,15 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLinks a { float:right; }
 
-.topLogo { }
+.topLogo { position:relative; }
+
+.topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
+
+.topLogoImage {float:left;}
+
+.topLogoImage, .mobiusLogo {width:250px;}
+
+.topLogoImage img, .mobiusLogo img, .scopeLogo { margin:20px 10px;}
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
@@ -1000,6 +1012,10 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #topLinksList li { list-style:none; padding:0; display:inline; }
 
 #topLinksList  { float:right; margin:0px; padding:0px; font-size:.9em; display:inline; }
+
+.topMyLibrary {
+    width:250px;
+}
 
 #topMyLibraryList { display:inline; line-height:2.4em; margin:0px 10px 0px 0px; padding:0px; }
 
