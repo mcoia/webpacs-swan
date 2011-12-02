@@ -999,9 +999,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogoImage {float:left;}
 
-.topLogoImage, .mobiusLogo {width:250px;}
-
-.topLogoImage img, .mobiusLogo img, .scopeLogo { margin:20px 10px;}
+.topLogoImage, .mobiusLogo  {width:250px; padding:20px 10px;}
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
