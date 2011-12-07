@@ -42,7 +42,7 @@ SSLPORT=80:443:swan.searchmobius.org:swan.searchmobius.org|2082:444:swan.searchm
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/swan_styles.css
-TIMEOUT=1200;URL=http://swan.missouri.edu
+TIMEOUT=1200;URL=/
 TOPLOGO=@screens/toplogo.html
 TOPLOGO1=@screens/toplogo_s1.html
 TOPLOGO2=@screens/toplogo_s2.html
@@ -78,7 +78,7 @@ SORT_ITEMS=T
 SUPPRESS_HOLDDISP=T
 
 #   INN-REACH OPTIONS
-INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;s=s;t=t)
+INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;s=s;t=t)
 # LANGUAGE HANDLING OPTIONS
 
 #   MEDIA MANAGEMENT OPTIONS

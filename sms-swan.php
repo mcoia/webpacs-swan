@@ -31,7 +31,7 @@ $item 			= "\nLoc: ".$location."\nCall: ".$callNumber;
 //echo "document.write('Debug: ".$location." ".$callNumber."');";
 
 //Change this url to your own catalog
-$url = "http://swan.mobius.umsystem.edu:2082/record=".$bib;
+$url = "http://swan.searchmobius.org/record=".$bib;
 
 //Use the bib number to get the title information for the item from the catalog
 $catalogItemPage = get_url_contents($url);
@@ -46,7 +46,7 @@ if(!strstr($catalogItemPage, $callNumber) || !strstr($catalogItemPage, $location
 }
 
 //defined variables. Set the from address and subject as desired
-$fromAddress 	= 'NoReply@swan.umsystem.edu';
+$fromAddress 	= 'NoReply@swan.searchmobius.org';
 
 $providers = array(	'cingular' 	=> '@mobile.mycingular.com',
              		'tmobile' 	=> '@tmomail.net',
