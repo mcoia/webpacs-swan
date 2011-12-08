@@ -166,6 +166,11 @@ function getJSON(jsonURI)
 				catch(jsonempty){bookData.push("")};
 			try{bookData.push(json.items[0].id)}
 				catch(jsonempty){bookData.push("")};
+			try{bookData.push(json.industryIdentifiers[0].identifier)[0]}
+				catch(jsonempty){bookData.push("")};
+			try{bookData.push(json.industryIdentifiers[0].identifier[1])}
+				catch(jsonempty){bookData.push("")};
+				
 				
 			
 			parsetohtml(bookData,1);
@@ -186,7 +191,22 @@ function getJSON(jsonURI)
 
 function parsetohtml(bookData,isbnExists)
 {
-	if(isbnExists==1)
+	//test google ISBNs against catalog ISBNs to make sure Google didn't serve the wrong
+	//title
+	var googleISBN10 = bookData[11];
+	var googleISBN13 = bookData[12];
+	var catalogISBN10 = getISBN(10);
+	var catalogISBN13 = getISBN(13);
+	var correctISBN = true;
+	
+	if((googleISBN10 != catalogISBN10) || (googleISBN13 != catalogISBN13))
+	{
+		correctISBN = false;
+	}
+	
+	//parse Google Books data IF the catalog has an ISBN for the record AND
+	//the catalog ISBN(s) matches the Google ISBN(s)
+	if((isbnExists==1) && (correctISBN==true))
 	{
 		var Title = bookData[0];
 		if(Title == undefined)
@@ -213,9 +233,10 @@ function parsetohtml(bookData,isbnExists)
 		if(Description == undefined || Description == "")
 			{Description="none"}
 		var ID = bookData[10];
+		
 		var amazonLink = "http://www.amazon.com/o/ASIN/"+getISBN(10);
 		
-		var ratingSpriteLocationY = parseInt(AverageRating) * 42;
+		var ratingSpriteLocationY = Number(AverageRating) * 42;
 		
 		var bookinfoHTML = 
 			'<div id="google-books">' +
