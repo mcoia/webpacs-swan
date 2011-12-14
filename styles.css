@@ -768,7 +768,7 @@ div .bibResourceSidebar { display:none; }
 
 .patHelp { border-top:1px dotted #D3D3D3; margin-top:10px; }
 
-.patFloat { background:#FFFFFF url('tile_pat3.jpg') repeat-x top left; height:700px; }
+.patFloat { background:#FFFFFF url('tile_pat3.jpg') repeat-x top left; }
 
 .patFloat .button img { margin-top:3px; }
 
