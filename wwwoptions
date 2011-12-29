@@ -77,7 +77,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
-ICON_BUT_NEWSRCH=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
+ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Xatdc
 FRAMEURL=0
@@ -285,7 +285,7 @@ ICON_BUT_PAT_SORTBYCHKOUT=<div onmousedown="this.className='pressedState';" onmo
 ICON_BUT_PAT_SORTBYDUE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Due Date</span></span></div></div>
 ICON_BUT_PAT_SUBMIT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div>
 ICON_BUT_PSTARTOVER=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
-ICON_BUT_RET2PREC=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Return to My Account</span></span>
+ICON_BUT_RET2PREC=Return to My Account
 ICON_BUT_UPDATE_HOLDS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
 CHANGE_HOLD_LOC=true
 #FREEZE_HOLDS=true
@@ -317,7 +317,7 @@ TABLEPARAM_PATFUNC=border="0"|border="0"|border="0"
 #TIMEOUT_POPUP=600
 
 # My Millennium
-ICON_BUT_LOGOUT=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Log Out</span></span>
+ICON_BUT_LOGOUT=Log Out
 ICON_BUT_PAT_PSEARCH_REMOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete All Searches</span></span></div></div>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif" class="button
 ICON_BUT_PAT_PSEARCH_UPDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
@@ -338,7 +338,7 @@ PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhis
 PREF_SEARCHES=25|Y
 PREFTEXT=Save as preferred search
 READING_HISTORY=optin|true|
-TOPLOGO_LOGGEDIN=False
+TOPLOGO_LOGGEDIN=T
 
 # Patron Ratings
 ICON_PATRATE=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">My Ratings</span></span>
