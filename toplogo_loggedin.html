@@ -1,6 +1,21 @@
-<!-- begin toplogo_loggedin.html file -->
+<!-- begin toplogo.html file -->
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 06 Oct 2010 -->
+<script type="text/javascript" src="/screens/jquery-1.7.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	//$('#searchtype').change(function(){
+    	//$("#exampleText").load("screens/" + this.value + ".inc");
+	//}); //Changes the search examples
+	
+	//$('#b option:not([value^=""])').hide(); //Hides the out-of-scope locations
+	//$('#b option[value=""]').show(); //Shows the any location for the scopes
+});
+</script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
 <script type="text/javascript">
 if (document.body){document.body.className = "bodybg";}
 </script>
@@ -11,30 +26,19 @@ if (document.body){document.body.className = "bodybg";}
 <div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
 <div class="topLogo">
 
-<div class="topLinks">
-<ul id="topLinksList">
-<li>
-<!--{patronrecord}-->
-</li>
-<li><a href="/logout" tabindex="120">Log Out</a></li>
-<li><a href="/help" tabindex="115">Help</a></li>
-<li><a href="#" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">Print</span></span></a></li>
-<li><a href="/search/" tabindex="105">New Search</a></li>
-</ul>
+<div class="topLogoImage">
+<a href="/search/" tabindex="10"><img src="/screens/logo_sm.jpg" alt="Cluster Catalog"></a>
 </div>
 
-<div class="topLogoSmall">
-<a href="/" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="Catalog Home Page"></a>
+<div class="mobiusLogo">
+<a href="http://searchmobius.org"><img src="/screens/mobius.gif" alt="MOBIUS Catalog"></a>
 </div>
 
 </div><!--topLogo-->
 
+
 <div class="topMyLibrary">
 <div id="topMyLibraryHeader"><h1>My Library</h1></div>
-<!--<ul id="topMyLibraryList">
-<li><a href="/acquire">Suggest a purchase</a></li>
-<li><a href="/suggest">Leave Comments</a></li>
-</ul> -->
 
 <ul id="toplogoMoreNav">
 <!-- Toplogo alt links. -->
@@ -46,7 +50,9 @@ if (document.body){document.body.className = "bodybg";}
 	<li id="first">
 		<div><a href="/patroninfo">My Library</a></div>
 		<ul>
-            <li><a href="/patroninfo">My Account</a></li>
+            <li>
+<!--{patronrecord}-->
+	    </li>
             <!--<li><a href="/selfreg">Create an account</a></li> -->
             <li><a href="/libinfo">About the library</a></li>
             <li><a href="/acquire">Suggest a purchase</a></li>
@@ -65,6 +71,25 @@ if (document.body){document.body.className = "bodybg";}
 			<li><a href="/help#rpro">Research Pro</a></li>
 			<li><a href="/help#programs">Library Events and Community Programs</a></li>
 		</ul>
+	</li>
+	
+	<li>
+		<div>
+			
+<!--{startover}-->
+		</div>
+	</li>
+	<li>
+		<div>
+			
+<!--{patronrecord}-->
+		</div>
+	</li>
+	<li>
+		<div>
+			
+<!--{logout}-->
+		</div>
 	</li>
 <!--
 	<li id="last">
@@ -131,11 +156,11 @@ return false;
 <!--<option value="/search/p">Instructor</option>
 <option value="/search/r">Course</option> -->
 </select>
-<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
 </div>
 
 </div><!--searchNav-->
 <div class="clear"></div>
 <div class="pageContent"><!-- content container -->
 <a name="content" id="content"></a>
-<!--end toplogo_loggedin.html-->
+<!--end toplogo.html-->
