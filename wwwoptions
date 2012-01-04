@@ -208,7 +208,7 @@ WEBPUDEF=T
 
 #  REQUESTING OPTIONS
 #BIBREQUEST=
-REQUEST=|denyiflocalavail|ask|true
+REQUEST=Request|denyiflocalavail|ask|true
 #REQUEST_ARTICLE_IFCHKIN=
 #REQUEST_INSTRUCTION=Any Special Instructions? 
 #REQUEST_MULTI=
