@@ -491,6 +491,7 @@ PATFEED_LIVE_BOOKMARKS=T
 PATFEED_PROGRAM_SESSION_SOON=An event that you have registered for is coming up soon. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming up tomorrow. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today. Please log on to My Account for the event date, time and location.
+FEEDS_PORT=63200
 
 # Z39.50
 ICON_BUT_EMAIL=Email
