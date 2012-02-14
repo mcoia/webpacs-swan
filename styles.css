@@ -840,6 +840,16 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 #bibDisplayBody .rateData a:link, #bibDisplayBody .rateData a:visited { padding:0; }
 
+#alertMessage {
+    margin-left:1em;
+    font-size:1.2em;
+    color:#6c0000;
+}
+
+#alertMessage a {
+    font-weight:bold;
+}
+
 .relSearchLink img { }
 
 .relSearch { padding:0 10%; text-align:left; font-size:.83333em; }
