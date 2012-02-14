@@ -144,6 +144,16 @@ a:hover  { color: #7C14B8; }
 
 #accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; margin:0 0 6px 0; }
 
+#alertMessage {
+    margin-left:1em;
+    font-size:1.2em;
+    color:#6c0000;
+}
+
+#alertMessage a {
+    font-weight:bold;
+}
+
 .availLimMessage { font-style:normal; }
 
 .bibClear { clear:both; }
@@ -839,16 +849,6 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 .rateData { margin-left:15%; }
 
 #bibDisplayBody .rateData a:link, #bibDisplayBody .rateData a:visited { padding:0; }
-
-#alertMessage {
-    margin-left:1em;
-    font-size:1.2em;
-    color:#6c0000;
-}
-
-#alertMessage a {
-    font-weight:bold;
-}
 
 .relSearchLink img { }
 
