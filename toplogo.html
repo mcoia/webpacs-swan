@@ -6,7 +6,7 @@
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script type="text/javascript" src="/screens/domainredirect.js"></script>
 <script type="text/javascript" src="/screens/mobileredirect.js"></script>
-<!--<script src="/screens/menu-collapsed.js" type="text/javascript"></script>-->
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <!--<script type="text/javascript" src='/screens/sms.js'> </script> -->
 <script type="text/javascript">
 $(document).ready(function () {
@@ -68,6 +68,32 @@ if (document.body){document.body.className = "bodybg";}
 </div><!--linkBanner-->
 
 <div class="clear"></div>
-<div class="pageContent"><!-- content container -->
+
+<div class="pageNavColumn"><!-- nav menu column-->
+
+<h1 class="navHeader">Search Options</h1>
+
+<ul id="rightCol">
+<li><a href="/search/X">Advanced Search</a></li>
+<li><a href="/search/a">Author</a></li>
+<li><a href="/search/t">Title</a></li>
+<li><a href="/search/s">Journals, Magazines, Newspapers</a></li>
+<li><a href="#">Numbers</a>
+			<ul>
+				<li><a href="/search/c">Library of Congress (LC) Call Number</a></li>
+				<li><a href="/search/e">Dewey Call Number</a></li>
+                                <li><a href="/search/f">Other Call Number</a></li>
+                                <li><a href="/search/g">Government Document Call Number</a></li>
+                                <li><a href="/search/i">ISBN, ISSN, Music, Etc., Number</a></li>
+                                <li><a href="/search/o">OCLC Number</a></li>
+			</ul>
+</li>
+<li><a href="/search/d">Subject (LC)</a></li>
+<li><a href="/search/m">Children's Subject</a></li>
+<li><a href="/search/q">Author and Title</a></li>
+</ul>
+        
+</div>
+<div class="pageContentColumn"><!-- content container -->
 <a name="content" id="content"></a>
 <!--end toplogo.html-->
