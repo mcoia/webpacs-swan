@@ -16,7 +16,7 @@ $.extend({
   }
 });
 
-var mobileHost = 'https://m.galahad.searchmobius.org'; // No trailing slash
+var mobileHost = 'https://m.swan.searchmobius.org'; // No trailing slash
 var redirectUrl = mobileHost;
 var scope;
 var scopeMatch = /~S(\d+)/.exec(window.location.href);

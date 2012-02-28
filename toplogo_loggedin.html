@@ -43,13 +43,10 @@ if (document.body){document.body.className = "bodybg";}
 
 <div id="alertMessage"></div>
 
+
 </div><!--topLogo-->
 <div class="topMyLibrary">
 <div id="topMyLibraryHeader"><h1>My Library</h1></div>
-<!--<ul id="topMyLibraryList">
-<li><a href="/acquire">Suggest a purchase</a></li>
-<li><a href="/suggest">Leave Comments</a></li>
-</ul> -->
 
 <ul id="toplogoMoreNav">
 <!-- Toplogo alt links. -->
@@ -61,7 +58,9 @@ if (document.body){document.body.className = "bodybg";}
 	<li id="first">
 		<div><a href="/patroninfo">My Library</a></div>
 		<ul>
-            <li><a href="/patroninfo">My Account</a></li>
+            <li>
+<!--{patronrecord}-->
+	    </li>
             <!--<li><a href="/selfreg">Create an account</a></li> -->
             <li><a href="/libinfo">About the library</a></li>
             <li><a href="/acquire">Suggest a purchase</a></li>
@@ -80,6 +79,25 @@ if (document.body){document.body.className = "bodybg";}
 			<li><a href="/help#rpro">Research Pro</a></li>
 			<li><a href="/help#programs">Library Events and Community Programs</a></li>
 		</ul>
+	</li>
+	
+	<li>
+		<div>
+			
+<!--{startover}-->
+		</div>
+	</li>
+	<li>
+		<div>
+			
+<!--{patronrecord}-->
+		</div>
+	</li>
+	<li>
+		<div>
+			
+<!--{logout}-->
+		</div>
 	</li>
 <!--
 	<li id="last">
@@ -146,11 +164,11 @@ return false;
 <!--<option value="/search/p">Instructor</option>
 <option value="/search/r">Course</option> -->
 </select>
-<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
 </div>
 
 </div><!--searchNav-->
 <div class="clear"></div>
 <div class="pageContent"><!-- content container -->
 <a name="content" id="content"></a>
-<!--end toplogo_loggedin.html-->
+<!--end toplogo.html-->
