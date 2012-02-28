@@ -671,6 +671,29 @@ div .bibResourceSidebar { display:none; }
 
 .libinfoRight li {  }
 
+.linkBanner {
+    background:#3B77B6;
+    margin:0;
+    position:relative;
+    text-align:right;
+    padding:.5em 0;
+    clear:both;
+    float:right;
+    width:100%;
+}
+
+.linkBanner a {color: #ffffff; font-weight:bold; text-decoration:none;}
+
+.linkBanner .navLeft {float: left;}
+
+.linkBanner .navRight {float: right;}
+
+.linkBanner .navLeft ul li {margin-left: 0; margin-right:2em;}
+
+.linkBanner ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
+
+.linkBanner ul li {display: inline; margin-left:2em;}
+
 .loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; }
 
 .loggedInMoreInfo { display:none; position:absolute; top:-5000px; right:-5000px; }
@@ -941,9 +964,6 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #searcharg { }
 
 /*Relative position allows this bg color to show in older IE.*/
-.searchNav { background:#3B77B6; margin:0; position:relative; }
-
-#searchNavMenu { margin:0; text-align:right; }
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
@@ -1050,8 +1070,6 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #toplogoMoreNav li:hover ul, #toplogoMoreNav li.over ul { visibility:visible; display:block; }
 
 #topMyLibraryHeader { float:left; }
-
-div#searchNavMenu { clear:both; float:right; background:#3B77B6; width:100%; }
 
 /*Special treatment for IE6, using the JS-activated "li.over"*/
 #toplogoMoreNav li.over ul { margin:0; }
