@@ -45,130 +45,38 @@ if (document.body){document.body.className = "bodybg";}
 
 
 </div><!--topLogo-->
-<div class="topMyLibrary">
-<div id="topMyLibraryHeader"><h1>My Library</h1></div>
+<div class="linkBanner">
 
-<ul id="toplogoMoreNav">
-<!-- Toplogo alt links. -->
-<!--<li><a href="/acquire">Suggest a purchase</a></li>
-<li><a href="/suggest">Leave Comments</a></li>
--->
-
-<!-- Dropdown menus -->
-	<li id="first">
-		<div><a href="/patroninfo">My Library</a></div>
-		<ul>
-            <li>
-<!--{patronrecord}-->
-	    </li>
-            <!--<li><a href="/selfreg">Create an account</a></li> -->
-            <li><a href="/libinfo">About the library</a></li>
-            <li><a href="/acquire">Suggest a purchase</a></li>
-            <li><a href="/suggest">Comments</a></li>
-		</ul>
-	</li>
-
-	<li>
-		<div><a href="/help">Help Topics</a></div>
-		<ul>
-			<li><a href="/help#searching">Searching</a></li>
-			<li><a href="/help#searchtips">Advanced Keyword Search Tips</a></li>
-			<li><a href="/help#prefsearch">Saving your searches</a></li>
-			<li><a href="/help#renewals">Renewals</a></li>
-			<li><a href="/help#feepay">Fee Payment</a></li>
-			<li><a href="/help#rpro">Research Pro</a></li>
-			<li><a href="/help#programs">Library Events and Community Programs</a></li>
-		</ul>
-	</li>
-	
-	<li>
-		<div>
-			
+<div class="navLeft">
+<ul>
+<li><a href="/">
 <!--{startover}-->
-		</div>
-	</li>
-	<li>
-		<div>
-			
+</li>
+<li>
 <!--{patronrecord}-->
-		</div>
-	</li>
-	<li>
-		<div>
-			
+</li>
+<li>
 <!--{logout}-->
-		</div>
-	</li>
-<!--
-	<li id="last">
-		<div><a href="#">Features</a></div>
-		<ul>
-            <li><a href="<encore IP/iii/encore>">Search Encore</a></li>
-            <li><a href="/iii/calendar/month">Program Calendar</a></li>
-            <li><a href="/ftlist">Featured Lists</a></li>
-            <li><a href="/rpro">Research Pro</a></li>
-            <li><a href="/search/y">Find e-resources</a></li>
-            <li><a href="/illb">Interlibrary Loan</a></li>
-		</ul>
-	</li> -->
-<!-- End dropdown menus -->    
-    
+</li>
+<li><a href="/search~/k">Help</a></li>
 </ul>
+</div> <!-- navLeft -->
 
-<script type="text/javascript"><!--//--><![CDATA[//><!--
+<div class="navRight">
+<ul>
+<li><a href="/">SWAN</a> </li>
+<li><a href="http://searchmobius.org">MOBIUS</a></li>
+</ul>
+</div> <!-- navLeft -->
 
-//Enable optional dropdown menu for additional navigation options.
-if (document.all&&document.getElementById) {
-	navRoot = document.getElementById("toplogoMoreNav");
-	for (i=0; i<navRoot.childNodes.length; i++) {
-		node = navRoot.childNodes[i];
-		if (node.nodeName=="LI") {
-			node.onmouseover=function() {
-				this.className+=" over";
-			}
-			node.onmouseout=function() {
-				this.className=this.className.replace(" over", "");
-			}
-		}
-	}
-}
 
-//--><!]]></script>
+<div class="clear"></div>
 
-</div><!--myLibrary-->
-<div class="topNavClear"></div>
+</div><!--linkBanner-->
 
-<div class="searchNav">
-<script language="JavaScript"> 
-<!--
-function GotoURL() { 
-//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
-window.location.assign(document.getElementById("specializedSearch").value);
-return false;
-} 
-// -->
-</script>
-<div id="searchNavMenu">
-<select name="specializedSearch" id="specializedSearch">
-<option selected="selected" value=" ">(More Searches)</option>
-<option value="/search/X">Advanced Keyword</option>
-<option value="/search/t">Title</option>
-<option value="/search/s">Journal Title</option>
-<option value="/search/a">Author</option>
-<option value="/search/d">Subject</option>
-<option value="/search/y">Resource Name</option>
-<option value="/search/c">Call Number</option>
-<option value="/search/i">ISBN</option>
-<option value="/search/g">Government Document #</option>
-<option value="/search/q">Author and Title</option>
-<!--<option value="/search/p">Instructor</option>
-<option value="/search/r">Course</option> -->
-</select>
-<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
-</div>
-
-</div><!--searchNav-->
 <div class="clear"></div>
 <div class="pageContent"><!-- content container -->
 <a name="content" id="content"></a>
 <!--end toplogo.html-->
+
+
