@@ -14,11 +14,15 @@ table.browseScreen td { width:18%; }
 
 .pageContent .bibDisplayPermLink, .resourceHistory, .recordPager { display:none; }
 
+.pageContentColumn {float:none; margin-left:0; padding: 0; width:100%} /*Fixes the float issues on the record display */
+
 .patActionsLinks, .patTop, .patFuncArea { border:0; }
 
 .patFloat { background-image:none; }
 
 .patFuncArea { float:none; margin-top:1em; width:auto; }
+
+.pageNavColumn {display:none;} /*Hides the Search Options */
 
 #bibDisplayBody div[align="center"] { display:none; }
 
