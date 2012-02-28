@@ -96,6 +96,10 @@ h2.briefcitTitle { font-size:10pt; }
 
 .loggedInMessage { display:none; }
 
+#mobiusLogo { top:10px; }
+
+#mobiusLogo img {max-height:50px}
+
 .patActionsLinks, .patTop, .patFuncArea { outline:none; }
 
 .patFuncArea { margin:0; }
@@ -124,4 +128,4 @@ tr.patFuncHeaders { border-bottom:1px solid #888888; }
 
 .resourceDisplayBibs td, .resourceDisplayBibs th, .resourceLicenseHeader { font-family:Times New Roman,Times,Georgia,serif; font-size:10pt; }
 
-.topLogoSmall img { border:0; height:.25in; width:1.75in; }
+.topLogoSmall img, #scopeLogo img {max-height:60px;}
