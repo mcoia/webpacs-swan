@@ -134,8 +134,8 @@ ICON_PAGING_NEXT=Next
 ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
-ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page</span></span>
-ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
+ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_multirequest.png" alt=""><span class="buttonText">Save All on Page</span></span>
+ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Save Marked for Print/Email</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -224,7 +224,7 @@ SORT_ITEMS=true
 SUPPRESS_CARD=UI
 
 # My Lists
-MY_LISTS=true
+MY_LISTS=false
 ICON_MYLISTS=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">My Lists</span></span>
 ICON_MYLISTS_EXPORT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Export List</span></span></div></div>
 ICON_MYLISTS_MOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Move Marked</span></span></div></div>
