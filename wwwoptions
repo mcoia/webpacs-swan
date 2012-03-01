@@ -66,6 +66,7 @@ STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=1200;URL=/
 TOPLOGO=@screens/toplogo.html
+TOPLOGO5=@screens/toplogo_s5.html
 UPDATECIRC=true
 XSTARTOVER=/search
 
