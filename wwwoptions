@@ -176,7 +176,7 @@ ICON_NEARBY=<img src="/screens/nearby.png" alt="Browse nearby" border="0">
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_RECORDLINK=<a href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Permanent Link</span></span></a>
+ICON_RECORDLINK=<a href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Persistent link for bookmarking</span></span></a>
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate
