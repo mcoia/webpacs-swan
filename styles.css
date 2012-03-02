@@ -312,6 +312,8 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .bookingsVerify a .buttonText  { text-decoration:underline; }
 
+#botlogo {font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 85%; text-align: center; margin: 5em auto 4em; padding: 1em 0;}
+
 /* Brief Citation display styles */
 
 .briefcitActions { text-align:left; }
