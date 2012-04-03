@@ -542,6 +542,14 @@ div .confirmValue { padding-top:3px; }
 
 /*Export*/
 
+#exampleText {
+    letter-spacing:1px;
+    margin:auto;
+    text-align:left;
+    width:55%;
+}
+
+
 .exportHeading { background:#FFFFFF; clear:both; padding:10px 12px 0; border-top:2px solid #D3D3D3; text-align:left; font-weight:bold; }
 
 .exportBrief { text-align:left; padding-bottom:10px; }
