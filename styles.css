@@ -211,7 +211,7 @@ a:hover  { color: #7C14B8; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { float:right; }
+.bibDisplayPermLink { float:right; margin-bottom:1em; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
