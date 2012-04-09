@@ -1223,3 +1223,30 @@ tr.highlight { background:#FFFFE4; }
 .syn_body p {
     margin:0;
 }
+
+/* Texting Feature */
+
+
+#info, #sms {
+       border:1px solid #36647b;
+       position:absolute;
+       top:455;
+       left:455; 
+       z-index:1000;
+       background:#fff;
+       padding:10px;
+       margin:10px;
+       background:#efefcf;
+       width:45em;
+}
+
+#sms .eg {
+       font-style:italic;
+       font-size:80%;
+}
+
+#info {top:500}
+
+#sms {font-size:70%}
+
+body > div#bibDisplayBody a#smsbutton { display:none; }
