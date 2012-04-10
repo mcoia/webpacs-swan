@@ -741,7 +741,7 @@ div .bibResourceSidebar { display:none; }
 
 .miscButtons { margin-bottom: 1em;}
 
-.mobiusLogo, .clusterLogo { position:absolute; right:10px; }
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; width:237px; }
 
 .mobiusLogo { top:24px; }
 
