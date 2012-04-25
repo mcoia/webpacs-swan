@@ -1,27 +1,25 @@
 var scopeStrings = new Array ();
-scopeStrings["crowder"] = "Crowder"
-scopeStrings["drury"] = "drury"
-scopeStrings["drury2"] = "Drury"
-scopeStrings["forest"] = "forest"
-scopeStrings["forest2"] = "fipp"
-scopeStrings["mssu"] = "spivalib"
-scopeStrings["mssu2"] = "MSSU"
-scopeStrings["msu"] = "missouristate"
-scopeStrings["msu2"] = "Missouri State"
-scopeStrings["otc"] = "otc"
-scopeStrings["otc2"] = "OTC"
-scopeStrings["sbu"] = "sbuniv"
-scopeStrings["sbu2"] = "SBU"
+scopeStrings[9] = new Array ("bbc", "BBC");
+scopeStrings[1] = new Array ("Crowder");
+scopeStrings[2] = new Array ("drury", "Drury");
+scopeStrings[12] = new Array ("forest", "fipp");
+scopeStrings[3] = new Array ("spivalib", "MSSU");
+scopeStrings[6] = new Array ("missouristate", "Missouri State"); 
+scopeStrings[4] = new Array ("otc", "OTC");  
+scopeStrings[5] = new Array ("sbu", "SBU");
 
+delete scopeStrings[scope];
 
 function hideLinks(){
 
     
     if ($("table").is('.bibLinks')){
         $(".bibLinks a").each(function(index, element) {
-	    for (var key in scopeStrings) {
-		if($(element).parent().html().indexOf(scopeStrings[key]) > -1) {
-		  $(element).parent().parent().hide()
+	    for (var k in scopeStrings) {
+		for (var l in scopeStrings[k]) {
+		    if($(element).parent().html().indexOf(scopeStrings[k][l]) > -1) {
+		      $(element).parent().parent().hide()
+		    }
 		}
 	    }    
         });
