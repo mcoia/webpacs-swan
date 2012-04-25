@@ -303,7 +303,7 @@ ICON_PAT_CANCELMARK=<div onmousedown="this.className='pressedState';" onmouseout
 ICON_PIN_RESET=<span class="button"><img src="/screens/ico_questionmark.png" alt=""><span class="buttonText">Forget Your PIN?</span></span>
 ICON_SORTPUDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Pickup</span></span></div></div>
 ICON_SORTREQDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Request</span></span></div></div>
-MIN_PIN_LENGTH=6
+MIN_PIN_LENGTH=4
 MODIFY_PFLDS=z
 #MODIFY_PFLDS=ahtpzHx
 MY_WEBPAC=false,2,0-255
