@@ -370,7 +370,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitResource { width:400px;}
 
-.briefcitRow { padding-left:5%; width:100%; }
+.briefcitRow { padding-left:5%; padding-bottom:1.5em; width:100%; }
 
 h2.briefcitTitle { font-size:1em; display:inline; }
 
