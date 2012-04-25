@@ -201,7 +201,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
-.bibDisplayItemsMain, .resourceLicenseArea { float:right; width:80%; }
+.bibDisplayItemsMain, .resourceLicenseArea { float:left; width:100%; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
 
