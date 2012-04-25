@@ -1,12 +1,12 @@
 var scopeStrings = new Array ();
-scopeStrings[9] = new Array ("bbc", "BBC");
 scopeStrings[1] = new Array ("Crowder");
-scopeStrings[2] = new Array ("drury", "Drury");
-scopeStrings[12] = new Array ("forest", "fipp");
-scopeStrings[3] = new Array ("spivalib", "MSSU");
-scopeStrings[6] = new Array ("missouristate", "Missouri State"); 
-scopeStrings[4] = new Array ("otc", "OTC");  
-scopeStrings[5] = new Array ("sbu", "SBU");
+scopeStrings[2] = new Array ("drury");
+scopeStrings[3] = new Array ("spivalib");
+scopeStrings[4] = new Array ("my.otc");
+scopeStrings[5] = new Array ("sbuniv");
+scopeStrings[6] = new Array ("missouristate"); 
+scopeStrings[9] = new Array ("gobbc");
+scopeStrings[12] = new Array ("online.forest");
 
 delete scopeStrings[scope];
 
