@@ -78,7 +78,7 @@ SORT_ITEMS=T
 SUPPRESS_HOLDDISP=T
 
 #   INN-REACH OPTIONS
-INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;s=s;t=t)
+INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;s=s;t=t;m=l)
 # LANGUAGE HANDLING OPTIONS
 
 #   MEDIA MANAGEMENT OPTIONS
