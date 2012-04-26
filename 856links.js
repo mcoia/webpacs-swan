@@ -22,7 +22,7 @@ function hideLinks(){
 	if ($("table").is('.bibLinks')){
 	    for (var k in goodStrings) {
 		for (var l in goodStrings[k]) {
-		    if($(".bibLinks").html().indexOf(goodStrings[k]) > -1 ){
+		    if($(".bibLinks").html().indexOf(goodStrings[k][l]) > -1 ){
 			var scopedLinks = true;
 		    }
 		}
@@ -38,7 +38,7 @@ function hideLinks(){
 		}
 	    }
 	    if (scopedLinks != true && hiddenLinks.length > 0){
-		$(".bibLinks").hide();
+		$(".bibLinks th").hide();
 	    }
 	}  
     }
