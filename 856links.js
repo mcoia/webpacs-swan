@@ -39,6 +39,7 @@ function hideLinks(){
 	    }
 	    if (scopedLinks != true && hiddenLinks.length > 0){
 		$(".bibLinks th").hide();
+		$(".bibLinks").css("border","none");
 	    }
 	}  
     }
