@@ -229,7 +229,8 @@ ICON_BUT_CARDFORM_BOX=<span class="button"><img src="/screens/ico_gear.png" alt=
 ICON_BUT_CARDFORM_LIN=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Show Cards in Line Format</span></span>
 CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
 CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
-CHECKIN_STATUS=ARRIVED=Here|EXPECTED=Coming soon|TO BIND/BOUND=Being bound|LATE=Late|Other=See staff
+CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
+#For the above wwwoption, see page 106918 of the manual for the correct label terminology.  For the left (all caps) side of the wwwoption, use what's in the manual, not what's in Millennium. 
 DISPLAY_CHECKIN_856=z
 HOLDINGS_REQ=Deliver this article to me
 SORT_ITEMS=true

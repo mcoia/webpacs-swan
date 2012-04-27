@@ -1071,7 +1071,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogoImage { padding:10px;}
 
-.topLogoImage, .mobiusLogo {width:250px;}
+.topLogoImage, .mobiusLogo, .clusterLogo {width:250px;}
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
