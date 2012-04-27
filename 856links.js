@@ -25,7 +25,7 @@ function hideLinks(){
 	    }
 	}
 	if ($(".bibLinks tr[style*=none]").length < $(".bibLinks a").length){
-	    $(".bibDisplayUrls").show();       
+	    $(".bibLinks").show();       
 	}
     }  
 }
