@@ -12,36 +12,23 @@ function hideLinks(){
     
     var scopeDropdown = $("#searchscope").val();
     
-    var goodStrings = new Array ();
-    goodStrings.push(stringsToHide[scopeDropdown]);
-    
     delete stringsToHide[scopeDropdown];
-    
-    var hiddenLinks = new Array ();
 	
-	if ($("table").is('.bibLinks')){
-	    for (var k in goodStrings) {
-		for (var l in goodStrings[k]) {
-		    if($(".bibLinks").html().indexOf(goodStrings[k][l]) > -1 ){
-			var scopedLinks = true;
-		    }
-		}
+    if ($("table").is('.bibLinks')){
+	for (var k in stringsToHide) {
+	    for (var l in stringsToHide[k]) {
+		$(".bibLinks a").each(function(index, element) {
+		    if($(element).parent().html().indexOf(stringsToHide[k][l]) > -1) {
+			$(element).parent().parent().hide()
+		    }    
+		});
 	    }
-	    for (var k in stringsToHide) {
-		for (var l in stringsToHide[k]) {
-		    $(".bibLinks a").each(function(index, element) {
-			if($(element).parent().html().indexOf(stringsToHide[k][l]) > -1) {
-			    $(element).parent().parent().hide()
-			    hiddenLinks.push(element);
-			}    
-		    });
-		}
-	    }
-	    if (scopedLinks != true && hiddenLinks.length > 0){
-		$(".bibLinks th").hide();
-	    }
-	}  
-    }
+	}
+	if ($(".bibLinks tr[style*=none]").length < $(".bibLinks a").length){
+	    $(".bibDisplayUrls").show();       
+	}
+    }  
+}
     
     
     $(document).ready(function () {

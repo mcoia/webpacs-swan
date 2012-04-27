@@ -217,6 +217,8 @@ a:hover  { color: #7C14B8; }
 
 h1.bibDisplayTitle { display:inline; font-size:1em; }
 
+.bibDisplayUrls {display:none;}
+
 .bibInfoData { vertical-align:top; }
 
 .bibInfoLabel, .resourceInfoLabel { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
