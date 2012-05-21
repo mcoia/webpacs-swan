@@ -1,108 +1,107 @@
-<!-- SWAN bib_display.html updated 080612 lee -->
-
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<br />
-<!--{ifbibdisplay}-->
-<!--{xif}-->
-<div class="navigationRow" style="text-align: center;">
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-<br />
-<br />
-</div>
-<div class="bibSearchtool" style="text-align: center;">
-<!--{searchtool}-->
-<!--{relsearch}-->
-</div>
-<!--{reslink}-->
-<br />
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-<br />
-<br />
+<!--{toplogo}-->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
 </div>
 
-<div class="leftBib">
+<div class="bibClear"></div>
 
-<!--{recordinfo:atpe}-->
-<!--{recordlink}-->
-
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
 </div>
 
-<div id="rightBib">
+<div class="bibDisplayJacket">
+<div id="syndetics">
 <!--{bibimage}-->
-<br />
-<!--{ifhaspatrate}-->
-<div class="rateLableWrapper">
-<!--{ratings}-->
-</div>
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+    
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
 <!--{xif}-->
 
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
 </div>
 
-<div class="clear"></div>
-<div class="bibHolds">
-<!--{holds}-->
-</div>
-<!--{linkeddocs}-->
-<!--{URLS}-->
-<!--{holdingslink}-->
-<!--{bloblinks}-->
-<!--{imagelinks}-->
-<!--{artthumb}-->
-<!--{booking}-->
-<!--{holdings}-->
-<div style="margin:5px;">
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+<!--{holdings}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
 <!--{items}-->
- 
- <!-- this is the button set we'll hide it if the BIB has no items -->
- <div id=smsfeatures>
-
-    <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton_dark.gif" border=0></a>
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
     </div>
+   
+</a>
+</div>
+</div>
 
+<!--{orders}-->
 
-    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
-       <script>
-       var f = document.getElementById('bib_detail');
-       try { 
-        var itms = document.getElementById('bib_items');
-        var tr = itms.getElementsByTagName('TR');
-        for(i = 1; i < tr.length; i++) {
-         var x=tr[i].getElementsByTagName('TD');
-         if (x.length == 3) {
-          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-         }
-        }
-       } catch (e) {
-         document.getElementById('smsfeatures').style.visibility='hidden';
-       }
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
 
-    </script>
-    </div>
-
-
-
-    <!-- just a placeholder for the sms form -->
-    <div id='sms' style="visibility:hidden;display:none">
-    </div>
-
-
-<br />
-<br />
-</div>
-<!--{orders}-->
-<!-- III sample token setting:recordinfo:ercsndjbuwi -->
-
-<div class="leftBib">
-<!--{recordinfo:crnfvwsdmibuxzolyjq}-->
-
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
 <div id="syn_anotes"></div>
 <div id="syn_awards"></div>
 <div id="syn_blreview"></div>
@@ -130,32 +129,48 @@
 <div id="syn_avprofile"></div>
 <div id="syn_avsummary"></div>
 <div id="syn_video_clip"></div>
+</div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<!--{patronreviewsfull}-->
 
 </div>
 
-<div class="clear"></div>
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!--{patronreviews}-->
-<!--{patronreviewsfull}-->
-<!--{xmlframe}-->
-<!--{catedit}-->
-<br />
-<br />
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-<br />
-<br />
-</div>
-<div class="navigationRow" style="text-align: center;">
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-</div>
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
 <script src="http://plus.syndetics.com/widget.php?id=minsostu" type="text/javascript"></script>
 
-<!--{botlogo}-->
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+<!--{botlogo}-->
+
