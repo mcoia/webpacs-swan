@@ -1,0 +1,58 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">PIN Request</h1>
+
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+
+<div class="form1Part">
+<form method="post" id="accessibleForm">
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<label for="name"><span class="formLabel">
+<!--{nameprompt}-->
+</span>
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</label>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<label for="barcode"><span class="formLabel">
+<!--{barcodeprompt}-->
+</span>
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</label>
+</div>
+<!--{xif}-->
+
+<!--{ifextpat}-->
+<div class="formEntryArea">
+<!--{extpatid}-->
+<!--{extpatpw}-->
+</div>
+<!--{xif}-->
+
+<!--{submit}-->
+
+</fieldset>
+</form>
+</div><!-- form1Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->

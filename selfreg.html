@@ -1,0 +1,153 @@
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Welcome! This is Patron Self Registration</h1>
+<p>This page allows you to register on-line as a patron of our library. You will have limited privileges.</p>
+<div id="accessibleForm" class="form1Part">
+<form method="post" class="unpadded" autocomplete="off"  onsubmit="return selfRegChecker();">
+<!--
+The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
+-->
+<!--
+<input type="hidden" name="TemplateName" value="YOUR_VALUE">
+-->
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<div class="errormessage" id="selfRegMessage">
+</div>
+<fieldset>
+<legend>Please enter the following information: (<span class="formRequired">*</span> means required field)</legend>
+
+<div class="formEntryArea">
+<span class="formLabel"><label for="nfirst">First name:<span class="formRequired">*</span></label></span>
+<!--{firstname}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="nlast">Last name:<span class="formRequired">*</span></label></span>
+<!--{lastname}-->
+</div>
+<!-- For optional Alternate ID:
+<div class="formEntryArea">
+<span class="formLabel"><label for="user_name">Alias/Nickname:</label></span>
+ -->
+   <!--{user_name}-->
+<!-- For optional Alternate ID:
+</div>
+-->
+<div class="formEntryArea">
+<span class="formLabel"><label for="stre_aaddress">Address:<span class="formRequired">*</span></label></span>
+<!--{street}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="city_aaddress">City:<span class="formRequired">*</span></label></span>
+<!--{city}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="stat_aaddress">State:<span class="formRequired">*</span></label></span>
+<!--{state}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="post_aaddress">ZIP Code:<span class="formRequired">*</span></label></span>
+<!--{postalcode}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="zemailaddr">Email:</label></span>
+<!--{emailaddress}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{submit}-->
+</span>
+</div>
+</fieldset>
+
+</form>
+</div> <!--accessibleForm -->
+</div><!-- pageContentInner -->
+
+<script type="text/javascript">
+function selfRegChecker(){
+var regForm = document.getElementsByTagName("INPUT");
+var messageDiv = document.getElementById("selfRegMessage");
+for(i=0;i<regForm.length;i++){
+switch(regForm[i].id){
+case "nfirst":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your First Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "nlast":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "stre_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Address to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "city_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your City to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "stat_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your State to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "nlast":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Last Name to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+case "post_aaddress":
+if (regForm[i].value==null||regForm[i].value==""){
+var message = document.createTextNode("Oops... Please supply your Zip Code to Register.");
+messageDiv.innerHTML ="";
+messageDiv.appendChild(message);
+regForm[i].focus();
+return false;
+}
+break;
+}
+}
+return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+	if(selfRegChecker()){
+		var obj = getFormHandleForm(1);
+		obj.submit();
+	}
+}
+</script>
+<!--{botlogo}-->
