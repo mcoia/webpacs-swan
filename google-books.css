@@ -1,0 +1,101 @@
+/*
+Created 11/1/2011 by Josh Welker at Southwest Baptist University
+*/
+
+
+
+#google-books
+{
+	margin-top:10px;
+	padding-left:5px;
+}
+
+#bib_detail
+{
+	width:auto;
+}
+
+.bibPager
+{
+	clear:both;
+}
+
+#float-box
+{
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	min-height:180px;
+}
+
+.infoLink td
+{
+	padding:5px 0px;
+}
+
+.averageRating
+{
+	margin:5px 0px;
+	width:125px;
+	height:20px;
+	background-image:url('/screens/google-books-rating.png');
+}
+
+.averageRating a
+{
+	display:inline-block;
+	height:20px;
+	width:125px;
+}
+
+.thumb
+{
+	width:128px;
+	
+}
+
+.message
+{
+	width:85%;
+}
+
+.previewLink
+{
+	margin-top:10px;
+}
+
+.thumb
+{
+
+}
+
+.title
+{
+	font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-size:15;
+	font-weight:bold;
+}
+
+.author
+{
+	font-size:13px;
+}
+
+.description
+{
+	margin:10px 0px;
+	font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-size:13px;
+}
+
+.ratingsCount
+{
+	text-align:center;
+	font-size:12px;
+}
+
+#google-books a img
+{
+	border:none;
+}
+
