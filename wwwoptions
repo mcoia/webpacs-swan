@@ -58,7 +58,7 @@ ICON_SELECT_ALL=<div onmousedown="this.className='pressedState';" onmouseout="th
 INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
-SSLPORT=80:443:swan.searchmobius.org:swan.searchmobius.org|2082:444:swan.searchmobius.org:swan.searchmobius.org
+SSLPORT=80:443|2082:444
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
