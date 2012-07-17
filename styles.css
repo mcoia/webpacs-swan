@@ -125,7 +125,7 @@ a:hover  { color: #7C14B8; }
 #accessibleForm form legend { font-weight:bold; }
 #accessibleForm h2 { margin-left:15px; margin-bottom:0; margin-top:12px }
 #accessibleForm span.formLabel { display:block; padding-top:3px; }
-#accessibleForm span.formLabelExample { font-style:italic; }
+#accessibleForm div.formLabelExample { font-style:italic; }
 #accessibleForm .formEntryArea, #accessibleForm .ecommerceFormEntryArea { margin:3px 0 0 15px; }
 #accessibleForm .formButtonArea .formButtonArea {margin-left:12px; display:inline;}
 #accessibleForm font { font-size:1em; padding:10px; }
@@ -609,6 +609,8 @@ div .bibResourceSidebar { display:none; }
 .form3PartBelow { background:#FFFFFF url('tile_vgradient.jpg') repeat-x scroll left top; clear:both; margin-top:1em; }
 
 .formLogin label { display:block; padding-top:3px; }
+
+.formLogin .formEntryArea { margin-bottom:1.25em !important; }
 
 .formLeft { float:left; padding:10px 10px 10px; }
 
