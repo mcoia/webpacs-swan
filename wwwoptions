@@ -40,6 +40,7 @@
 AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
+BOTLOGO1=@screens/botlogo_s1.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
