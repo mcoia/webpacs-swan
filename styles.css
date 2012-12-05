@@ -227,7 +227,7 @@ table.bibItems { clear:both; }
 
 .bibItems  th { text-align:left; }
 
-.bibItemsEntry td { padding:0; margin:0; }
+.bibItemsEntry td { padding:0; margin:0; width: 30%; }
 
 .bibItems { border:none; }
 

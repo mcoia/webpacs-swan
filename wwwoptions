@@ -135,7 +135,7 @@ ICON_BUT_UNLIMAVAIL=<span class="button"><img src="/screens/ico_list.png" alt=""
 DISPLAY_245=atd
 EXTENDED=AL
 HEADING_LENGTH=100
-ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
+#ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
 #ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save for Print/Email</span></span>
 ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Saved for Print/Email</span></span>
