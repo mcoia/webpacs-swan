@@ -23,6 +23,13 @@ b|t||-6|Title||b|
 # converted from HOLDINGS_POS field tag: 'p'
 #
 b|p||-6|Imprint||b|
+b|p|26[^4]|-6789|Imprint||b|
+b|p|264 0|-6789|Production||b|
+b|p|264 1|-6789|Publication||b|
+b|p|264 2|-6789|Distribution||b|
+b|p|264 3|-6789|Manufacture||b|
+b|p|264 4|-6789|Copyright date||b|
+
 b|e||-6|Edition||b|
 #
 # end HOLDINGS_POS
@@ -37,7 +44,7 @@ b|r|321|-6|Former Frequency||b|
 b|r|33[0-9]||||b|
 b|r|350|-6|||b|
 b|r|362|-6|Publication History||b|
-b|r||-6|Descript.||b|
+b|r||-6|Description||b|
 b|s|440.0|-6|Series||b|
 b|s|490.1|-6|Added Title||b|
 b|s||-6|Series||b|
