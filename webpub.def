@@ -23,9 +23,8 @@ b|t||-6|Title||b|
 # converted from HOLDINGS_POS field tag: 'p'
 #
 b|p||-6|Imprint||b|
-b|p|260 2|-6789|Intervening publisher||b|
-b|p|260 3|-6|Current/latest publisher||b|
-b|p|26[^4]|-6789|Imprint||b|
+b|p|2602|-6|Intervening publisher||b|
+b|p|2603|-6|Current/latest publisher||b|
 b|p|264 0|-6789|Production||b|
 b|p|264 1|-6789|Publication||b|
 b|p|264 2|-6789|Distribution||b|
