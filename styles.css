@@ -179,7 +179,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; }
 
-.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:76%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:76%; margin-left:4.5em; display:inline; }
 
 .bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:0; font-size:.8824em; }
 
@@ -627,6 +627,12 @@ div .bibResourceSidebar { display:none; }
 .formMultiSelect { display:inline; }
 
 .fullPage { background:#ffffff; padding:0px; text-align:left; }
+
+#googlebooks { display: block; font-size:.9em; }
+
+#googlebooks img {margin-top:1em; }
+
+.googlebooks { display:none; }
 
 .pageContent div.helpContent { padding-bottom:12em; }
 
