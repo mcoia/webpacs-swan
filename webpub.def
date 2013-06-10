@@ -25,10 +25,15 @@ b|t||-6|Title||b|
 b|p||-6|Imprint||b|
 b|p|2602|-6|Intervening publisher||b|
 b|p|2603|-6|Current publisher||b|
+b|p|2640.|-6789|Production||b|
 b|p|264 0|-6789|Production||b|
+b|p|2641.|-6789|Publication||b|
 b|p|264 1|-6789|Publication||b|
+b|p|2642.|-6789|Distribution||b|
 b|p|264 2|-6789|Distribution||b|
+b|p|2643.|-6789|Manufacture||b|
 b|p|264 3|-6789|Manufacture||b|
+b|p|2644.|-6789|Copyright date||b|
 b|p|264 4|-6789|Copyright date||b|
 
 b|e||-6|Edition||b|
