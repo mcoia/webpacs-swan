@@ -19,7 +19,7 @@ $(document).ready(function () {
 	//Changes the search examples
 	
 	var selectAny = $('#b option[value=""]')
-	$('#b option:not([value^="a"])').detach(); 
+	$('#b option:not([value^="a"],[value^="e"])').detach(); 
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
 });
