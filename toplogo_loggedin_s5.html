@@ -23,7 +23,7 @@ $(document).ready(function () {
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
 
-	pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
 	if(pathnameFtList.indexOf('ftlist') > -1){
 		$('.browseEntry:not(:contains("SBU"))').addClass('hideMe');
 		$(".hideMe").hide();
