@@ -22,6 +22,16 @@ $(document).ready(function () {
 	//$('#b option:not([value^="s"])').detach(); 
 	//selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+	
+	//hides out of scope featured lists
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+    if(pathnameFtList.indexOf('ftlist') > -1){
+    $('.browseEntry:not(:contains("MSSU"))').addClass('hideMe');
+    $(".hideMe").hide();
+    text = $('.ftlistHeader').text();
+	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{2,3}/m, " ").replace("entries", " ");
+	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+  }
 });
 </script>
 
@@ -95,7 +105,7 @@ if (document.body){document.body.className = "bodybg";}
 <li><a href="/search/d">Subject (LC)</a></li>
 <li><a href="/search/q">Author and Title</a></li>
 <li><a href="/search/m">Genre</a></li>
-<li><a href="/ftlists">New Titles</a></li>
+<li><a href="/search~S3/ftlists">New Titles</a></li>
 <li><a href="/search/b">Course Reserves</a></li>
 </ul>
         
