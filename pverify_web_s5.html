@@ -1,0 +1,148 @@
+<!--{toplogo}-->
+<link rel="stylesheet" type="text/css" href="/screens/styles_login.css" />
+<div class="form1Part codeHelp">
+<h2>Institution Code Help</h2>
+	  <p> For example, a student at Southwest Baptist University would enter 123654185SBU.</p>
+          
+          <ul>
+
+        <li>Baptist Bible College - <strong>BBC</strong></li>
+		<li>Cottey College - <strong>COTT</strong></li>
+		<li>Crowder College - <strong>CC</strong></li>
+		<li>Drury University - <strong>DU</strong></li>
+		<li>Evangel University - <strong>EU</strong></li>
+		<li>Forest Institute of Professional Psychology - <strong>FIPP</strong></li>
+		<li>Missouri Southern State University - <strong>MSSU</strong></li>
+		<li>Missouri State University - <strong>MSU</strong></li>
+		<li>Ozarks Technical College - <strong>OTC</strong></li>
+		<li>Southwest Baptist University - <strong>SBU</strong></li>
+            </ul>
+
+		<p>Please contact your library if you have any questions.</p>     
+</div>
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<div class="formLabelExample">
+<!--{nameexample}-->
+</div>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<div class="formLabelExample">
+<!--{barcodeexample}-->
+</div>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<div class="formLabelExample">
+<!--{pininstructions}-->
+</div>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div>
+<div>
+	<ul class="sbuMessage">
+        <li>ID Requires 7-Digit ID Number followed by SBU</li>
+		<li>Add Leading Zero When ID is less than 7-Digits</li>
+		<li>Example: 0654321SBU</li>
+		<li>First-Time Users:</li>
+		<li>Enter a Passcode to Create a Passcode.</li>
+		<li>Passcodes can be a PIN Number, Password or Passphrase</li>
+		<li>Example:</li>
+		<li>PIN: 12345678</li>	
+		<li>Password: MyPassword!</li>
+		<li>Passphrase: ILoveMySBULibrary2014</li>	
+		<li>Returning Users:</li>
+		<li>Enter Your Passcode</li>
+	</ul>
+</div> 
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>
