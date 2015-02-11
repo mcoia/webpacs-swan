@@ -57,6 +57,7 @@ b|s||-6|Series||b|
 b|n|504|-z6|Bibliography||b|
 # 080220 added 1st indicator 0 below lee
 b|n|505..|-z6|Contents||b|
+b|f||-6|Contents||b|
 b|n|508|-z6|Credits||b|
 b|n|510|-z6|||b|
 b|n|5111|-z6|Cast||b|
@@ -141,7 +142,6 @@ b|u|730|-6|Added Title||b|
 b|u|740|-6|Added Title||b|
 b|u||-6|Add Title||b|
 b|f|970|-6|||b|
-b|f||-6|Contents||b|
 b|i|020|-c6|ISBN||b|
 b|i|022|-c6|ISSN||b|
 b|i|0242|-c6|Ismn||b|
