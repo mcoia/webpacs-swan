@@ -78,6 +78,7 @@ TOPLOGO8=@screens/toplogo_s8.html
 TOPLOGO9=@screens/toplogo_s9.html
 TOPLOGO10=@screens/toplogo_s10.html
 TOPLOGO12=@screens/toplogo_s12.html
+TOPLOGO13=@screens/toplogo_s13.html
 UPDATECIRC=true
 XSTARTOVER=/search
 
