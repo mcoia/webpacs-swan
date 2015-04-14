@@ -60,7 +60,7 @@ INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 SSLPORT=80:443|2082:444
-CUSTOM_MESSAGES=F
+CUSTOM_MESSAGES=T
 STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/styles.css
