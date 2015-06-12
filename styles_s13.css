@@ -1,1 +1,18 @@
 .topLogoImage { width: 145px; }
+.frontLimits {width:35%; margin: auto}
+.browseSearchtool td {
+    border: medium none;
+    padding: 5px;
+    text-align: left;
+}
+
+#accessibleForm p {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.pageContentInner p {
+    margin-left: 0;
+}
+.limitBox {
+    padding: 10px;
+}
