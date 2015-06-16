@@ -1,0 +1,174 @@
+<!--{toplogo}-->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
+</div>
+
+<div class="bibDisplayJacket">
+<div id="syndetics">
+<!--{bibimage}-->
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+    
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{holds}-->
+<!--{holdings}-->
+
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+<div id="syn_anotes"></div>
+<div id="syn_awards"></div>
+<div id="syn_blreview"></div>
+<div id="syn_abreview"></div>
+<div id="syn_chreview"></div>
+<div id="syn_criticasreview"></div>
+<div id="syn_dbchapter"></div>
+<div id="syn_gmsummary"></div>
+<div id="syn_hbreview"></div>
+<div id="syn_itasummary"></div>
+<div id="syn_kireview"></div>
+<div id="syn_ljreview"></div>
+<div id="syn_nyreview"></div>
+<div id="syn_pwreview"></div>
+<div id="syn_sljreview"></div>
+<div id="syn_series"></div>
+<div id="syn_spreview"></div>
+<div id="syn_spsummary"></div>
+<div id="syn_summary"></div>
+<div id="syn_swedreview"></div>
+<div id="syn_swedsummary"></div>
+<div id="syn_swedtoc"></div>
+<div id="syn_toc"></div>
+<div id="syn_fiction"></div>
+<div id="syn_avprofile"></div>
+<div id="syn_avsummary"></div>
+<div id="syn_video_clip"></div>
+</div>
+
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<!--{items}-->
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
+    </div>
+   
+</a>
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+
+
+
+
+
+
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+<script src="http://plus.syndetics.com/widget.php?id=minsostu" type="text/javascript"></script>
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+<!--{botlogo}-->
+
