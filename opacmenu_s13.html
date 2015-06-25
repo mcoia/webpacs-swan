@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>SWAN Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">    
+
+  <div id="tabs">
+    <div id="tab-1" class="tabContent">
+
+<div class="innerTab">
+<div class="innerTabForm X">
+    <div class="inlineBlock">
+<select name="searchtype" class="searchtype">
+<option value="X" selected="selected">Keyword
+<option value="a">Author</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="d">Subject</option>
+<option value="c">LC Call Number</option>
+<option value="e">Dewey Call Number</option>
+<option value="f">Other Call Number</option>
+</select>
+<form method="get" action="http://swan.searchmobius.org:2082/search/X?"enctype="multipart/form-data">
+</div><!-- inlineBlock -->       
+<input type="text" name="SEARCH" id="search" maxlength="75" size="39" >
+<div class="inlineBlock">
+    <select id="searchscope" name="searchscope">
+        <option value="9"> Baptist Bible College</option> 
+	<option value="8"> Cottey College</option> 
+	<option value="1"> Crowder College</option> 
+	<option value="2"> Drury University</option> 
+	<option value="10"> Evangel University</option> 
+	<option value="12"> Forest Institute of Professional Psychology</option> 
+	<option value="3"> Missouri Southern State University</option> 
+	<option value="6"> Missouri State University</option> 
+	<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
+	<option selected="selected" value="13"> Ozark Christian College</option> 
+	<option value="4"> Ozarks Technical Community College</option> 
+	<option value="5"> Southwest Baptist University</option> 
+	<option value="11"> View Entire Collection</option>
+    </select>
+</div><!-- inlineBlock -->
+    <input type="hidden" name="SORT" value="D">
+<div class="frontLimits">
+<table>
+<tr class="limitBox">
+    <p>Check one or more formats, or leave all unchecked for no limit.</p>
+    <td>
+    <label for="formatv"><input type="checkbox" name="m" id="m" value="v" /> DVD/Blu-ray<br /></label>
+</td>
+<td>
+    <label for="formaty"><input type="checkbox" name="m" id="m" value="y" /> Audio - CD<br /></label>
+    </td>
+</tr>
+</table>
+</div>
+    <input type="submit" value="Submit">
+</form>
+</div><!-- innerTabForm X -->
+<div class="innerTabForm otherIndexes">
+<form action="/search/" method="get" name="search" id="search">
+
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" class="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="a">Author</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="d">Subject</option>
+<option value="c">LC Call Number</option>
+<option value="e">Dewey Call Number</option>
+<option value="f">Other Call Number</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="39" >
+<select id="searchscope" name="searchscope">
+        <option value="9"> Baptist Bible College</option> 
+	<option value="8"> Cottey College</option> 
+	<option value="1"> Crowder College</option> 
+	<option value="2"> Drury University</option> 
+	<option value="10"> Evangel University</option> 
+	<option value="12"> Forest Institute of Professional Psychology</option> 
+	<option value="3"> Missouri Southern State University</option> 
+	<option value="6"> Missouri State University</option> 
+	<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
+	<option selected="selected" value="13"> Ozark Christian College</option> 
+	<option value="4"> Ozarks Technical Community College</option> 
+	<option value="5"> Southwest Baptist University</option> 
+	<option value="11"> View Entire Collection</option>
+
+<span class="nowrap formButtonArea">
+
+<input value="Submit" type="submit">
+
+</span>
+
+</form>
+</div>
+</div><!-- innertab -->
+</div>
+</div>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<div id="exampleText">
+	<div class="mainMenuSrchText">Type the search term you want to find. Examples:
+		<ul class="unpadded">
+			<li>Italian cooking</li>
+			<li>The Appeal</li>
+
+			<li>tax and legislat*</li>
+			<li>(lunar or solar) and eclipse</li>
+		</ul>
+	</div>
+</div>
+
+</div><!--pageContentInner -->
+
+<div style="clear:both"></div>
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
