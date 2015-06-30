@@ -37,6 +37,7 @@
 
 
 # General Display and Behavior
+REFRESH_MESSAGE=You are getting this error because the catalog server received multiple requests in a short period of time. This can happen if you double-click a link, refresh the browser too quickly, or redo the same search quickly. You should be able to get past this error by using your browser's "back" button or by refreshing this window. (Please click the refresh button just once.)
 AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
