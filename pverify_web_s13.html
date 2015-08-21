@@ -1,0 +1,124 @@
+<!--{toplogo}-->
+<link rel="stylesheet" type="text/css" href="/screens/styles_login.css" />
+<div class="form1Part codeHelp">
+<h2>ID Help</h2>
+
+     <p>Students must use their <strong>Library ID</strong> followed by OCC.</p>
+            <ul>
+	          	<li><strong>Example:</strong> 123456789OCC</li>
+	        </ul>  	
+	  
+    
+
+</div>
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<div class="formLabelExample">
+<!--{nameexample}-->
+</div>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<div class="formLabelExample">
+<!--{barcodeexample}-->
+</div>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<span><strong>Your PIN must be 4 to 30 characters long and should contain a mix of alpha and numeric characters.</strong></span>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<div class="formLabelExample">
+<!--{pininstructions}-->
+</div>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div> 
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>
