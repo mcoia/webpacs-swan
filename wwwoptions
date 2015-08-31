@@ -90,7 +90,7 @@ STAFF=1
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
-ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Advanced Search</span></span>
+ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText anotherSearch">Advanced Search</span></span>
 ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Xatsdcef
@@ -104,8 +104,8 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText">Modify Search</span></span>
-ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">More Like This</span></span>
+ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText modifySearch">Modify Search</span></span>
+ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText moreLike">More Like This</span></span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
@@ -466,7 +466,9 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;p=p;r=r;s=s;t=t;m=l)
+#ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>
+#INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
+#INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;p=p;r=r;s=s;t=t;m=l)
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>

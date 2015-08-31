@@ -135,6 +135,46 @@ Use "near" to specify words close to each other, in any order.<br>
 </div> <!-- form3Part -->
 
 </div><!-- pageContentInner -->
+<script type="text/javascript">
+$(document).ready(function () {
+    $(window).load(function() {
+
+//adds innreach button to scrhelp index pages
+
+
+    function advSearchinnReachButton() {
+        advsearchURL = window.location.href.split(/[/\s?]+/); //gets url index
+        advSearchIndexType = advsearchURL[3]; //isolates index value based on url
+        advSearchType = $("[name*='fieldLimit'] option:selected").val();
+        searchAdvInput = $("input[name*='searchText']").val(); //gets search text for advanced search page
+        
+
+
+        //adv search page
+        if((advSearchIndexType.match(/X/) || searchAdvInput.length > 0)) {
+            prospectSearch = searchAdvInput.split(" ").join().replace(/and/g, " ").replace(/not/g, "-").replace(/(or)!/g, "|").replace(/,/g, " ").trim();
+            innReachArgIndex = advSearchType + prospectSearch;
+        }
+        else {
+            innReachArgIndex = searchAdvInput; //creates url for keyword and other indexes
+        }
+
+        $("#innReachLink").attr("href", innReachUrl + innReachArgIndex)
+    }
+
+innReachUrl = "http://searchmobius.org/iii/encore/search/C__S";
+
+innReachButton = "<a id='innReachLink' href=''><span class='button'><img src='/screens/ico_mobius.png' alt=''><span class='buttonText'>Search MOBIUS</span></span></a>";
+
+
+
+        if ($('h2:contains("NO ENTRIES FOUND")')[0]){ //for individual search index pages
+            $('.miscButtons').append(innReachButton); // drop a button that doesn't go anywhere
+                advSearchinnReachButton();
+        }
+    })
+});
+</script>
 <!--{botlogo}-->
 </body>
 </html>
