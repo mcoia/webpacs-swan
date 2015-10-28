@@ -63,7 +63,13 @@ b|n|510|-z6|||b|
 b|n|5111|-z6|Cast||b|
 b|n|5112|-z6|Presenter||b|
 b|n|5113|-z6|Narrator||b|
-b|n|520|-z6|Summary||b|
+b|n|520|-z0123468|Summary||b|
+b|n|520|0|Subject||b|
+b|n|520|1|Review||b|
+b|n|520|2|Scope and Content||b|
+b|n|520|3|Abstract||b|
+b|n|520|4|Content Advice||b|
+b|n|520|8|Note||b|
 b|n|521 |-z6|Audience||b|
 b|n|5210|-z6|Reading Level||b|
 b|n|5211|-z6|Age Level||b|
@@ -71,9 +77,17 @@ b|n|5212|-z6|Grade Level||b|
 b|n|5213|-z6|Audience||b|
 b|n|5214|-z6|Audience||b|
 b|n|5218|-z6|Audience||b|
-b|n|555[^0]|-z6|Indexes||b|
+b|n|524|-z6|Cite As||b|
+b|n|535|1|Holder of Originals||b|
+b|n|535|2|Holder of Duplicates||b|
+b|n|540|2|Use/Reproduction||b|
+b|n|545|0|Biographical Sketch||b|
+b|n|545|1|Administrative History||b|
+b|n|555[^0]|-z06|Indexes||b|
+b|n|555[^0]|0|Finding Aids||b|
+b|n|561||Ownership History||b|
 b|n|59[0-9]|-z6|Local Note||b|
-b|n||-z6|Note||b|
+#b|n||-z6|Note||b|
 b|x|7801|-6|||b|
 b|x|780.0|-6|Continues||b
 b|x|780.1|-6|Continues In Part||b|
