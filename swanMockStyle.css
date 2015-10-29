@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #F5F8FA;	
+}
+
+.footer {
+     position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 4px;
+	background-color:#004F99;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	.footer {
+		position: relative !important;	
+	}
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFF !important;
+}
+
+.panel-default>.panel-heading {
+	background-color: #004F99 !important;
+    background-image: none !important;
+}
+
+#rightPanel {
+	width: 190px;	
+}
+
+@media (max-width: 1243px) {
+#rightPanel {
+	width: 180px;	
+}
+}
+
+@media (max-width: 1186px) {
+#rightPanel {
+	width: 170px;	
+}
+}
+
+@media (max-width: 1108px) {
+#rightPanel {
+	width: 160px;	
+}
+}
+
+@media (max-width: 1066px) {
+#rightPanel {
+	width: 150px;	
+}
+}
+
+.ui-widget-header {
+	background: none !important;
+    background-color: #004F99 !important;
+}
+
+.panel-default>.panel-heading {
+	color: white !important;	
+}
+
+.container-fluid {
+	background-color: #004F99;
+}
+
+#hideChild {	
+	list-style-type: none;
+}
+
+#centerText {
+	text-align: center;	
+}
+
+
+#bulletStyle a {
+	color: black !important;	
+}
+
+
+
+.row {
+	margin: 0px !important;	
+}
+
+.page-header {
+	padding: 15px 0px 15px 0px !important;
+    margin: 0px !important;
+    border-bottom: none !important;
+    background-color: #FFF !important;
+	padding-bottom: 35px !important;
+}
+
+.navbar-default {
+}
+
+#center-block {
+	border: 1px solid #D3E0E9;	
+	background-color: #004F99;
+	border-radius: 5%;
+	margin-bottom: 20px;
+}
+
+#center-inner-block {
+	margin: 10px;
+	text-align: center;	
+	
+}
+
+ol, ul {
+	margin-left: -30px;
+	list-style: none;
+	line-height: 2;	
+}
+
+@media (max-width: 991px) {
+#center-block {
+	margin-top: -800px;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 420px;
+}
+
+#rightPanel {
+	width: 100%;
+	text-align: center;	
+}
+}
+
+@media (max-width: 767px) {
+#center-block {
+	margin-top: -960px;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 580px;
+}
+}
+
+@media (max-width: 662px) {
+#center-block {
+	margin-top: -990px;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 610px;
+}
+}
+
+@media (max-width: 561px) {
+#center-block {
+	margin-top: -1000px !important;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 620px !important;
+}
+}
+
+
+@media (max-width: 496px) {
+#center-block {
+	margin-top: -1000px !important;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 620px !important;
+}
+}
+
+@media (max-width: 496px) {
+#center-block {
+	margin-top: -1030px !important;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 650px !important;
+}
+}
+
+@media (max-width: 394px) {
+#center-block {
+	margin-top: -1060px !important;	
+	margin-bottom: 300px;	
+}
+
+#firstPanel {
+	margin-top: 680px !important;
+}
+}
+
+@media (max-width: 359px) {
+#center-block {
+	margin-top: -865px !important;	
+	margin-bottom: 300px;	
+}
+
+#firstPanel {
+	margin-top: 480px !important;
+}
+}
+
+@media (max-width: 372px) {
+#center-block {
+	margin-top: -1100px !important;	
+	margin-bottom: 300px;	
+}
+
+#firstPanel {
+	margin-top: 720px !important;
+}
+}
+
+@media (max-width: 354px) {
+#center-block {
+	margin-top: -1130px !important;	
+	margin-bottom: 300px;	
+}
+
+#firstPanel {
+	margin-top: 750px !important;
+}
+}
+
+@media (max-width: 343px) {
+#center-block {
+	margin-top: -1160px !important;	
+	margin-bottom: 300px;	
+}
+
+#firstPanel {
+	margin-top: 780px !important;
+}
+}
+
+@media (max-width: 306px) {
+#center-block {
+	margin-top: -1240px !important;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 830px !important;
+}
+}
+
+@media (max-width: 250px) {
+#center-block {
+	margin-top: -1400px !important;	
+	margin-bottom: 350px;	
+}
+
+#firstPanel {
+	margin-top: 1000px !important;
+}
+}
+
+
+@media (max-width: 496px) {
+#swanLogo {
+	width: 150px;			
+}
+
+#mssuLogo {
+	width: 150px;	
+}
+}
+
+@media (max-width: 320px) {
+#swanLogo {
+	width: 130px;			
+}
+
+#mssuLogo {
+	width: 130px;	
+}
+}
+
+/*#right-block {
+	border: 1px solid #D3E0E9;	
+	background-color: white;
+}
+
+#right-inner-block {
+	margin: 10px;
+}*/
+

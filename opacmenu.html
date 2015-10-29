@@ -1,13 +1,25 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2009B Example Set -->
-<!-- Updated: 09 June 2010 -->
+<!doctype html>
+<html lang="en">
 <head>
-<title>SWAN Catalog</title>
-<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
-<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
-<script type="text/javascript">/* <![CDATA[ */
+<meta charset="utf-8">
+<title>Swan Mock</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script href="http://swan.searchmobius.org/scripts/elcontent.js"></script>
+<script href="http://swan.searchmobius.org/scripts/common.js"></script>
+<script href="http://swan.searchmobius.org/scripts/common.js"></script>
+<link rel="stylesheet" href="swanMockStyle.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
 function iiiSearchValidate() {
 	try{
 	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
@@ -30,75 +42,757 @@ obj.submit();
 /* ]]> */
 </script>
 </head>
-<body>
-<!--{toplogo}-->
-
-<div class="pageContentInner mainSearch">
-
-<h1 class="accessibleAddInfo">Search</h1>
-
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-
-
-<input type="hidden" id="iiiFormHandle_1">
-
-<!-- Optional legend:
+<body style="background-color:#F5F8FA;">
+<div class="page-header">
+  <div><img  id="swanLogo" class="img-responsive pull-right" src="swan.png" /></div>
+  <div><img  id="mssuLogo" class="img-responsive" src="mssu.png"/></div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="choose1"><a href="http://mssu.summon.serialssolutions.com/">Search Summon</a></li>
+        <li id="choose2"><a href="http://searchmobius.org/">MOBIUS</a></li>
+        <li id="choose3"><a href="http://swan.searchmobius.org/patroninfo">My Library Account</a></li>
+        <li id="choose4"><a href="http://swan.searchmobius.org/help">Help</a></li>
+      </ul>
+    </div>
+    <script>
+		$("#choose1").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose1").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose2").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose2").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose3").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose3").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose4").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose4").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+	</script> 
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="row row-centered">
+  <div id="firstPanel" class="col-xs-12 col-md-2 col-lg-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">Search Options</div>
+      <div class="panel-body">
+        <ul id="bulletStyle">
+          <li><a href="/search/X">Advanced Search</a></li>
+          <li><a href="/search/Y">Keyword</a></li>
+          <li><a href="/search/a">Author</a></li>
+          <li><a href="/search/t">Title</a></li>
+          <li><a href="/search/s">Journals, Magazines, Newspapers</a></li>
+          <li><a href="/search/d">Subject (LC)</a></li>
+          <li><a href="/search/q">Author and Title</a></li>
+          <li><a href="/search/m">Genre</a></li>
+          <li><a href="/search~S3/ftlists">New Titles</a></li>
+          <li><a href="/search/b">Course Reserves</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8 col-lg-8">
+    <div id="center-block">
+      <div id="center-inner-block" class="center-block">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Quick Search</a></li>
+            <li><a href="#tabs-2">Advanced Search</a></li>
+            <li><a href="#tabs-3">Subjects</a></li>
+            <li><a href="#tabs-4">Numbers/Others</a></li>
+          </ul>
+          <div id="tabs-1">
+            <form class="form-inline" action="http://swan.searchmobius.org/search/" method="get" name="search" id="search" onsubmit="return iiiSearchValidate();">
+              <input type="hidden" id="iiiFormHandle_1">
+              
+              <!-- Optional legend:
 <fieldset>
 <legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<div class="inlineBlock">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="X" selected="selected">Keyword</option>
-<option value="a">Author</option>
-<option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="d">Subject</option>
-<option value="c">LC Call Number</option>
-<option value="e">Dewey Call Number</option>
-<option value="f">Other Call Number</option>
-</select>
-<!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="39" >
+              <div class="form-group">
+                <div>
+                  <select name="searchtype" id="select" class="form-control">
+                    <option value="X" selected="selected">Keyword</option>
+                    <option onclick="myFunction()" value="a">Author</option>
+                    <option value="t">Title</option>
+                    <option value="s">Journal Title</option>
+                    <option value="d">Subject</option>
+                    <option value="c">LC Call Number</option>
+                    <option value="e">Dewey Call Number</option>
+                    <option value="f">Other Call Number</option>
+                  </select>
+                  <input type="hidden" name="SORT" id="SORT" value="D">
+                  <input name="searcharg" size="30" class="form-control" style="">
+                </div>
+                <br>
+                <div>
+                  <label for="scope" class="accessibleAddInfo">Location: </label>
+                  <label for="searchscope" style="display:none;">Search Scope</label>
+                  <select name="searchscope" id="searchscope" class="form-control">
+                    <option value="9"> Baptist Bible College</option>
+                    <option value="8"> Cottey College</option>
+                    <option value="1"> Crowder College</option>
+                    <option value="2"> Drury University</option>
+                    <option value="10"> Evangel University</option>
+                    <option value="12"> Forest Institute of Professional Psychology</option>
+                    <option value="3" selected="selected"> Missouri Southern State University</option>
+                    <option value="6"> Missouri State University</option>
+                    <option value="7"> Missouri State Univ. - Greenwood LMC</option>
+                    <option value="13"> Ozark Christian College</option>
+                    <option value="4"> Ozarks Technical Community College</option>
+                    <option value="5"> Southwest Baptist University</option>
+                    <option value="11"> View Entire Collection</option>
+                  </select>
+                  <span class="formButtonArea"> 
+                  
+                  <!--{submit}-->
+                  
+                  <input type="hidden" id="iiiFormHandle_1">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  </span> </div>
+              </div><br><br>
+              <!-- formEntryArea --> 
+              <!--</fieldset> optional-->
+            </form>
+            <div style="line-height:25px;">
+            <p>Type the author's or artist's last name first. For example:</p>
+            <ul>
+            	<li>shakespeare</li>
+                <li>shakespeare, william</li>
+            </ul>
+            <p>you may also type the name of an organization or governmental body. For example:</p>
+            <ul>
+            	<li>United State Congress</li>
+            </ul>
+            </div>
+          </div>
+          <div id="tabs-2" class="form-group" style="padding-bottom: 50px;">
+            <form class="form-inline" action="http://swan.searchmobius.org/search/X"  name="search" id="search" onsubmit="return submitSearch(this, location.pathname, false);">
+              <div class="form3PartAbove">
+                <fieldset>
+                  <legend>Enter Search Terms</legend>
+                  <div class="formEntryArea">
+                    <select name="fieldLimit1" class="form-control">
+                      <option value="" selected="selected">Any Field:</option>
+                      <option value="a:">AUTHOR:</option>
+                      <option value="t:">TITLE:</option>
+                      <option value="d:">SUBJECT:</option>
+                      <option value="N:">Note:</option>
+                    </select>
+                    <input maxlength="75" size="35" name="searchText1" class="form-control">
+                    <select name="boolean1" class="form-control">
+                      <option value="%20and%20" selected="selected">And</option>
+                      <option value="%20and%20not%20">And not</option>
+                      <option value="%20or%20">Or</option>
+                    </select>
+                    <br>
+                    <select name="fieldLimit2" class="form-control">
+                      <option value="" selected="selected">Any Field:</option>
+                      <option value="a:">AUTHOR:</option>
+                      <option value="t:">TITLE:</option>
+                      <option value="d:">SUBJECT:</option>
+                      <option value="N:">Note:</option>
+                    </select>
+                    <input maxlength="75" size="35" name="searchText2" class="form-control">
+                    <select name="boolean2" class="form-control">
+                      <option value="%20and%20" selected="selected">And</option>
+                      <option value="%20and%20not%20">And not</option>
+                      <option value="%20or%20">Or</option>
+                    </select>
+                    <br>
+                    <select name="fieldLimit3" class="form-control">
+                      <option value="" selected="selected">Any Field:</option>
+                      <option value="a:">AUTHOR:</option>
+                      <option value="t:">TITLE:</option>
+                      <option value="d:">SUBJECT:</option>
+                      <option value="N:">Note:</option>
+                    </select>
+                    <input maxlength="75" size="35" name="searchText3" class="form-control">
+                    <select name="boolean3" class="form-control">
+                      <option value="%20and%20" selected="selected">And</option>
+                      <option value="%20and%20not%20">And not</option>
+                      <option value="%20or%20">Or</option>
+                    </select>
+                    <br>
+                    <select name="fieldLimit4" class="form-control">
+                      <option value="" selected="selected">Any Field:</option>
+                      <option value="a:">AUTHOR:</option>
+                      <option value="t:">TITLE:</option>
+                      <option value="d:">SUBJECT:</option>
+                      <option value="N:">Note:</option>
+                    </select>
+                    <input maxlength="75" size="35" name="searchText4" class="form-control">
+                  </div>
+                  <input type="hidden" name="startLimit">
+                  <div class="formEntryArea">
+                    <input type="checkbox" name="availlim" id="availlim" value="1" class="form-control">
+                    <span class="availLimMessage">Limit search to available items</span></div>
+                  <a href="#" onclick="iiiAdvSubmit();">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  </a> <a href="#" onclick="iiiDoReset_1();">
+                  <button type="submit" class="btn btn-default">Clear Form</button>
+                  </a>
+                </fieldset>
+                <script type="text/JavaScript">
+function iiiAdvSubmit()
+{
+obj = getObj("search");
+submitSearch(obj, location.pathname, false);
+}
+if (document.layers)
+  document.captureEvents(Event.KEYDOWN);
+document.onkeydown =
+  function (evt) {
+    var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+    if (keyCode == 13) 
+      iiiAdvSubmit(); };
+</script> 
+              </div>
+              <!-- form3PartAbove -->
+              
+              <div class="form3PartBelow">
+                <div class="formLeft advancedSearch">
+                  <fieldset>
+                    <legend>Add Limits (Optional)</legend>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="searchscope"> Library </label></td>
+                            <td><label for="searchscope" style="display:none;">Search Scope</label>
+                              <select name="searchscope" id="searchscope" class="form-control">
+                                <option value="9"> Baptist Bible College</option>
+                                <option value="8"> Cottey College</option>
+                                <option value="1"> Crowder College</option>
+                                <option value="2"> Drury University</option>
+                                <option value="10"> Evangel University</option>
+                                <option value="12"> Forest Institute of Professional Psychology</option>
+                                <option value="3"> Missouri Southern State University</option>
+                                <option value="6"> Missouri State University</option>
+                                <option value="7"> Missouri State Univ. - Greenwood LMC</option>
+                                <option value="13"> Ozark Christian College</option>
+                                <option value="4"> Ozarks Technical Community College</option>
+                                <option value="5"> Southwest Baptist University</option>
+                                <option value="11" selected="selected"> View Entire Collection</option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="b">Specific Library Location:</label></td>
+                            <td><select id="b" name="b" class="form-control">
+                                <option value="">ANY</option>
+                                <option value="8vg  "> BBC General Circulation</option>
+                                <option value="8vr  "> BBC Reference Collection</option>
+                                <option value="8vp  "> BBC Periodicals</option>
+                                <option value="8va  "> BBC Audio-Visuals</option>
+                                <option value="8vc  "> BBC Curriculum</option>
+                                <option value="8ve  "> BBC Christian Education</option>
+                                <option value="8vj  "> BBC Juvenile</option>
+                                <option value="8vs  "> BBC Special Collections</option>
+                                <option value="8vm  "> BBC Microforms</option>
+                                <option value="8vd  "> BBC Electronic Resources</option>
+                                <option value="8vx  "> BBC Reserve</option>
+                                <option value="tra  "> Cottey AV Collection</option>
+                                <option value="tre  "> Cottey Environmental Studies</option>
+                                <option value="trc  "> Cottey Juvenile</option>
+                                <option value="tro  "> Cottey Oversize</option>
+                                <option value="trm  "> Cottey Pop Movie</option>
+                                <option value="trp  "> Cottey Popular Reading</option>
+                                <option value="trr  "> Cottey Reference Collection</option>
+                                <option value="trv  "> Cottey Reserves</option>
+                                <option value="trs  "> Cottey Stacks</option>
+                                <option value="trw  "> Cottey Women's Studies</option>
+                                <option value="cnb  "> Crowder College </option>
+                                <option value="dob  "> Drury University </option>
+                                <option value="dom  "> Drury Music Library</option>
+                                <option value="aga  "> Evangel AGTS Audiovisuals Collection</option>
+                                <option value="agg  "> Evangel AGTS General Collection</option>
+                                <option value="agp  "> Evangel AGTS Periodicals Collection</option>
+                                <option value="agr  "> Evangel AGTS Reference Collection</option>
+                                <option value="eca  "> Evangel CBC Archives Collection</option>
+                                <option value="ecg  "> Evangel CBC General Collection</option>
+                                <option value="ecm  "> Evangel CBC Media Collection</option>
+                                <option value="ecp  "> Evangel CBC Periodicals Collection</option>
+                                <option value="ecr  "> Evangel CBC Reference Collection</option>
+                                <option value="ejr  "> Evangel James River Library Collection</option>
+                                <option value="eua  "> Evangel Kendrick Archives Collection</option>
+                                <option value="eug  "> Evangel Kendrick General Collection</option>
+                                <option value="eui  "> Evangel Kendrick Instructional Resource Center Collection</option>
+                                <option value="eum  "> Evangel Kendrick Media Collection</option>
+                                <option value="euu  "> Evangel Kendrick Music Library Collection</option>
+                                <option value="eup  "> Evangel Kendrick Periodicals Collection</option>
+                                <option value="eur  "> Evangel Kendrick Reference Collection</option>
+                                <option value="fcr  "> Forest Clinic</option>
+                                <option value="flb  "> Forest General</option>
+                                <option value="fla  "> Forest AV</option>
+                                <option value="flp  "> Forest Periodicals</option>
+                                <option value="flr  "> Forest Reference</option>
+                                <option value="fls  "> Forest Special Coll.</option>
+                                <option value="fbb  "> Forest St. Louis</option>
+                                <option value="flt  "> Forest Test Collection</option>
+                                <option value="flv  "> Forest Archives</option>
+                                <option value="msa  "> MSSU Audio-Visuals/Curriculum</option>
+                                <option value="msg  "> MSSU Government Documents</option>
+                                <option value="msm  "> MSSU Main Collection</option>
+                                <option value="msr  "> MSSU Reference</option>
+                                <option value="msp  "> MSSU Periodicals</option>
+                                <option value="mss  "> MSSU Archives/Special Coll</option>
+                                <option value="mst  "> MSSU Specific Collections</option>
+                                <option value="ssl  "> MSU Barbe Library</option>
+                                <option value="sme  "> MSU Electronic Resources</option>
+                                <option value="sgb  "> MSU Garnett Library</option>
+                                <option value="srb  "> MSU Greenwood School</option>
+                                <option value="sma  "> MSU Meyer-Media Coll. </option>
+                                <option value="smc  "> MSU Meyer-Curriculum</option>
+                                <option value="smg  "> MSU Meyer-General</option>
+                                <option value="smd  "> MSU Meyer-Gov Docs</option>
+                                <option value="smq  "> MSU Meyer-Maps</option>
+                                <option value="smm  "> MSU Meyer-Microforms</option>
+                                <option value="sub  "> MSU Meyer-Music Coll.</option>
+                                <option value="smr  "> MSU Meyer-Reference</option>
+                                <option value="sms  "> MSU Meyer-Spec Coll.</option>
+                                <option value="smt  "> MSU Meyer-Thesis</option>
+                                <option value="orb  "> OTC RV</option>
+                                <option value="osb  "> Ozark Tech. </option>
+                                <option value="77b  "> Ozark Christian College</option>
+                                <option value="bbe  "> SBU Bolivar Best Sellers </option>
+                                <option value="bbb  "> SBU Bolivar </option>
+                                <option value="bbc  "> SBU Bolivar Curriculum</option>
+                                <option value="bbf  "> SBU Bolivar Faith</option>
+                                <option value="bbd  "> SBU Bolivar Gov Docs</option>
+                                <option value="bbj  "> SBU Bolivar Juvenile</option>
+                                <option value="bbm  "> SBU Bolivar Media</option>
+                                <option value="bbp  "> SBU Bolivar Periodicals</option>
+                                <option value="bbr  "> SBU Bolivar Reference</option>
+                                <option value="bbs  "> SBU Bolivar Spec Coll.</option>
+                                <option value="bmb  "> SBU Mt. View </option>
+                                <option value="blb  "> SBU Salem</option>
+                                <option value="bsb  "> SBU Springfield</option>
+                                <option value="bse  "> SBU Springfield Best Sellers</option>
+                                <option value="bsm  "> SBU Springfield Media</option>
+                                <option value="bsr  "> SBU Springfield Reference</option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="m">Other Format:</label></td>
+                            <td><select id="m" name="m" class="form-control">
+                                <option value="">ANY</option>
+                                <option value="r"> 3-D OBJECT</option>
+                                <option value="b"> ARCHIVAL MATL</option>
+                                <option value="5"> AUDIO CASSETTE</option>
+                                <option value="y"> AUDIO CD</option>
+                                <option value="a"> BOOK</option>
+                                <option value="q"> CD/DVD ROM</option>
+                                <option value="v"> DVD/BLU-RAY</option>
+                                <option value="2"> E-BOOK</option>
+                                <option value="4"> E-DOC</option>
+                                <option value="3"> E-PERIODICAL</option>
+                                <option value="7"> EQUIPMENT</option>
+                                <option value="g"> FILM</option>
+                                <option value="n"> GAME</option>
+                                <option value="x"> INTERNET RESOURCE</option>
+                                <option value="o"> KIT</option>
+                                <option value="t"> MANUSCRIPT</option>
+                                <option value="e"> MAP</option>
+                                <option value="l"> MICROFORM</option>
+                                <option value="z"> MP3 CD</option>
+                                <option value="u"> ONLINE FILM</option>
+                                <option value="h"> ONLINE MAP</option>
+                                <option value="s"> PERIODICAL</option>
+                                <option value="k"> PICS/POSTERS</option>
+                                <option value="c"> PRINTED MUSIC</option>
+                                <option value="6"> RECORD</option>
+                                <option value="w"> VIDEO CASSETTE</option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="l">Language of Work:</label></td>
+                            <td><select id="l" name="l" class="form-control">
+                                <option value="">ANY</option>
+                                <option value="eng">English</option>
+                                <option value="ara">Arabic</option>
+                                <option value="arc">Aramaic</option>
+                                <option value="chi">Chinese</option>
+                                <option value="fre">French</option>
+                                <option value="ger">German</option>
+                                <option value="gre">Greek</option>
+                                <option value="grc">Greek, Ancient</option>
+                                <option value="hin">Hindi</option>
+                                <option value="ita">Italian</option>
+                                <option value="jpn">Japanese</option>
+                                <option value="kor">Korean</option>
+                                <option value="lat">Latin</option>
+                                <option value="por">Portuguese</option>
+                                <option value="rus">Russian</option>
+                                <option value="spa">Spanish</option>
+                                <option value="vie">Vietnamese</option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="D">Year of Publication:</label></td>
+                            <td><fieldset>
+                                <legend>Within</legend>
+                                <label for="Da"> After </label>
+                                <input type="text" size="10" name="Da" id="Da" value="" class="form-control">
+                                <label for="Db">and Before</label>
+                                <input type="text" size="10" name="Db" id="Db" value="" class="form-control">
+                              </fieldset></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>
+                    <div class="formEntryArea">
+                      <table border="0">
+                        <tbody>
+                          <tr>
+                            <td><label for="p">Publisher Name Keywords:</label></td>
+                            <td><input type="text" size="20" name="p" value="" class="form-control"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>
+                    <div class="formEntryArea" id="form3PartAdvLimitSort">
+                      <label for="SORT"> Search and Sort:</label>
+                      <select name="SORT" id="SORT" class="form-control">
+                        <option value="D" selected="selected">sorted by relevance</option>
+                        <option value="DX">sorted by date</option>
+                        <option value="AX">sorted by title</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <input type="hidden" name="endLimit">
+                </div>
+                <!-- formLeft -->
+                
+                <div class="formRight">
+                  <table class="tipsTable">
+                    <caption>
+                    Search Tips
+                    </caption>
+                    <!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+                    <tbody>
+                      <tr>
+                        <th>Wildcards</th>
+                        <td> Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+                          <span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+                      </tr>
+                      <tr>
+                        <th>Boolean Operators</th>
+                        <td> Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+                          <span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+                          <span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+                      </tr>
+                      <tr>
+                        <th>Field limits</th>
+                        <td> A field limit causes the system to search only the specified field for the specified word(s).</td>
+                      </tr>
+                      <tr>
+                        <th>Grouping</th>
+                        <td> Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query. </td>
+                      </tr>
+                      <!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+                    </tbody>
+                  </table>
+                </div>
+                <!-- formRight -->
+                <div class="clear"></div>
+              </div>
+              <!-- form3PartBelow -->
+              
+            </form>
+          </div>
+          <div id="tabs-3" class="form-group">
+            <form class="form-inline" action="http://swan.searchmobius.org/search/" method="get" name="search" id="search" onsubmit="return iiiSearchValidate();">
+              <input type="hidden" id="iiiFormHandle_1">
+              
+              <fieldset>
+                <!-- Optional legend:
+<legend>Type the subject you want to find, then press the Enter key or click Submit.</legend>
+-->
+                <div class="formEntryArea"> <span class="formLabel">
+                <label for="SEARCH">Search:</label>
+                <input type="text" id="SEARCH" name="SEARCH"  value="" class="form-control">
+                
+                  <label for="sortdropdown">Sort by:</label>
+                  </span>
+                  <noscript>
+                  &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class="errorMessage"&gt;
+                  You must have javascript enabled on your browser in order to use functions on this page. Please enable javascript on your browser and reload this page or contact a librarian for further assistance.
+                  &lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+                  </noscript>
+                  <!--<script type="text/JavaScript">
+<!-- Hide the JS
+document.write('<label for="sortdropdown" style="display:none;">Sort Drop Down</label><select name="sortdropdown" id="sortdropdown" >');
+document.write('<option value="-">System Sorted</option> ');
+document.write('<option value="t"> Title</option> ');
+document.write('<option value="a"> Author</option> ');
+document.write('<option value="c"> Year</option> ');
+document.write('<option value="r"> Reverse Year</option> ');
+document.write('<option value="n"> Call Number</option> ');
+document.write('<option value="m"> Material Type</option> ');
+document.write('</select> ');
+// Unhide the JS 
+</script>-->
+                  <label for="sortdropdown" style="display:none;">Sort Drop Down</label>
+                  <select name="sortdropdown" id="sortdropdown" class="form-control">
+                    <option value="-">System Sorted</option>
+                    <option value="t"> Title</option>
+                    <option value="a"> Author</option>
+                    <option value="c"> Year</option>
+                    <option value="r"> Reverse Year</option>
+                    <option value="n"> Call Number</option>
+                    <option value="m"> Material Type</option>
+                  </select>
+                </div>
+                <br>
+                <div class="formEntryArea formScopeSearch"> <span class="formLabel">
+                  <label for="searchscope">Search in the:</label>
+                  </span>
+                  <label for="searchscope" style="display:none;">Search Scope</label>
+                  <select name="searchscope" id="searchscope" class="form-control">
+                    <option value="9"> Baptist Bible College</option>
+                    <option value="8"> Cottey College</option>
+                    <option value="1"> Crowder College</option>
+                    <option value="2"> Drury University</option>
+                    <option value="10"> Evangel University</option>
+                    <option value="12"> Forest Institute of Professional Psychology</option>
+                    <option value="3"> Missouri Southern State University</option>
+                    <option value="6"> Missouri State University</option>
+                    <option value="7"> Missouri State Univ. - Greenwood LMC</option>
+                    <option value="13"> Ozark Christian College</option>
+                    <option value="4"> Ozarks Technical Community College</option>
+                    <option value="5"> Southwest Baptist University</option>
+                    <option value="11" selected="selected"> View Entire Collection</option>
+                  </select>
+                  <script type="text/JavaScript">
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+obj.submit();
+}
+</script>
+                  <input type="hidden" id="iiiFormHandle_1">
+                  <a href="#" onclick="iiiDoSubmit_1();"><button type="submit" class="btn btn-default">Submit</button>
+                  </a> 
+                  <script type="text/JavaScript">
+
+//getFormHandleForm() is in common.js
+var evtobj = getFormHandleForm(1);
+if (document.layers)
+    {
+    document.captureEvents(Event.KEYUP);
+    }
+document.onkeyup = function(evt)
+{
+if (!evt) evt = window.event;
+var keyCode;
+if (evt.which) keyCode = evt.which;
+else if (evt.keyCode) keyCode = evt.keyCode;
+var targ;
+if (evt.target) targ = evt.target;
+else if (evt.srcElement) targ = evt.srcElement;
+if (targ.nodeType == 3) //for Safari bug
+    targ = targ.parentNode;
+if (targ.form)
+    {
+    targ = targ.form;
+    //alert('targ='+targ+'  evtobj='+evtobj);
+    if (keyCode == 13 && targ == evtobj)
+        {
+        iiiDoSubmit_1();
+        }
+    }
+};
+
+</script> 
+                  <script>
+$("#hideChild").hide();
+$("#dropTrigger").click (function() {
+	$("#hideChild").toggle("fast");
+});
+</script> 
+                  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script> 
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div id="tabs-4">
+          	<form class="form-inline" action="http://swan.searchmobius.org/search/" method="get" name="search" id="search" onsubmit="return iiiSearchValidate();">
+              <input type="hidden" id="iiiFormHandle_1">
+              
+              <!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+              <div class="form-group">
+              	<div class="radio">
+  <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> ISBN/ISSN/Standard Number
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Call Number (Library of Congress)
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Government Publication
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Medical Call Number
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Music Number
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Dewey/Other Call NUmber
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> OCLC/WorldCat
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Donor Honoree
+</label>
+</div><br><br>
+                <div>
+                  
+                  <input type="hidden" name="SORT" id="SORT" value="D">
+                  
+                  <label for="searchscope" style="display:none;">Search Scope</label>
+                  <select name="searchscope" id="searchscope" class="form-control" style="width: 15em;">
+                    <option value="9"> Baptist Bible College</option>
+                    <option value="8"> Cottey College</option>
+                    <option value="1"> Crowder College</option>
+                    <option value="2"> Drury University</option>
+                    <option value="10"> Evangel University</option>
+                    <option value="12"> Forest Institute of Professional Psychology</option>
+                    <option value="3" selected="selected"> Missouri Southern State University</option>
+                    <option value="6"> Missouri State University</option>
+                    <option value="7"> Missouri State Univ. - Greenwood LMC</option>
+                    <option value="13"> Ozark Christian College</option>
+                    <option value="4"> Ozarks Technical Community College</option>
+                    <option value="5"> Southwest Baptist University</option>
+                    <option value="11"> View Entire Collection</option>
+                  </select>
+                  <input name="searcharg" size="30" class="form-control" style="">
+                  <span class="formButtonArea"> 
+                  
+                  <!--{submit}-->
+                  
+                  <input type="hidden" id="iiiFormHandle_1">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  </span> </div>
+              </div><br><br>
+              <!-- formEntryArea --> 
+              <!--</fieldset> optional-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-2 col-lg-2">
+    <div class="panel panel-default">
+      <div class="panel-heading" >
+        <h3 class="panel-title"><b>SWAN Libraries</b></h3>
+      </div>
+      <div id="rightPanel">
+        <div class="panel-body"> Baptist Bible College | Cottey College | Crowder College | Drury University</div>
+        <div class="panel-body"> Evangel University | Missouri Southern State University | Missouri State University</div>
+        <div class="panel-body"> Ozark Christian College | Ozarks Technical Community College | Southwest Baptist University</div>
+      </div>
+      <div> </div>
+    </div>
+  </div>
 </div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="formButtonArea">
+<footer class="footer"><br>
+      <div class="container">
+        <p>&copy; SWAN Southwest Academic Network 2015</p>
+      </div>
+</footer>
+<script type="text/javascript">
 
-  <!--{submit}-->
+//global variables below are set by webpac
+encode = "UTF-8";
+savedScopeIndex = 6;
+//this func is created at runtime by webpac
+function AdvancedSearchForm_initLimits(ths, form)
+{
 
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+ths.limitArray.lang = (form.elements["l"]) ? form.elements["l"] : "";
+ths.limitArray.mattype = (form.elements["m"]) ? form.elements["m"] : "";
+ths.limitArray.branch = (form.elements["b"]) ? form.elements["b"] : "";
+ths.limitArray.publish = (form.elements["p"]) ? form.elements["p"] : "";
+ths.limitArray.serbk = (form.elements["s"]) ? form.elements["s"] : "";
+ths.limitArray.invnum = (form.elements["i"]) ? form.elements["i"] : "";
+ths.limitArray.accsprvdr = (form.elements["a"]) ? form.elements["a"] : "";
+}
 
-<input type="submit" class="submitHidden">
-
-</span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
-</form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
-
-<div id="exampleText">
-	<ul class="unpadded">
-		<li>Italian cooking</li>
-		<li>The Appeal</li>
-		<li>tax and legislat*</li>
-		<li>(lunar or solar) and eclipse</li>
-	</ul>
-</div>
-
-</div><!--pageContentInner -->
-
-<!--{botlogo}-->
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-try { document.forms[0].searcharg.focus(); }
-catch(err) {}
-//--><!]]></script>
+</script>
 </body>
 </html>
