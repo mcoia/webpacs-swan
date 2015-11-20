@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Swan Mock</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script href="http://swan.searchmobius.org/scripts/elcontent.js"></script>
+<script href="http://swan.searchmobius.org/scripts/common.js"></script>
+<script href="http://swan.searchmobius.org/scripts/common.js"></script>
+<link rel="stylesheet" href="swanMockStyle.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body style="background-color:#F5F8FA;">
+<div class="page-header">
+  <div><img  id="swanLogo" class="img-responsive pull-right" src="swan.png" /></div>
+  <div><img  id="mssuLogo" class="img-responsive" src="msu.png"/></div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="choose1"><a href="http://mssu.summon.serialssolutions.com/">Search Summon</a></li>
+        <li id="choose2"><a href="http://searchmobius.org/">MOBIUS</a></li>
+        <li id="choose3"><a href="http://swan.searchmobius.org/patroninfo">My Library Account</a></li>
+        <li id="choose4"><a href="http://swan.searchmobius.org/help">Help</a></li>
+      </ul>
+    </div>
+    <script>
+		$("#choose1").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose1").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose2").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose2").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose3").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose3").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+		
+		$("#choose4").mouseenter(function() {
+			$(this).addClass( "active" );
+		});
+		
+		$("#choose4").mouseout(function() {
+			$(this).removeClass( "active" );
+		});
+	</script> 
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="row row-centered">
+  <div id="firstPanel" class="col-xs-12 col-md-3 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">Search Options</div>
+      <div class="panel-body">
+        <ul id="bulletStyle">
+          <li><a href="/search/X">Advanced Search</a></li>
+          <li><a href="/search/Y">Keyword</a></li>
+          <li><a href="/search/a">Author</a></li>
+          <li><a href="/search/t">Title</a></li>
+          <li><a href="/search/s">Journals, Magazines, Newspapers</a></li>
+          <li><a href="/search/d">Subject (LC)</a></li>
+          <li><a href="/search/q">Author and Title</a></li>
+          <li><a href="/search/m">Genre</a></li>
+          <li><a href="/search~S3/ftlists">New Titles</a></li>
+          <li><a href="/search/b">Course Reserves</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <style>
+  	#rightPanel {
+	width: 100% !important;	
+}
+  </style>
+  </div>
+  
+  <div class="row row-centered">
+  <div class="col-xs-12 col-md-3 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading" >
+        <h3 class="panel-title"><b>SWAN Libraries</b></h3>
+      </div>
+      <div id="rightPanel">
+        <div class="panel-body"> Baptist Bible College | Cottey College | Crowder College | Drury University</div>
+        <div class="panel-body"> Evangel University | Missouri Southern State University | Missouri State University</div>
+        <div class="panel-body"> Ozark Christian College | Ozarks Technical Community College | Southwest Baptist University</div>
+      </div>
+      <div> </div>
+    </div>
+  </div>
+  </div>
+</div>
+<style>
+#movePic {
+	margin-top: -690px !important;
+	float: right;
+	position: relative;	
+	padding-right: 20px;
+}
+</style>
+<div id="movePic">
+  	<img width="920" src="swanMockOld.png" />
+ </div>
+<footer class="footer"><br>
+      <div class="container">
+        <p>&copy; SWAN Southwest Academic Network 2015</p>
+      </div>
+</footer>
+<script type="text/javascript">
+
+//global variables below are set by webpac
+encode = "UTF-8";
+savedScopeIndex = 6;
+//this func is created at runtime by webpac
+function AdvancedSearchForm_initLimits(ths, form)
+{
+
+ths.limitArray.lang = (form.elements["l"]) ? form.elements["l"] : "";
+ths.limitArray.mattype = (form.elements["m"]) ? form.elements["m"] : "";
+ths.limitArray.branch = (form.elements["b"]) ? form.elements["b"] : "";
+ths.limitArray.publish = (form.elements["p"]) ? form.elements["p"] : "";
+ths.limitArray.serbk = (form.elements["s"]) ? form.elements["s"] : "";
+ths.limitArray.invnum = (form.elements["i"]) ? form.elements["i"] : "";
+ths.limitArray.accsprvdr = (form.elements["a"]) ? form.elements["a"] : "";
+}
+
+</script>
+</body>
+</html>
