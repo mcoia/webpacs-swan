@@ -326,7 +326,7 @@ PATRON_FIELDS=n
 #Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 #PATRON_MSG=z|Message from the library
 #PATRON_NOTICES=apz
-PIN_ALPHA_NUM=true
+PIN_ALPHA_NUM=false
 PIN_NUM_ONLY=false
 PIN_RESET=true
 PIN_RESET_EMAIL=Request to reset your library PIN|NoReply@swan.searchmobius.org|NoReply@swan.searchmobius.org
