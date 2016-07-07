@@ -1266,3 +1266,31 @@ tr.highlight { background:#FFFFE4; }
 #smsbutton {text-align:center;}
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
+
+.topLogoImage { width: 145px; }
+.frontLimits { margin: auto}
+.browseSearchtool td {
+    border: medium none;
+    padding: 5px;
+    text-align: left;
+}
+
+#accessibleForm p {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.pageContentInner p {
+    margin-left: 0;
+}
+.limitBox {
+    padding: 10px;
+}
+table.limitBox {
+  width:100%;
+}
+tr.limitBox td {
+  text-align: center;
+}
+.limitBox label {
+  margin:0 20px 0 10px;
+}
