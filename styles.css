@@ -19,7 +19,7 @@ yellow hover color: #FFFFE4
 Gray for borders and borders serving as horizontal rules: #D3D3D3
 
 Font Size Quick Reference
-(Default browser font size) * Body Font Size = Default Display Size 
+(Default browser font size) * Body Font Size = Default Display Size
 16pt * .85 = 13.6pt
 Find your desired size in ems by dividing your desired font-size in points by the present size of the font.
 For instance, 12pt font = 12/13.6 = .8824em.
@@ -772,7 +772,7 @@ div .bibResourceSidebar { display:none; }
 .navHeader {
 border-bottom:1px dashed #5E5D5D;
 color:#5E5D5D;
-font-size:small;
+font-size:18px;
 font-weight:bold;
 letter-spacing:1px;
 margin-bottom:0;
@@ -786,7 +786,7 @@ padding:2px;
 
 .navigationRow, .navigationRowRecord { clear:both; text-align:center; }
 
-.navigationRow > form, .navigationRowNoForm { margin-top:5px; margin-bottom:0; } 
+.navigationRow > form, .navigationRowNoForm { margin-top:5px; margin-bottom:0; }
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
 
@@ -825,7 +825,7 @@ width:21%;
 
 #patActionsLinksList { margin:0 10px 0 0; padding:0px; font-size:1em; }
 
-/* Override ProStyles.css styles applied to pat divs */ 
+/* Override ProStyles.css styles applied to pat divs */
 .patActionsLinks,.patNameAddress,.patHelp,.patLeft,.patFuncArea  { border:0; clear:none; margin:0; padding:0; text-align:left; float:none; width:auto; }
 
 .patActionsLinks  { float:left; background:#FFFFFF; display:inline; margin:0px 0px 20px 20px; padding:10px 0 5px; width:21.33em; }
@@ -1121,27 +1121,27 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 /*Toplogo optional dropdown menus*/
 
 /*#toplogoMoreNav { list-style: none; padding: 0; margin: 0; float:left; border:2px solid pink; } */
-#toplogoMoreNav { list-style: none; padding: 0; margin: 0; } 
+#toplogoMoreNav { list-style: none; padding: 0; margin: 0; }
 
-#toplogoMoreNav a { text-decoration: none; } 
+#toplogoMoreNav a { text-decoration: none; }
 
-#toplogoMoreNav li li a { display: block; font-weight: normal; padding: 0 10px 3px; } 
+#toplogoMoreNav li li a { display: block; font-weight: normal; padding: 0 10px 3px; }
 
-#toplogoMoreNav li li a:hover { text-decoration:underline; } 
+#toplogoMoreNav li li a:hover { text-decoration:underline; }
 
-#toplogoMoreNav li { cursor: default; background-color: white; margin-right:1em; margin-top:5px; float:left; padding:0; } 
+#toplogoMoreNav li { cursor: default; background-color: white; margin-right:1em; margin-top:5px; float:left; padding:0; }
 
-#toplogoMoreNav li#first { } 
+#toplogoMoreNav li#first { }
 
-#toplogoMoreNav li#last { } 
+#toplogoMoreNav li#last { }
 
-#toplogoMoreNav li ul { position: absolute; visibility:hidden; font-weight: normal; padding: 0.5em 0 1em 0; border: solid 1px #D3D3D3; border-top:none; background:#FFFFFF; white-space:nowrap; z-index:99; } 
+#toplogoMoreNav li ul { position: absolute; visibility:hidden; font-weight: normal; padding: 0.5em 0 1em 0; border: solid 1px #D3D3D3; border-top:none; background:#FFFFFF; white-space:nowrap; z-index:99; }
 
-#toplogoMoreNav li>ul { top: auto; left: auto; } 
+#toplogoMoreNav li>ul { top: auto; left: auto; }
 
 #toplogoMoreNav li li { display: block; float: none; background-color: transparent; border:0; border-bottom:1px solid white; }
 
-#toplogoMoreNav li ul li { margin:0; } 
+#toplogoMoreNav li ul li { margin:0; }
 
 #toplogoMoreNav li:hover ul, #toplogoMoreNav li.over ul { visibility:visible; display:block; }
 
@@ -1245,7 +1245,7 @@ tr.highlight { background:#FFFFE4; }
        border:1px solid #36647b;
        position:absolute;
        top:455;
-       left:455; 
+       left:455;
        z-index:1000;
        background:#fff;
        padding:10px;
@@ -1293,4 +1293,12 @@ tr.limitBox td {
 }
 .limitBox label {
   margin:0 20px 0 10px;
+}
+
+li.leaf:not(.expanded) > a::before {
+  content: "+ ";
+}
+
+li.leaf.expanded > a::before {
+  content: "- ";
 }
