@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>SWAN Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="a">Author</option>
+<option value="t">Title</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="39" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Location</label>
+<!--{scope}-->
+
+<a id="search-form-advanced-link" href="/search/X~S6">Advanced Search</a>
+
+</div>
+</div><!-- formEntryArea -->
+<span class="formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<div id="exampleText">
+	<ul class="unpadded">
+		<li>Italian cooking</li>
+		<li>The Appeal</li>
+		<li>tax and legislat*</li>
+		<li>(lunar or solar) and eclipse</li>
+	</ul>
+</div>
+
+</div><!--pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
