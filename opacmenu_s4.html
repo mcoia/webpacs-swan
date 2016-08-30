@@ -39,18 +39,66 @@ obj.submit();
 
 <div id="accessibleForm" class="form1Part">
 <div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+ <div id="tabs">
+    <div id="tab-1" class="tabContent">
 
-
-<input type="hidden" id="iiiFormHandle_1">
-
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
+<div class="innerTab">
+<div class="innerTabForm X">
+    <div class="inlineBlock">
+<select name="searchtype" class="searchtype">
+<option value="X" selected="selected">Keyword
+<option value="a">Author</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="d">Subject</option>
+<option value="c">LC Call Number</option>
+<option value="e">Dewey Call Number</option>
+<option value="f">Other Call Number</option>
+</select>
+<form method="get" action="/search/X?"enctype="multipart/form-data">
+</div><!-- inlineBlock -->       
+<input type="text" name="SEARCH" id="search" maxlength="75" size="39" >
 <div class="inlineBlock">
+	<select id="searchscope" name="searchscope">
+		<option value="9"> Baptist Bible College</option> 
+		<option value="8"> Cottey College</option> 
+		<option value="1"> Crowder College</option> 
+		<option value="2"> Drury University</option> 
+		<option value="10"> Evangel University</option> 
+		<option value="3"> Missouri Southern State University</option> 
+		<option value="6"> Missouri State University</option> 
+		<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
+		<option value="13"> Ozark Christian College</option> 
+		<option selected="selected" value="4"> Ozarks Technical Community College</option> 
+		<option value="5"> Southwest Baptist University</option> 
+		<option value="11"> View Entire Collection</option>
+	</select>
+	<a id="search-form-advanced-link" href="/search/X~S4">Advanced Search</a>
+	
+	
+</div><!-- inlineBlock -->
+        
+<input type="hidden" name="SORT" value="D">
+<div class="frontLimits">
+<table class="limitBox">
+<tr class="limitBox">
+    <p>Check one or more formats, or leave all unchecked for no limit.</p>
+    <td>
+    <label><input type="checkbox" name="m" value="a">Books</label>
+    <label><input type="checkbox" name="m" value="2">Ebooks</label>
+    <label><input type="checkbox" name="m" value="v">DVD/Blu-Ray</label>
+    </td>
+</tr>
+</table>
+</div>
+<input type="submit" value="Submit">
+</form>
+</div><!-- innerTabForm X -->
+<div class="innerTabForm otherIndexes">
+<form action="/search/" method="get" name="search" id="search">
+
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
+<select name="searchtype" class="searchtype">
 <option value="X" selected="selected">Keyword</option>
 <option value="a">Author</option>
 <option value="t">Title</option>
@@ -63,27 +111,30 @@ obj.submit();
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
 <input maxlength="75" name="searcharg" size="39" >
+<select id="searchscope" name="searchscope">
+        <option value="9"> Baptist Bible College</option> 
+	<option value="8"> Cottey College</option> 
+	<option value="1"> Crowder College</option> 
+	<option value="2"> Drury University</option> 
+	<option value="10"> Evangel University</option> 
+	<option value="3"> Missouri Southern State University</option> 
+	<option value="6"> Missouri State University</option> 
+	<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
+	<option value="13"> Ozark Christian College</option> 
+	<option selected="selected" value="4"> Ozarks Technical Community College</option> 
+	<option value="5"> Southwest Baptist University</option> 
+	<option value="11"> View Entire Collection</option>
+</select>
+<div>
+<input value="Submit" type="submit"> <a id="search-form-advanced-link" href="/search/X~S4">Advanced Search</a>
 </div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="formButtonArea">
 
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
-
-</span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
 </form>
+</div>
+</div><!-- innertab -->
+</div>
+</div>
 </div><!-- browseSearchtool -->
-</div><!-- form1Part -->
-
 <div id="exampleText">
 	<ul class="unpadded">
 		<li>Italian cooking</li>
@@ -92,7 +143,7 @@ obj.submit();
 		<li>(lunar or solar) and eclipse</li>
 	</ul>
 </div>
-
+</div><!-- form1Part -->
 </div><!--pageContentInner -->
 
 <!--{botlogo}-->
