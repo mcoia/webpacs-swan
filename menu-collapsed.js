@@ -1,4 +1,4 @@
-/* 
+/*
    Simple JQuery Collapsing menu.
    HTML structure to use:
 
@@ -32,10 +32,11 @@ Free for non-commercial use
 */
 
 function initMenu() {
-  $('#rightCol ul').hide();
+  //$('#rightCol ul').hide();
   $('#rightCol li a').click(
     function() {
-        $(this).next().slideToggle('normal');	
+        $(this).next().slideToggle('normal');
+        $(this).parent().toggleClass('expanded')
       }
     );
   }

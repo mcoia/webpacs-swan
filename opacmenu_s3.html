@@ -51,47 +51,44 @@ obj.submit();
 <option value="X" selected="selected">Keyword
 <option value="a">Author</option>
 <option value="t">Title</option>
-<option value="s">Journal Title</option>
 <option value="d">Subject</option>
-<option value="c">LC Call Number</option>
-<option value="e">Dewey Call Number</option>
-<option value="f">Other Call Number</option>
 </select>
-<form method="get" action="http://swan.searchmobius.org:2082/search/X?"enctype="multipart/form-data">
+<form method="get" action="/search/X?"enctype="multipart/form-data">
 </div><!-- inlineBlock -->       
 <input type="text" name="SEARCH" id="search" maxlength="75" size="39" >
 <div class="inlineBlock">
-    <select id="searchscope" name="searchscope">
-        <option value="9"> Baptist Bible College</option> 
-	<option value="8"> Cottey College</option> 
-	<option value="1"> Crowder College</option> 
-	<option value="2"> Drury University</option> 
-	<option value="10"> Evangel University</option> 
-	<option value="3"> Missouri Southern State University</option> 
-	<option value="6"> Missouri State University</option> 
-	<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
-	<option selected="selected" value="13"> Ozark Christian College</option> 
-	<option value="4"> Ozarks Technical Community College</option> 
-	<option value="5"> Southwest Baptist University</option> 
-	<option value="11"> View Entire Collection</option>
-    </select>
-	<a id="search-form-advanced-link" href="/search/X~S13">Advanced Search</a>
+	<select id="searchscope" name="searchscope">
+		<option value="9"> Baptist Bible College</option> 
+		<option value="8"> Cottey College</option> 
+		<option value="1"> Crowder College</option> 
+		<option value="2"> Drury University</option> 
+		<option value="10"> Evangel University</option> 
+		<option value="12"> Forest Institute of Professional Psychology</option> 
+		<option value="3" selected="selected"> Missouri Southern State University</option> 
+		<option value="6"> Missouri State University</option> 
+		<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
+		<option value="13"> Ozark Christian College</option> 
+		<option value="4"> Ozarks Technical Community College</option> 
+		<option value="5"> Southwest Baptist University</option> 
+		<option value="11"> View Entire Collection</option>
+	</select>
+<a id="search-form-advanced-link" href="/search/X~S3">Advanced Search</a>
 </div><!-- inlineBlock -->
-    <input type="hidden" name="SORT" value="D">
+        
+<input type="hidden" name="SORT" value="D">
 <div class="frontLimits">
-<table>
+<table class="limitBox">
 <tr class="limitBox">
     <p>Check one or more formats, or leave all unchecked for no limit.</p>
     <td>
-    <label for="formatv"><input type="checkbox" name="m" id="m" value="v" /> DVD/Blu-ray<br /></label>
-</td>
-<td>
-    <label for="formaty"><input type="checkbox" name="m" id="m" value="y" /> Audio - CD<br /></label>
+    <label><input type="checkbox" name="m" value="a">Books</label>
+    <label><input type="checkbox" name="m" value="2">Ebooks</label>
+    <label><input type="checkbox" name="m" value="v">DVD/Blu-Ray</label>
     </td>
 </tr>
 </table>
 </div>
-    <input type="submit" value="Submit">
+<input type="submit" value="Submit">
 </form>
 </div><!-- innerTabForm X -->
 <div class="innerTabForm otherIndexes">
@@ -102,11 +99,6 @@ obj.submit();
 <option value="X" selected="selected">Keyword</option>
 <option value="a">Author</option>
 <option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="d">Subject</option>
-<option value="c">LC Call Number</option>
-<option value="e">Dewey Call Number</option>
-<option value="f">Other Call Number</option>
 </select>
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
@@ -117,17 +109,18 @@ obj.submit();
 	<option value="1"> Crowder College</option> 
 	<option value="2"> Drury University</option> 
 	<option value="10"> Evangel University</option> 
-	<option value="3"> Missouri Southern State University</option> 
+	<option value="12"> Forest Institute of Professional Psychology</option> 
+	<option selected="selected" value="3"> Missouri Southern State University</option> 
 	<option value="6"> Missouri State University</option> 
 	<option value="7"> Missouri State Univ. - Greenwood LMC</option> 
-	<option selected="selected" value="13"> Ozark Christian College</option> 
+	<option value="13"> Ozark Christian College</option> 
 	<option value="4"> Ozarks Technical Community College</option> 
 	<option value="5"> Southwest Baptist University</option> 
 	<option value="11"> View Entire Collection</option>
 
 </select>
 <div>
-<input value="Submit" type="submit"> <a id="search-form-advanced-link" href="/search/X~S13">Advanced Search</a>
+<input value="Submit" type="submit"> <a id="search-form-advanced-link" href="/search/X~S3">Advanced Search</a>
 </div>
 
 </form>
@@ -148,7 +141,6 @@ obj.submit();
 	</div>
 </div>
 </div><!-- form1Part -->
-
 </div><!--pageContentInner -->
 
 <div style="clear:both"></div>

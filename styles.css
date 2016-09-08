@@ -772,7 +772,7 @@ div .bibResourceSidebar { display:none; }
 .navHeader {
 border-bottom:1px dashed #5E5D5D;
 color:#5E5D5D;
-font-size:small;
+font-size:18px;
 font-weight:bold;
 letter-spacing:1px;
 margin-bottom:0;
@@ -1296,4 +1296,12 @@ tr.limitBox td {
 }
 .limitBox label {
   margin:0 20px 0 10px;
+}
+
+li.leaf:not(.expanded) > a::before {
+  content: "+ ";
+}
+
+li.leaf.expanded > a::before {
+  content: "- ";
 }
