@@ -321,7 +321,9 @@ MIN_PIN_LENGTH=4
 MODIFY_PFLDS=z
 #MODIFY_PFLDS=ahtpzHx
 MY_WEBPAC=false,2,0-255
-NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
+NEWPIN_MSG=Please enter a password
+NEWPIN1_PROMPT=Enter your password
+NEWPIN2_PROMPT=Enter your password again
 PATRON_FIELDS=n
 #Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
 #PATRON_MSG=z|Message from the library

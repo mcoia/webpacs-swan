@@ -1263,10 +1263,6 @@ tr.highlight { background:#FFFFE4; }
 
 #sms {font-size:70%}
 
-#smsbutton {
-  text-align:center;
-  display:none;
-}
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
 

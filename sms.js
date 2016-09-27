@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "https://mobiusconsortium.org/sms/sms-swan.php?";
+var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-swan.php?";
 
 function showsms() {
 
