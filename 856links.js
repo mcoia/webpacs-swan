@@ -11,7 +11,9 @@ function hideLinks(){
     stringsToHide[9] = new Array ("gobbc");
     stringsToHide[10] = new Array ("Evangel");
     stringsToHide[12] = new Array ("online.forest", "forest");
+	stringsToHide[13] = new Array ("OCC")
 
+	
     var scopeDropdown = $("#searchscope").val();
     
     delete stringsToHide[scopeDropdown];

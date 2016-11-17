@@ -1255,13 +1255,13 @@ tr.highlight { background:#FFFFE4; }
 }
 
 #sms .eg {
-       font-style:italic;
-       font-size:80%;
+       font-weight:bold;
+       font-size:90%;
 }
 
 #info {top:500}
 
-#sms {font-size:70%}
+#sms {font-size:90%}
 
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
