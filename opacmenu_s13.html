@@ -57,7 +57,7 @@ obj.submit();
 <option value="e">Dewey Call Number</option>
 <option value="f">Other Call Number</option>
 </select>
-<form method="get" action="http://swan.searchmobius.org:2082/search/X?"enctype="multipart/form-data">
+<form method="get" action="/search/X?"enctype="multipart/form-data">
 </div><!-- inlineBlock -->       
 <input type="text" name="SEARCH" id="search" maxlength="75" size="39" >
 <div class="inlineBlock">
@@ -82,7 +82,13 @@ obj.submit();
 <table>
 <tr class="limitBox">
     <p>Check one or more formats, or leave all unchecked for no limit.</p>
-    <td>
+		<td>
+    <label for="formata"><input type="checkbox" name="m" id="m" value="a" /> Books<br /></label>
+</td>
+<td>
+    <label for="format2"><input type="checkbox" name="m" id="m" value="2" /> EBooks<br /></label>
+    </td>
+		<td>
     <label for="formatv"><input type="checkbox" name="m" id="m" value="v" /> DVD/Blu-ray<br /></label>
 </td>
 <td>
