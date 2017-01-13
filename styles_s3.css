@@ -1,3 +1,6 @@
+header a { text-align: center; text-decoration: none; padding: 10px; display: block; position: absolute; border-width: 0; border-style: solid; background-color: #3168A3; }
+
 #syndetics { display: block; }
 
 .topLogoImage { padding: 12px 10px; }
+
