@@ -1,3 +1,4 @@
+
 #<!-- Rel 2009B Example Set -->*/
 #<!-- This File Last Changed: 24 Mar 2010 -->*/
 
@@ -34,6 +35,7 @@
 # WebPAC Pro
 # Research Pro
 # Program Registration
+# ArticleReach 
 
 
 # General Display and Behavior
@@ -609,6 +611,15 @@ ICON_VIEW_ADDITIONAL_SESSIONS=<span class="button"><span class="buttonText">View
 ICON_HIDE_ADDITIONAL_SESSIONS=<span class="button"><span class="buttonText">Hide Additional Sessions</span></span>
 ICON_PROGRAM_CAL=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">Events Calendar</span></span>
 TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
+
+# ArticleReach
+ARTICLEREACH_CENTRALS=arlir.iii.com
+ARTICLEREACH_LABELS=1|2|14|15  
+ICON_ARTICLEREACH=Request Article
+ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmall.gif" alt=""><span class="buttonText">Article Requests</span></span>
+
+
+
 
 # Scoping
 
