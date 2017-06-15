@@ -4,7 +4,7 @@ function hideLinks(){
     stringsToHide[1] = new Array ("Crowder");
     stringsToHide[2] = new Array ("drury");
     stringsToHide[3] = new Array ("spivalib", "mssu");
-    stringsToHide[4] = new Array ("my.otc");
+    stringsToHide[4] = new Array ("otc");
     stringsToHide[5] = new Array ("sbuniv", "SBU");
     stringsToHide[6] = new Array ("missouristate");
     stringsToHide[8] = new Array ("cottey", "Cottey"); 
