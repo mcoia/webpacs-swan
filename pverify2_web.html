@@ -19,10 +19,30 @@ startTimeout(600000, "/");
 </head>
 <body>
 <!--{toplogo}-->
+<link rel="stylesheet" type="text/css" href="/screens/styles_login.css" />
+<div class="form1Part codeHelp">
+<h2>Institution Code Help</h2>
+	  <p> For example, a student at Southwest Baptist University would enter 123654185SBU.</p>
+          
+          <ul>
+
+        <li>Baptist Bible College - <strong>BBCJSTUD999BBC</strong></li>
+		<li>Cottey College - <strong>COTT</strong></li>
+		<li>Crowder College - <strong>CC</strong></li>
+		<li>Drury University - <strong>DU</strong></li>
+		<li>Evangel University - <strong>12345678911EU</strong></li>
+		<li>Missouri Southern State University - <strong>S12345678MSSU</strong></li>
+		<li>Missouri State University - <strong>M00123456MSU</strong></li>
+		<li>Ozark Christian College - <strong>OCC</strong></li>
+		<li>Ozarks Technical College - <strong>OTC</strong></li>
+		<li>Southwest Baptist University - <strong>0123456SBU</strong></li>
+            </ul>
+     
+</div>
 <div class="pageContentInner">
 <h1 class="pageHeader">Login</h1>
-<div class="form1Part" id="accessibleForm">
-<form method="post" target="_top" name="patform">
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
 <!--{iferrmsg}-->
 <span class="errormessage">
 <!--{iferrmsgisPIN}-->
@@ -57,9 +77,9 @@ Password:
 <div class="formEntryArea">
 <!--{nameprompt}-->
 <!--{name}-->
-<span class="formLabelExample">
+<div class="formLabelExample">
 <!--{nameexample}-->
-</span>
+</div>
 </div>
 <!--{xif}-->
 
@@ -67,9 +87,9 @@ Password:
 <div class="formEntryArea">
 <!--{barcodeprompt}-->
 <!--{barcode}-->
-<span class="formLabelExample">
+<div class="formLabelExample">
 <!--{barcodeexample}-->
-</span>
+</div>
 </div>
 
 <!--{ifneedspin}-->
@@ -78,6 +98,7 @@ Password:
 <p>
 <!--{newpinmsg}-->
 </p>
+<span><strong>Your password must be 4 to 30 characters long and should contain a mix of letters and numbers.</strong></span>
 <div class="formEntryArea">
 <!-- <label for="pin1"> -->
 <span class="formLabel">
@@ -99,9 +120,9 @@ Password:
 <div class="formEntryArea">
 <!--{pinprompt}-->
 <!--{pin}-->
-<span class="formLabelExample">
+<div class="formLabelExample">
 <!--{pininstructions}-->
-</span>
+</div>
 </div>
 
 <!--{xif}-->
@@ -117,17 +138,31 @@ Password:
 <!--{pinresetrequest}-->
 <!--{xif}-->
 <!--{submit}-->
+<input type="submit" class="submitHidden">
 </div>
 </fieldset>
-</form>
+<!--{formend}-->
 
 </div>
 
+<div id="loginHelp">
+
+    
+		<a name="newuserhelp">
+                    <strong>New Users</strong></a>
+  <p>Please type your name, ID followed by your institution code, and click the button "Submit."
+ <br>
+  You will then be prompted to create your password.</p>
+		<a name="oldusers"><strong>Existing Users</strong></a>
+	<p>If you forget your password please click "Forget your password?" and enter your name and ID followed by your institution code.  Then an email with a link to create a new password will be sent to the email associated with your account.</p>
+				  		  
 </div>
+
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].elements[1].focus(); }
 catch(err) {}
 //--><!]]></script>
-</body>
-</html>
+
