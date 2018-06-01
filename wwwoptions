@@ -101,14 +101,17 @@ FRAMEURL=0
 IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
-NOSEARCH=nubv
+#NOSEARCH edited by III to add z%#, old value nubv
+NOSEARCH=nubz%#
 OFFER_HISTORY=true
 
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText modifySearch">Modify Search</span></span>
-ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText moreLike">More Like This</span></span>
+#ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText modifySearch">Modify Search</span></span>
+ICON_BUT_MODIFY=<span id="modifySearch"class="navButton">Modify Search</span>
+#ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText moreLike">More Like This</span></span>
+ICON_BUT_SHOWSIM=<span class="navButton">More Like This</span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
@@ -192,9 +195,12 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0"|align=
 
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
-ICON_BUT_MARC_DISPLAY=<span class="button"><img src="/screens/ico_marc.png" alt=""><span class="buttonText">MARC Display</span></span>
-ICON_BUT_REGULAR_DISPLAY=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Regular Display</span></span>
-ICON_BUT_RTRNTB=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Browse</span></span>
+#ICON_BUT_MARC_DISPLAY=<span class="button"><img src="/screens/ico_marc.png" alt=""><span class="buttonText">MARC Display</span></span>
+#ICON_BUT_REGULAR_DISPLAY=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Regular Display</span></span>
+#ICON_BUT_RTRNTB=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Browse</span></span>
+ICON_BUT_MARC_DISPLAY=<span class="navButton">MARC Display</span>
+ICON_BUT_REGULAR_DISPLAY=<span class="navButton">Regular Display</span>
+ICON_BUT_RTRNTB=<span class="navButton">Return to Browse</span>
 DISPLAY_856=z3|false
 HOLDINGS_POS=atpe
 #HOTLINK=i^020,c^09,n^505
@@ -268,23 +274,36 @@ ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" al
 
 # Saving and Exporting
 #BRIEF_EXPORT=c|a|t|p
-ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save Record</span></span>
-ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Clear Saved Records</span></span>
-ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
-ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
-ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
+#ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save Record</span></span>
+#ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Clear Saved Records</span></span>
+#ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
+#ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
+#ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
+ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Save Record</span>
+ICON_BUT_CLEAR_MARKED=<span class="navButton">Clear Saved Records</span>
+ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
+ICON_BUT_EXPORT_VIEW_SAVES=<span class="navButton">View Saved Records</span>
+ICON_BUT_VIEW_SAVES=<span class="navButton">View Saved Records</span>
+
 EMAILOP=From the SWAN Library Catalog|mcohelp@mobiusconsortium.org|
 EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:marc,full,endnote
 XRECTYPE=boi
 
 #Requesting
 #BIBREQUEST=true
-ICON_BUT_REQUEST=<span class="button"><img src="/screens/ico_checkmark.png" alt=""><span class="buttonText">Request</span></span>
+#ICON_BUT_REQUEST=<span class="button"><img src="/screens/ico_checkmark.png" alt=""><span class="buttonText">Request</span></span>
+#ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
+#ICON_BUT_REQUEST_MULTI=<span class="button"><img src="/screens/ico_request_multi.png" alt=""><span class="buttonText">Request Saved</span></span>
+#ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
+#ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
+#ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
+ICON_BUT_REQUEST=<span class="navButtonOneLine" id="requestButton">Request</span>
+#ICON_BUT_REQUEST3=<span class="navButtonOneLine resourceButton">Request</span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
-ICON_BUT_REQUEST_MULTI=<span class="button"><img src="/screens/ico_request_multi.png" alt=""><span class="buttonText">Request Saved</span></span>
+ICON_BUT_REQUEST_MULTI=<span class="navButton">Request Saved</span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
-ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
+ICON_REQUEST=<span class="navButtonSmall navButton">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|denyiflocalavail|ask|true
 #REQUEST_ARTICLE_IFCHKIN=Y
@@ -471,7 +490,8 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
+#ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
+ICON_INNREACH_ENCORE=<span class="navButton resourceButton">Search MOBIUS</span>
 INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
 #INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;o=o;p=p;r=r;s=s;t=t;m=l)
 
@@ -490,7 +510,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-FEATURED_LIST=16,17,18,19,23,25,42,55,62,41,08,134,281,26,290,241,285,286,246,497,303,375,244,276,242,247,291,593,581,572,437,596,494,432,147,500,579|NEW TITLES AND LISTS||# TITLES
+FEATURED_LIST=16,17,18,19,23,25,42,55,62,41,08,134,281,26,290,241,285,286,246,497,303,375,244,276,242,247,291,593,581,572,437,596,494,432,147,500,579,182|NEW TITLES AND LISTS||# TITLES
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -676,3 +696,11 @@ LOC_msm*=http://libguides.mssu.edu/library-floor-plan "target=_blank"
 LOC_msint=http://libguides.mssu.edu/library-floor-plan "target=_blank"
 LOC_mspej=http://libguides.mssu.edu/library-floor-plan "target=_blank"
 LOC_msebk=http://libguides.mssu.edu/library-floor-plan "target=_blank"
+#BRIEF_b=q added by III for security reasons
+BRIEF_b=q
+#BRIEF_n=q added by III for security reasons
+BRIEF_n=q
+#BRIEF_u=q added by III for security reasons
+BRIEF_u=q
+#BRIEF_z=q added by III for security reasons
+BRIEF_z=q

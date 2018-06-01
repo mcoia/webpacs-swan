@@ -8,7 +8,7 @@ function hideLinks(){
     stringsToHide[5] = new Array ("sbuniv", "SBU");
     stringsToHide[6] = new Array ("missouristate");
     stringsToHide[8] = new Array ("cottey", "Cottey"); 
-    stringsToHide[9] = new Array ("gobbc");
+    stringsToHide[9] = new Array ("BBC");
     stringsToHide[10] = new Array ("Evangel");
     stringsToHide[12] = new Array ("online.forest", "forest");
 	stringsToHide[13] = new Array ("OCC")
