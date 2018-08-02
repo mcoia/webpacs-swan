@@ -1,7 +1,6 @@
 $(document).ready(function(){
     
-    var all_links = [];
-    $(".bibDisplayUrls").append("<pre class='debugger'></pre>");
+    var all_links = [];    
     $(".bibDisplayUrls").find("a").each(function(){
         all_links.push($(this).html() + "_!!!!_" + $(this).prop("href"));
     });
@@ -17,9 +16,7 @@ $(document).ready(function(){
         sorted_table+="<tr align=\"center\">\n<td><a href=\"" + splits[1] + "\">" + splits[0] + "<\a><br></td></tr>\n";
     } 
     sorted_table+="<\tbody>\n";
-    
-    $(".debugger").html($(".debugger").html()+sorted_table);
-    //$(".bibDisplayUrls table").html(sorted_table);
+    $(".bibDisplayUrls table").html(sorted_table);
 
 
 });
