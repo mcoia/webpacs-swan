@@ -102,7 +102,7 @@ IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
 #NOSEARCH edited by III to add z%#, old value nubv
-NOSEARCH=nubz%#
+NOSEARCH=nubvz%#
 OFFER_HISTORY=true
 
 # Advanced Searching
@@ -377,7 +377,7 @@ ICON_READING_HISTORY_OPTIN=<div onmousedown="this.className='pressedState';" onm
 ICON_READING_HISTORY_OPTOUT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Opt Out</span></span></div></div>
 ICON_READING_HISTORY_EXPORT=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export My Reading List</span></span>
 LOGGEDIN_MSG=<span class="loggedInMessage">You are logged in <span class="loggedInMoreInfo">to %s</span> as %s</span>
-NO_REVERIFY=acq,book,req,ecr,z39
+NO_REVERIFY=acq,book,req,ecr,wam,z39
 PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
 PREF_SEARCHES_1=10|Y
 PREF_SEARCHES_2=10|Y
@@ -441,6 +441,7 @@ PREF_SEARCHES_160=10|Y
 PREFTEXT=Save as preferred search
 READING_HISTORY=optin|true|
 TOPLOGO_LOGGEDIN=T
+IPSSO_USEHTML=T
 
 # Patron Ratings
 ICON_PATRATE=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">My Ratings</span></span>
@@ -544,7 +545,6 @@ PATFEED_LIVE_BOOKMARKS=T
 PATFEED_PROGRAM_SESSION_SOON=An event that you have registered for is coming up soon. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming up tomorrow. Please log on to My Account for the event date, time and location.
 PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today. Please log on to My Account for the event date, time and location.
-FEEDS_PORT=63200
 
 # Z39.50
 ICON_BUT_EMAIL=Email
