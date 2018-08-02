@@ -17,7 +17,8 @@ $(document).ready(function(){
     } 
     sorted_table+="<\tbody>\n";
     
-    $(".bibDisplayUrls table").html(sorted_table);
+    $(".bibDisplayUrls").append("<blockquote> "+sorted_table+"</blockquote");
+    //$(".bibDisplayUrls table").html(sorted_table);
 
 
 });
