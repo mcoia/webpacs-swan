@@ -1,8 +1,9 @@
 $(document).ready(function(){
     
     var all_links = [];
+    $(".bibDisplayUrls").append("<pre class='debugger'></pre>");
     $(".bibDisplayUrls").find("a").each(function(){
-        all_links.push($(this).html + "_!!!!_" + $(this).prop("href"));
+        all_links.push($(this).html() + "_!!!!_" + $(this).prop("href"));
     });
     
     all_links.sort(function (a, b) {
@@ -17,7 +18,7 @@ $(document).ready(function(){
     } 
     sorted_table+="<\tbody>\n";
     
-    $(".bibDisplayUrls").append("<blockquote> "+sorted_table+"</blockquote");
+    $(".debugger").html($(".debugger").html()+sorted_table);
     //$(".bibDisplayUrls table").html(sorted_table);
 
 
