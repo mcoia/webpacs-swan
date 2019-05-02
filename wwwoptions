@@ -102,7 +102,7 @@ IBROWSE_MAX=10000
 KEYWORD_COLOR=Y|all|red
 MULT_LIMITS=true
 #NOSEARCH edited by III to add z%#, old value nubv
-NOSEARCH=nubvz%#
+NOSEARCH=nubz%#
 OFFER_HISTORY=true
 
 # Advanced Searching
@@ -471,6 +471,7 @@ ICON_PAY_CONTINUE=<div onmousedown="this.className='pressedState';" onmouseout="
 
 # Bookings
 BOOKINGS=no|true|true|false
+BOOKINGS1=choose|true|true|true
 BOOKINGS_DAY_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> hours. No items available on <span id="unavailable">grayed out</span> hours.</span>
 BOOKINGS_MONTH_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> days. No items available on <span id="unavailable">grayed out</span> days.</span>
 BOOKINGS_REPEAT=true
@@ -511,7 +512,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-FEATURED_LIST=16,17,18,19,23,25,42,55,62,41,08,134,281,26,290,241,285,286,246,497,303,375,244,276,242,247,291,593,581,572,437,596,494,432,147,500,579,182|NEW TITLES AND LISTS||# TITLES
+FEATURED_LIST=16,17,18,19,23,25,42,55,62,41,08,134,281,26,290,241,285,286,246,497,303,244,276,242,247,291,593,581,572,437,596,494,432,147,500,579,182,599|NEW TITLES AND LISTS||# TITLES
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -527,6 +528,7 @@ ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><s
 ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Other Resources</span></span></div>
 ICON_BUT_RET2RESOURCE=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span></div>
 RESLINK=bibresourcetop|browseresourcetop||
+RESLINK1=bibresourcetop|browseresourcetop||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
 
 # Patron Feeds

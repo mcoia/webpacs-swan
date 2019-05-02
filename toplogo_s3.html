@@ -24,6 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src='/screens/tabs.js'></script>
 <script type="text/javascript">
 $(document).ready(function () {
+    $("#idHelpButton").click(function() {
+            $("#idHelp").show();
+		});
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
 	$('#searchtype').change(function(){

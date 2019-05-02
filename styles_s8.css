@@ -1,1 +1,2 @@
-.topLogoImage { padding: 28px 15px; }
+.topLogoImage { padding: 10px 15px; }
+.topLogoImage img { max-height: 100px; } 
