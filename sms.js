@@ -84,68 +84,75 @@ function showsms() {
 return false;
 }
 
-
 function sendSMS(location) {
-  var frm = document.sms_form;      // get the SMS form
-  var phone = frm.phone.value;      // get the phone #
-  phone = phone.replace(/[^\d]/ig,"");  // remove all non-digit characters
-  if (phone.length == 10) {        // if 10 chars, we're good
-  var url = smsurl;            // start creating the URL
-  url += "&number="+encodeURIComponent(frm.phone.value);  // html escape #
-  url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);  // html escpae provider
-  for (i=0;i<frm.loc.length;i++) {    // for each item, get the checked one
-    //    alert(i+" "+frm.loc[i].checked);
-    if (frm.loc[i].checked == true) {  // if checked, add it to the URL
-      url += "&item="+encodeURIComponent(frm.loc[i].value);
-    }
-  }
-  if (frm.loc.length == undefined) {    // if just one, should not come to this
-    url += "&item="+encodeURIComponent(frm.loc.value);
-  }
-
-  var bodyRef = document.getElementsByTagName("body")[0]; //get the bib number out of the <body>, add it to the url
-  var bodyText = bodyRef.innerHTML;
-  var bibNum = bodyText.match(/b[\d]{7}/m);
-  url += "&bib="+bibNum;
-
-  var head = document.getElementsByTagName("head")[0];    // now we create a <SCRIPT> tag in the <HEAD> to get the response
-  var script = document.createElement('script');
-  script.setAttribute('type','text/javascript');
-  script.setAttribute('src',url);              // the script is actually the PERL script
-  head.appendChild(script);                  // append the script
-} else {    // invalid phone #, send message
-  alert('please enter a valid phone #');
-}
-}
-
-// clear/hide the SMS DIV
-function clearsms() {
-  var sms = document.getElementById('sms');
-  sms.style.visibility = 'hidden';
-  sms.style.display = 'none';
-}
-
+	var title = encodeURIComponent(
+		$(".bibDisplayTitle td.bibInfoData")
+			.html()
+			.replace(/<\/?[^>]+(>|$)/g, "")
+			.replace(/\:.*$/g,'')
+			.substring(1,35).trim()
+	);
+    var frm = document.sms_form;			// get the SMS form
+	var phone = frm.phone.value;			// get the phone #
+	phone = phone.replace(/[^\d]/ig,"");	// remove all non-digit characters
+	if (phone.length == 10) {				// if 10 chars, we're good
+	var url = smsurl;						// start creating the URL
+		url += "&number="+encodeURIComponent(frm.phone.value);	// html escape #
+		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escpae provider
+		for (i=0;i<frm.loc.length;i++) {		// for each item, get the checked one 
+//		alert(i+" "+frm.loc[i].checked);
+			if (frm.loc[i].checked == true) {	// if checked, add it to the URL
+				url += "&item="+encodeURIComponent(frm.loc[i].value);
+			}
+		}
+		if (frm.loc.length == undefined) {		// if just one, should not come to this
+			url += "&item="+encodeURIComponent(frm.loc.value);		
+		}
+		    url += "&title="+title; 	//get title
+		
+	var bodyRef = document.getElementsByTagName("body")[0]; //get the bib number out of the <body>, add it to the url
+	var bodyText = bodyRef.innerHTML;
+	var bibNum = bodyText.match(/b[\d]{7}/m);
+	url += "&bib="+bibNum;
+	 
+	 var head = document.getElementsByTagName("head")[0];		// now we create a <SCRIPT> tag in the <HEAD> to get the response
+   	 var script = document.createElement('script');
+   	 script.setAttribute('type','text/javascript');
+   	 script.setAttribute('src',url);							// the script is actually the PERL script 
+   	 head.appendChild(script);									// append the script
+	} else {		// invalid phone #, send message
+	  alert('please enter a valid phone #');
+      }
+   }
+	
+	// clear/hide the SMS DIV
+   function clearsms() {
+     var sms = document.getElementById('sms');
+	 sms.style.visibility = 'hidden';
+	 sms.style.display = 'none';
+	 }
+	 
 
 
 // get the position of an item, good for putting the SMS form in a useful place
 function findPos(obj,obj2,lofset,tofset) {
-  var curleft = curtop = 0;
-  if (obj.offsetParent) {
-    curleft = obj.offsetLeft
-    curtop = obj.offsetTop
-    while (obj = obj.offsetParent) {
-      curleft += obj.offsetLeft
-      curtop += obj.offsetTop
-    }
-  }
-  obj2.style.left = curleft+lofset;
-  obj2.style.top = curtop+tofset;
-  //  return [curleft,curtop];
+	var curleft = curtop = 0;
+	if (obj.offsetParent) {
+		curleft = obj.offsetLeft
+		curtop = obj.offsetTop
+		while (obj = obj.offsetParent) {
+			curleft += obj.offsetLeft
+			curtop += obj.offsetTop
+		}
+	}
+	obj2.style.left = curleft+lofset;
+	obj2.style.top = curtop+tofset;
+//	return [curleft,curtop];
 }
 
 // Grab the bib number of the item
-function getbib() {
-  var buttonBlock = document.getElementById('navigationRow').innerHTML;
-  sms.style.visibility = 'hidden';
-  sms.style.display = 'none';
-}
+   function getbib() {
+     var buttonBlock = document.getElementById('navigationRow').innerHTML;
+	 sms.style.visibility = 'hidden';
+	 sms.style.display = 'none';
+	 }

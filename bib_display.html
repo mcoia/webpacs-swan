@@ -173,13 +173,13 @@
        
 var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/(w).*/g,"$1")
 
-var cburl = "http://books.google.com/books";
+var cburl = "https://books.google.com/books";
 // Retrieve the info for these bibkeys
 var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
 var s = document.createElement("script");
 s.setAttribute("type", "text/javascript");
 //alert("searching for: " + ISBN);
-s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+s.setAttribute("src", "https://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
 document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
