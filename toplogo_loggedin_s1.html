@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
     if(pathnameFtList.indexOf('ftlist') > -1){
-    $('.browseEntry:not(:contains("CC"))').addClass('hideMe');
+    $('.browseEntry:not(:contains("CROWDER"))').addClass('hideMe');
     $(".hideMe").hide();
     text = $('.ftlistHeader').text();
 	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{2,3}/m, " ").replace("entries", " ");
