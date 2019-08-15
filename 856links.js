@@ -4,17 +4,16 @@ function hideLinks(){
     stringsToHide[1] = new Array ("Crowder");
     stringsToHide[2] = new Array ("drury");
     stringsToHide[3] = new Array ("spivalib", "mssu");
-    stringsToHide[4] = new Array ("otc");
+    stringsToHide[4] = new Array ("otc", "OTC");
     stringsToHide[5] = new Array ("sbuniv", "SBU");
-    stringsToHide[6] = new Array ("missouristate");
+    stringsToHide[6] = new Array ("missouristate", "MSU");
     stringsToHide[8] = new Array ("cottey", "Cottey"); 
     stringsToHide[9] = new Array ("BBC");
     stringsToHide[10] = new Array ("Evangel");
-    stringsToHide[12] = new Array ("online.forest", "forest");
-	stringsToHide[13] = new Array ("OCC")
+    stringsToHide[13] = new Array ("OCC");
 
 	
-    var scopeDropdown = $("#searchscope").val();
+   var scopeDropdown = $("#searchscope").val();
     
     delete stringsToHide[scopeDropdown];
 	
