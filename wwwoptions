@@ -516,7 +516,7 @@ FEATURED_LIST=16,17,18,19,23,25,42,55,62,41,08,134,281,26,290,241,285,286,246,49
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=minsostu|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=minsostu
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=sbuniv|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=sbuniv
 BIBIMAGE_TEXT=Book Cover
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
