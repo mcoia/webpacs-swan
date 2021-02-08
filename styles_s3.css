@@ -1,10 +1,12 @@
 header a { text-align: center; text-decoration: none; padding: 10px; display: block; position: absolute; border-width: 0; border-style: solid; background-color: #3168A3; }
 
-
+.linkBanner {margin-top: 10px;}
 
 #syndetics { display: block; }
 
 .topLogoImage { padding: 12px 10px; }
+
+.topLogoImage img { padding: 0px 0px 0px 10px; max-width: 300px;} 
 
 #patButAR { display: none; }
 

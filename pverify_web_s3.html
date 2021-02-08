@@ -1,0 +1,132 @@
+<!--{toplogo}-->
+<link rel="stylesheet" type="text/css" href="/screens/styles_login_s3.css" />
+
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<div class="formLabelExample">
+<!--{nameexample}-->
+</div>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<div class="formLabelExample">
+For example, S12345678MSSU
+</div>
+</div>
+<div id="loginHelpLink">
+<a target="_blank" href=https://www.youtube.com/watch?v=4okfjPbJeHo&list=PLNe_80QC7GmtlNTWxz-HPYzrLujmcoOnj&index=13>How to login - For MSSU Students</a>
+</div>
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<span><strong>Your password must be 4 to 30 characters long and should contain a mix of letters and numbers.</strong></span>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<div class="formLabelExample">
+<!--{pininstructions}-->
+</div>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div>
+<!--
+
+<div id="loginHelp">
+
+    
+		<a name="newuserhelp">
+                    <strong>New Users</strong></a>
+  <p>Please type your name, ID followed by your institution code, and click the button "Submit."
+ <br>
+  You will then be prompted to create your password.</p>
+		<a name="oldusers"><strong>Existing Users</strong></a>
+	<p>If you forget your password please click "Forget your password?" and enter your name and ID followed by your institution code.  Then an email with a link to create a new password will be sent to the email associated with your account.</p>
+				  		  
+</div>
+
+-->
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>
