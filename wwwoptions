@@ -644,7 +644,8 @@ ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmal
 # Web Access Management
 PROXYDNS=*swan.searchmobius.org
 TIMEOUT_WAMPATRON=3600
-
+WAM_LOG_IP=t
+WAM_LOG_PNUM=t
 
 # Scoping
 
