@@ -636,10 +636,10 @@ ICON_PROGRAM_CAL=<span class="button"><img src="/screens/ico_calendar.png" alt="
 TABLEPARAM_PROG_SECTIONS=width="100%" border="0" cellspacing="0" align="center"
 
 # ArticleReach
-ARTICLEREACH_CENTRALS=arlir.iii.com
-ARTICLEREACH_LABELS=1|2|14|15  
-ICON_ARTICLEREACH=Request Article
-ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmall.gif" alt=""><span class="buttonText">Article Requests</span></span>
+# ARTICLEREACH_CENTRALS=arlir.iii.com
+# ARTICLEREACH_LABELS=1|2|14|15  
+# ICON_ARTICLEREACH=Request Article
+# ICON_MYARTICLEREACH=<span class="button"><img src="/screens/media_periodicalsmall.gif" alt=""><span class="buttonText">Article Requests</span></span>
 
 # Web Access Management
 PROXYDNS=*swan.searchmobius.org
