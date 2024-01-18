@@ -378,7 +378,7 @@ ICON_READING_HISTORY_OPTOUT=<div onmousedown="this.className='pressedState';" on
 ICON_READING_HISTORY_EXPORT=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export My Reading List</span></span>
 LOGGEDIN_MSG=<span class="loggedInMessage">You are logged in <span class="loggedInMoreInfo">to %s</span> as %s</span>
 NO_REVERIFY=acq,book,req,ecr,wam,z39
-PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
+PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs
 PREF_SEARCHES_1=10|Y
 PREF_SEARCHES_2=10|Y
 PREF_SEARCHES_3=20|Y
